@@ -1,125 +1,210 @@
-# Polymer App Toolbox - Starter Kit
-
-[![Build Status](https://travis-ci.org/Polymer/polymer-starter-kit.svg?branch=master)](https://travis-ci.org/Polymer/polymer-starter-kit)
-
-This template is a starting point for building apps using a drawer-based
-layout. The layout is provided by `app-layout` elements.
-
-This template, along with the `polymer-cli` toolchain, also demonstrates use
-of the "PRPL pattern" This pattern allows fast first delivery and interaction with
-the content at the initial route requested by the user, along with fast subsequent
-navigation by pre-caching the remaining components required by the app and
-progressively loading them on-demand as the user navigates through the app.
-
-The PRPL pattern, in a nutshell:
-
-* **Push** components required for the initial route
-* **Render** initial route ASAP
-* **Pre-cache** components for remaining routes
-* **Lazy-load** and progressively upgrade next routes on-demand
-
-### Migrating from Polymer Starter Kit v1?
-
-[Check out our blog post that covers what's changed in PSK2 and how to migrate!](https://www.polymer-project.org/1.0/blog/2016-08-18-polymer-starter-kit-or-polymer-cli.html)
-
-### Quickstart
-
-We've recorded a Polycast to get you up and running with PSK2 fast!
-
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=HgJ0XCyBwzY&list=PLNYkxOF6rcIDdS7HWIC_BYRunV6MHs5xo&index=10">
-    <img src="https://img.youtube.com/vi/HgJ0XCyBwzY/0.jpg" alt="Polymer Starter Kit 2 video">
-  </a>
-</p>
-
-### Setup
-
-##### Prerequisites
-
-First, install [Polymer CLI](https://github.com/Polymer/polymer-cli) using
-[npm](https://www.npmjs.com) (we assume you have pre-installed [node.js](https://nodejs.org)).
-
-    npm install -g polymer-cli
-
-Second, install [Bower](https://bower.io/) using [npm](https://www.npmjs.com)
-
-    npm install -g bower
-
-##### Initialize project from template
-
-    mkdir my-app
-    cd my-app
-    polymer init polymer-2-starter-kit
-
-### Start the development server
-
-This command serves the app at `http://127.0.0.1:8081` and provides basic URL
-routing for the app:
-
-    polymer serve
-
-### Build
-
-The `polymer build` command builds your Polymer application for production, using build configuration options provided by the command line or in your project's `polymer.json` file.
-
-You can configure your `polymer.json` file to create multiple builds. This is necessary if you will be serving different builds optimized for different browsers. You can define your own named builds, or use presets. See the documentation on [building your project for production](https://www.polymer-project.org/2.0/toolbox/build-for-production) for more information.
-
-The Polymer Starter Kit is configured to create three builds using [the three supported presets](https://www.polymer-project.org/2.0/toolbox/build-for-production#build-presets):
-
 ```
-"builds": [
-  {
-    "preset": "es5-bundled"
-  },
-  {
-    "preset": "es6-bundled"
-  },
-  {
-    "preset": "es6-unbundled"
-  }
-]
+When I wrote this, only God and I understood what I was doing.
+
+Now, only God knows.
 ```
 
-Builds will be output to a subdirectory under the `build/` directory as follows:
+<div align="center">
+  <a href="https://liyas-vr.firebaseapp.com"><img src="https://raw.githubusercontent.com/liyasthomas/templates/master/assets/logo.gif" alt="Liyas Thomas" width="200"></a>
+  <br>
+  <h1>Liyas Thomas</h1>
+</div>
+
+<div align="center">
+  <sub>Built with ❤︎ by
+  <a href="https://github.com/liyasthomas">liyasthomas</a> and
+  <a href="https://github.com/liyasthomas/templates/graphs/contributors">contributors</a>
+	</sub>
+</div>
+
+---
+
+[![Build Status](https://travis-ci.org/liyasthomas/templates.svg?branch=master)](https://travis-ci.org/liyasthomas/templates) [![GitHub release](https://img.shields.io/github/release/liyasthomas/templates/all.svg)](https://github.com/liyasthomas/templates/releases/latest) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/liyasthomas/templates/issues) [![Website](https://img.shields.io/website-up-down-ff69b4-ff69b4/https/shields.io.svg?label=website)](https://liyas-vr.firebaseapp.com) [![license](https://img.shields.io/github/license/liyasthomas/templates.svg)](https://github.com/liyasthomas/templates/blob/master/LICENSE) [![Donate](https://img.shields.io/badge/$-donate-ff69b4.svg)](https://www.paypal.me/liyascthomas)
+
+# <img src="https://raw.githubusercontent.com/liyasthomas/templates/master/assets/images/favicon.png" alt="Templates" width="32"> Templates
+
+### Description by [Liyas Thomas](https://github.com/liyasthomas)
+
+<div align="center">
+  <br>
+  <img src="https://storage.googleapis.com/gd-wagtail-prod-assets/images/ARUX_hero2_2x1.max-4000x2000.jpegquality-90.png" alt="Templates" width="100%">
+  <br>
+</div>
+
+### Features :sparkles:
+
+:eyeglasses: **Virtual Reality made simple**: Templates handles the 3D and [WebVR](https://webvr.info) boilerplates required to get running across platforms including mobile, desktop, Vive, and Rift. It works on any phone with [WebGL](https://caniuse.com/#feat=webgl) and [WebRTC](https://caniuse.com/#feat=stream).
+
+:heart: **Declarative HTML**: HTML is easy to read and copy-and-paste. Since Templates can be used from HTML, Templates is accessible to everyone: web developers, VR enthusiasts, educators, artists, makers, kids. It is completely open source and free of charge!
+
+:electric_plug: **Entity-Component Architecture**: Templates is a powerful framework on top of [three.js](https://github.com/mrdoob/three.js), providing a declarative, composable, reusable entity-component structure. While Templates can be used from HTML, developers have unlimited access to JavaScript, DOM APIs, three.js, [WebVR](https://webvr.info), and [WebGL](https://caniuse.com/#feat=webgl).
+
+:zap: **Performance**: Templates is a thin framework on top of [AR.js](https://github.com/jeromeetienne/AR.js) and [A-Frame](https://github.com/aframevr/aframe). Although A-Frame uses the DOM, A-Frame does not touch the browser layout engine. Performance is a top priority, being battle-tested on highly interactive [WebVR](https://webvr.info) experiences. It runs efficiently even on mobile phones!
+
+:globe_with_meridians: **Cross-Platform**: Build VR applications for Vive,
+Rift, Daydream, GearVR, and Cardboard. Don't have a headset or controllers? No
+problem! Templates still works on standard desktop and smartphones. It is a pure web solution, so no installation required. Full JavaScript based on [three.js](https://github.com/mrdoob/three.js) + [jsartoolkit5](https://github.com/artoolkit/jsartoolkit5).
+
+---
+
+## Getting started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+<div align="center">
+  <br>
+  <img src="https://storage.googleapis.com/gd-wagtail-prod-assets/original_images/ARUX_inline-option3.jpg" alt="Templates" width="100%">
+  <br>
+</div>
+
+### Prerequisites
+
+What things you need to install the software and how to install them.
+
+* A device which supports [WebGL](https://caniuse.com/#feat=webgl) and [WebRTC](https://caniuse.com/#feat=stream) with a working camera input
+* Internet connection
+* A web browser that supports [WebVR](https://webvr.info). Works best with Chrome on Android devices. You can still experience [WebVR](https://webvr.info) content in other browsers on Android and iOS, but it might not be as smooth since those browsers don’t fully support [WebVR](https://webvr.info)
+* [Wonder](https://en.wikipedia.org/wiki/Wonder_(emotion))! :heart:
+
+<div align="center">
+  <br>
+  <img src="https://mixedreality.mozilla.org/static/img/experience/devices.png" alt="Templates" width="100%">
+  <br>
+  <br>
+</div>
+
+### Try it on mobile :iphone:
+
+It works on all platforms. Android, iOS and Windows phone. It runs on **any browser with [WebGL](https://caniuse.com/#feat=webgl) and [WebRTC](https://caniuse.com/#feat=stream)** (for iOS, you need to update to iOS 11).
+
+Try on your phone in only two easy steps, check it out!
+
+1. Open any [marker image from here](https://github.com/liyasthomas/templates/tree/master/assets/patterns) in your browser.
+2. Open my [augmented reality web app](https://liyasthomas.github.io/templates) in your phone browser. Give permissions to access camera. Scan marker image with your camera.
+
+You're done! It will open a web page which read the phone's webcam, localize a marker and add 3D on top of it.
+
+<div align="center">
+  <br>
+  <img src="https://storage.googleapis.com/gd-wagtail-prod-assets/original_images/ARUX_inline2-option1.png" alt="Templates" width="100%">
+  <br>
+</div>
+
+### Installing
+
+A step by step series of examples that tell you've to get a development environment running.
+
+1. Download the whole zip/clone the repository.
+2. Unzip and make changes.
+3. Save and deploy to any hosting platforms like Firebase, GitHub pages etc.
+
+---
+
+## Running the tests
+
+Explain how to run the automated tests for this system.
+
+### Break down into end to end tests
+
+Explain what these tests test and why.
 
 ```
-build/
-  es5-bundled/
-  es6-bundled/
-  es6-unbundled/
+Will be explained later
 ```
 
-* `es5-bundled` is a bundled, minified build with a service worker. ES6 code is compiled to ES5 for compatibility with older browsers.
-* `es6-bundled` is a bundled, minified build with a service worker. ES6 code is served as-is. This build is for browsers that can handle ES6 code - see [building your project for production](https://www.polymer-project.org/2.0/toolbox/build-for-production#compiling) for a list.
-* `es6-unbundled` is an unbundled, minified build with a service worker. ES6 code is served as-is. This build is for browsers that support HTTP/2 push.
+### And coding style tests
 
-Run `polymer help build` for the full list of available options and optimizations. Also, see the documentation on the [polymer.json specification](https://www.polymer-project.org/2.0/docs/tools/polymer-json) and [building your Polymer application for production](https://www.polymer-project.org/2.0/toolbox/build-for-production).
+Explain what these tests test and why.
 
-### Preview the build
+```
+Will be explained later
+```
 
-This command serves your app. Replace `build-folder-name` with the folder name of the build you want to serve.
+---
 
-    polymer serve build/build-folder-name/
+## Deployment
 
-### Run tests
+Add additional notes about how to deploy this on a live system.
 
-This command will run [Web Component Tester](https://github.com/Polymer/web-component-tester)
-against the browsers currently installed on your machine:
+```
+Will be explained later
+```
 
-    polymer test
+---
 
-If running Windows you will need to set the following environment variables:
+## Built with
 
-- LAUNCHPAD_BROWSERS
-- LAUNCHPAD_CHROME
+* **[AR.js](https://github.com/jeromeetienne/AR.js)** - For efficient augmented reality for the web
+	* [three.js](https://github.com/mrdoob/three.js) - For being a great library to do 3d on the web
+	* [ARToolKit](https://github.com/artoolkit/artoolkit5) - Years of development and experiences on doing augmented reality
+	* [emscripten](https://github.com/kripken/emscripten) and [asm.js](https://github.com/dherman/asm.js) - Thus we could compile ARToolKit C into JavaScript
+* **[A-Frame](https://github.com/aframevr/aframe)** - Web framework for building virtual reality experiences
+* **[Chromium](https://github.com/chromium/chromium)** - Thanks for being so fast!
+* HTML - For the web framework
+* CSS - For styling components
 
-Read More here [daffl/launchpad](https://github.com/daffl/launchpad#environment-variables-impacting-local-browsers-detection)
+---
 
-### Adding a new view
+## Contributing
 
-You can extend the app by adding more views that will be demand-loaded
-e.g. based on the route, or to progressively render non-critical sections of the
-application. Each new demand-loaded fragment should be added to the list of
-`fragments` in the included `polymer.json` file. This will ensure those
-components and their dependencies are added to the list of pre-cached components
-and will be included in the build.
+Please read [CONTRIBUTING](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+---
+
+## Continuous Integration
+
+We use [Travis CI](https://travis-ci.com) for continuous integration. Check out our [Travis CI Status](https://travis-ci.org/liyasthomas/templates).
+
+---
+
+## Versioning
+
+This project is developed by [Liyas Thomas](https://github.com/liyasthomas) using the [Semantic Versioning specification](https://semver.org). For the versions available, see the [releases on this repository](https://github.com/liyasthomas/templates/releases).
+
+---
+
+## Authors
+
+### Lead Developers
+* [**Liyas Thomas**](https://github.com/liyasthomas) - *Author*
+
+### Testing and Debugging
+* [Liyas Thomas](https://github.com/liyasthomas)
+
+### Contributors
+* [Liyas Thomas](https://github.com/liyasthomas)
+
+### Thanks
+* [Jerome Etienne](https://github.com/jeromeetienne) - For [AR.js](https://github.com/jeromeetienne/AR.js)
+
+See also the list of [contributors](https://github.com/liyasthomas/templates/graphs/contributors) who participated in this project.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## Change log
+
+See the [CHANGELOG](CHANGELOG.md) file for details.
+
+---
+
+## Acknowledgments
+
+* Hat tip to anyone who's code was used
+* Inspirations:
+	* [Google VR](https://vr.google.com)
+	* [Google ARCore](https://developers.google.com/ar)
+	* [Google WebVR Experiments](https://experiments.withgoogle.com/webvr)
+	* [Google AR Experiments](https://experiments.withgoogle.com/ar)
+	* [Apple ARKit](https://developer.apple.com/arkit)
+	* [Microsoft HoloLens](https://www.microsoft.com/en-us/hololens)
+	* [YouTube](https://www.youtube.com)
+	* [A-Frame](https://aframe.io)
+	* [three.js](https://threejs.org)
+	* [CodePen](https://codepen.io)
+	* [GitHub](https://github.com)
