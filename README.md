@@ -1,11 +1,5 @@
-```
-When I wrote this, only God and I understood what I was doing.
-
-Now, only God knows.
-```
-
 <div align="center">
-  <a href="https://liyas-vr.firebaseapp.com"><img src="https://raw.githubusercontent.com/liyasthomas/templates/master/assets/logo.gif" alt="Liyas Thomas" width="200"></a>
+  <a href="https://liyas-vr.firebaseapp.com"><img src="https://raw.githubusercontent.com/liyasthomas/liyas-thomas/master/assets/logo.gif" alt="Liyas Thomas" width="200"></a>
   <br>
   <h1>Liyas Thomas</h1>
 </div>
@@ -13,37 +7,37 @@ Now, only God knows.
 <div align="center">
   <sub>Built with ❤︎ by
   <a href="https://github.com/liyasthomas">liyasthomas</a> and
-  <a href="https://github.com/liyasthomas/templates/graphs/contributors">contributors</a>
+  <a href="https://github.com/liyasthomas/liyas-thomas/graphs/contributors">contributors</a>
 	</sub>
 </div>
 
 ---
 
-[![Build Status](https://travis-ci.org/liyasthomas/templates.svg?branch=master)](https://travis-ci.org/liyasthomas/templates) [![GitHub release](https://img.shields.io/github/release/liyasthomas/templates/all.svg)](https://github.com/liyasthomas/templates/releases/latest) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/liyasthomas/templates/issues) [![Website](https://img.shields.io/website-up-down-ff69b4-ff69b4/https/shields.io.svg?label=website)](https://liyas-vr.firebaseapp.com) [![license](https://img.shields.io/github/license/liyasthomas/templates.svg)](https://github.com/liyasthomas/templates/blob/master/LICENSE) [![Donate](https://img.shields.io/badge/$-donate-ff69b4.svg)](https://www.paypal.me/liyascthomas)
+[![Build Status](https://travis-ci.org/liyasthomas/liyas-thomas.svg?branch=master)](https://travis-ci.org/liyasthomas/liyas-thomas) [![GitHub release](https://img.shields.io/github/release/liyasthomas/liyas-thomas/all.svg)](https://github.com/liyasthomas/liyas-thomas/releases/latest) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/liyasthomas/liyas-thomas/issues) [![Website](https://img.shields.io/website-up-down-ff69b4-ff69b4/https/shields.io.svg?label=website)](https://liyas-vr.firebaseapp.com) [![license](https://img.shields.io/github/license/liyasthomas/liyas-thomas.svg)](https://github.com/liyasthomas/liyas-thomas/blob/master/LICENSE) [![Donate](https://img.shields.io/badge/$-donate-ff69b4.svg)](https://www.paypal.me/liyascthomas)
 
-# <img src="https://raw.githubusercontent.com/liyasthomas/templates/master/assets/images/favicon.png" alt="Templates" width="32"> Templates
+# <img src="https://raw.githubusercontent.com/liyasthomas/liyas-thomas/master/assets/images/favicon.png" alt="Liyas Thomas" width="32"> Liyas Thomas
 
-### Description by [Liyas Thomas](https://github.com/liyasthomas)
+### My official website by [Liyas Thomas](https://github.com/liyasthomas)
 
 <div align="center">
   <br>
-  <img src="https://storage.googleapis.com/gd-wagtail-prod-assets/images/ARUX_hero2_2x1.max-4000x2000.jpegquality-90.png" alt="Templates" width="100%">
+  <img src="https://storage.googleapis.com/gd-wagtail-prod-assets/images/ARUX_hero2_2x1.max-4000x2000.jpegquality-90.png" alt="Liyas Thomas" width="100%">
   <br>
 </div>
 
 ### Features :sparkles:
 
-:eyeglasses: **Virtual Reality made simple**: Templates handles the 3D and [WebVR](https://webvr.info) boilerplates required to get running across platforms including mobile, desktop, Vive, and Rift. It works on any phone with [WebGL](https://caniuse.com/#feat=webgl) and [WebRTC](https://caniuse.com/#feat=stream).
+:eyeglasses: **Virtual Reality made simple**: Liyas Thomas handles the 3D and [WebVR](https://webvr.info) boilerplates required to get running across platforms including mobile, desktop, Vive, and Rift. It works on any phone with [WebGL](https://caniuse.com/#feat=webgl) and [WebRTC](https://caniuse.com/#feat=stream).
 
-:heart: **Declarative HTML**: HTML is easy to read and copy-and-paste. Since Templates can be used from HTML, Templates is accessible to everyone: web developers, VR enthusiasts, educators, artists, makers, kids. It is completely open source and free of charge!
+:heart: **Declarative HTML**: HTML is easy to read and copy-and-paste. Since Liyas Thomas can be used from HTML, Liyas Thomas is accessible to everyone: web developers, VR enthusiasts, educators, artists, makers, kids. It is completely open source and free of charge!
 
-:electric_plug: **Entity-Component Architecture**: Templates is a powerful framework on top of [three.js](https://github.com/mrdoob/three.js), providing a declarative, composable, reusable entity-component structure. While Templates can be used from HTML, developers have unlimited access to JavaScript, DOM APIs, three.js, [WebVR](https://webvr.info), and [WebGL](https://caniuse.com/#feat=webgl).
+:electric_plug: **Entity-Component Architecture**: Liyas Thomas is a powerful framework on top of [three.js](https://github.com/mrdoob/three.js), providing a declarative, composable, reusable entity-component structure. While Liyas Thomas can be used from HTML, developers have unlimited access to JavaScript, DOM APIs, three.js, [WebVR](https://webvr.info), and [WebGL](https://caniuse.com/#feat=webgl).
 
-:zap: **Performance**: Templates is a thin framework on top of [AR.js](https://github.com/jeromeetienne/AR.js) and [A-Frame](https://github.com/aframevr/aframe). Although A-Frame uses the DOM, A-Frame does not touch the browser layout engine. Performance is a top priority, being battle-tested on highly interactive [WebVR](https://webvr.info) experiences. It runs efficiently even on mobile phones!
+:zap: **Performance**: Liyas Thomas is a thin framework on top of [AR.js](https://github.com/jeromeetienne/AR.js) and [A-Frame](https://github.com/aframevr/aframe). Although A-Frame uses the DOM, A-Frame does not touch the browser layout engine. Performance is a top priority, being battle-tested on highly interactive [WebVR](https://webvr.info) experiences. It runs efficiently even on mobile phones!
 
 :globe_with_meridians: **Cross-Platform**: Build VR applications for Vive,
 Rift, Daydream, GearVR, and Cardboard. Don't have a headset or controllers? No
-problem! Templates still works on standard desktop and smartphones. It is a pure web solution, so no installation required. Full JavaScript based on [three.js](https://github.com/mrdoob/three.js) + [jsartoolkit5](https://github.com/artoolkit/jsartoolkit5).
+problem! Liyas Thomas still works on standard desktop and smartphones. It is a pure web solution, so no installation required. Full JavaScript based on [three.js](https://github.com/mrdoob/three.js) + [jsartoolkit5](https://github.com/artoolkit/jsartoolkit5).
 
 ---
 
@@ -53,7 +47,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 <div align="center">
   <br>
-  <img src="https://storage.googleapis.com/gd-wagtail-prod-assets/original_images/ARUX_inline-option3.jpg" alt="Templates" width="100%">
+  <img src="https://storage.googleapis.com/gd-wagtail-prod-assets/original_images/ARUX_inline-option3.jpg" alt="Liyas Thomas" width="100%">
   <br>
 </div>
 
@@ -68,7 +62,7 @@ What things you need to install the software and how to install them.
 
 <div align="center">
   <br>
-  <img src="https://mixedreality.mozilla.org/static/img/experience/devices.png" alt="Templates" width="100%">
+  <img src="https://mixedreality.mozilla.org/static/img/experience/devices.png" alt="Liyas Thomas" width="100%">
   <br>
   <br>
 </div>
@@ -79,14 +73,14 @@ It works on all platforms. Android, iOS and Windows phone. It runs on **any brow
 
 Try on your phone in only two easy steps, check it out!
 
-1. Open any [marker image from here](https://github.com/liyasthomas/templates/tree/master/assets/patterns) in your browser.
-2. Open my [augmented reality web app](https://liyasthomas.github.io/templates) in your phone browser. Give permissions to access camera. Scan marker image with your camera.
+1. Open any [marker image from here](https://github.com/liyasthomas/liyas-thomas/tree/master/assets/patterns) in your browser.
+2. Open my [augmented reality web app](https://liyasthomas.github.io/liyas-thomas) in your phone browser. Give permissions to access camera. Scan marker image with your camera.
 
 You're done! It will open a web page which read the phone's webcam, localize a marker and add 3D on top of it.
 
 <div align="center">
   <br>
-  <img src="https://storage.googleapis.com/gd-wagtail-prod-assets/original_images/ARUX_inline2-option1.png" alt="Templates" width="100%">
+  <img src="https://storage.googleapis.com/gd-wagtail-prod-assets/original_images/ARUX_inline2-option1.png" alt="Liyas Thomas" width="100%">
   <br>
 </div>
 
@@ -153,13 +147,13 @@ Please read [CONTRIBUTING](CONTRIBUTING.md) for details on our code of conduct, 
 
 ## Continuous Integration
 
-We use [Travis CI](https://travis-ci.com) for continuous integration. Check out our [Travis CI Status](https://travis-ci.org/liyasthomas/templates).
+We use [Travis CI](https://travis-ci.com) for continuous integration. Check out our [Travis CI Status](https://travis-ci.org/liyasthomas/liyas-thomas).
 
 ---
 
 ## Versioning
 
-This project is developed by [Liyas Thomas](https://github.com/liyasthomas) using the [Semantic Versioning specification](https://semver.org). For the versions available, see the [releases on this repository](https://github.com/liyasthomas/templates/releases).
+This project is developed by [Liyas Thomas](https://github.com/liyasthomas) using the [Semantic Versioning specification](https://semver.org). For the versions available, see the [releases on this repository](https://github.com/liyasthomas/liyas-thomas/releases).
 
 ---
 
@@ -177,7 +171,7 @@ This project is developed by [Liyas Thomas](https://github.com/liyasthomas) usin
 ### Thanks
 * [Jerome Etienne](https://github.com/jeromeetienne) - For [AR.js](https://github.com/jeromeetienne/AR.js)
 
-See also the list of [contributors](https://github.com/liyasthomas/templates/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/liyasthomas/liyas-thomas/graphs/contributors) who participated in this project.
 
 ---
 

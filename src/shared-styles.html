@@ -1,45 +1,92 @@
-<!--
-@license
-Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
-
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 
 <!-- shared styles for all views -->
 <dom-module id="shared-styles">
-  <template>
-    <style>
-      .card {
-        margin: 24px;
-        padding: 16px;
-        color: #757575;
-        border-radius: 5px;
-        background-color: #fff;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-      }
-
-      .circle {
-        display: inline-block;
-        width: 64px;
-        height: 64px;
-        text-align: center;
-        color: #555;
-        border-radius: 50%;
-        background: #ddd;
-        font-size: 30px;
-        line-height: 64px;
-      }
-
-      h1 {
-        margin: 16px 0;
-        color: #212121;
-        font-size: 22px;
-      }
+	<template>
+    <style is="custom-style">
+			a {
+        text-decoration: none !important;
+				outline: none;
+				color: inherit;
+			}
+			a.link {
+				color: var(--accent-color);
+			}
+			a.link:hover {
+				color: var(--dark-accent-color);
+			}
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			h1, h2, h3, h4 {
+				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
+				font-weight: normal;
+				margin: 0;
+			}
+			paper-item, paper-icon-item {
+				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
+				line-height: 1.5;
+				color: var(--primary-text-color);
+				--paper-item-focused: {
+				};
+				--paper-item-focused-before: {
+					opacity: 0;
+				};
+			}
+			paper-icon-button.link {
+				margin: 4px;
+			}
+			paper-icon-button {
+				color: var(--secondary-text-color);
+			}
+			paper-icon-button:hover {
+				color: var(--secondary-text-color);
+			}
+			paper-button {
+				border-radius: 46px;
+				margin: 0;
+				padding: 0.7em 1.2em;
+				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
+				font-weight: 500;
+				text-transform: none;
+				font-weight: 500 !important;
+				transition: all .2s;
+			}
+			paper-button.primary {
+				background-color: var(--accent-color);
+				color: #fff;
+				--paper-button-raised-keyboard-focus: {
+					background-color: var(--dark-accent-color) !important;
+				};
+			}
+			paper-button.primary:hover {
+				background-color: var(--dark-accent-color);
+			}
+			paper-button.secondary {
+				color: var(--accent-color);
+				--paper-button-raised-keyboard-focus: {
+					color: var(--dark-accent-color) !important;
+				};
+			}
+			paper-button.secondary:hover {
+				color: var(--dark-accent-color);
+			}
+			paper-button iron-icon {
+				padding-left: 8px;
+			}
+			paper-progress {
+        display: block;
+        width: 100%;
+				position: fixed;
+				top: 0;
+			}
+			.error {
+				padding: 16px;
+				color: var(--paper-grey-500);
+				text-align: center;
+			}
     </style>
   </template>
 </dom-module>

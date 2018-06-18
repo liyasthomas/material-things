@@ -1,18 +1,15 @@
 {
-	"name": "Saap",
-	"short_name": "Saap",
-	"description": "Virtual and Augmented reality for everyone",
-	"scope": "/lvr/",
-	"start_url": "/lvr/",
-	"display": "fullscreen",
-	"orientation": "any",
+	"name": "Liyas Thomas",
+	"short_name": "Liyas Thomas",
+	"start_url": "/",
+	"display": "standalone",
 	"theme_color": "#fff",
 	"background_color": "#fff",
 	"icons": [
 		{
-			"src": "assets/images/favicon.png",
+			"src": "images/manifest/icon-512x512.png",
 			"sizes": "512x512",
 			"type": "image/png"
     }
-	]
+  ]
 }
