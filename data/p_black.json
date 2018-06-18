@@ -1,42 +1,52 @@
 [
 	{
+		"mode": "dark",
 		"color": "#000",
-		"title": "black 1",
-		"link": "about"
+		"title": "black 1"
 	},
 	{
-		"color": "#000",
-		"title": "black 2",
-		"link": "about"
+		"mode": "dark",
+		"color": "#111",
+		"title": "black 2"
 	},
 	{
-		"color": "#000",
-		"title": "black 3",
-		"link": "about"
+		"mode": "dark",
+		"color": "#222",
+		"title": "black 3"
 	},
 	{
-		"color": "#000",
-		"title": "black 4",
-		"link": "about"
+		"mode": "dark",
+		"color": "#333",
+		"title": "black 4"
 	},
 	{
-		"color": "#000",
-		"title": "black 5",
-		"link": "about"
+		"mode": "dark",
+		"color": "#444",
+		"title": "black 5"
 	},
 	{
-		"color": "#000",
-		"title": "black 6",
-		"link": "about"
+		"mode": "dark",
+		"color": "#555",
+		"title": "black 6"
 	},
 	{
-		"color": "#000",
-		"title": "black 7",
-		"link": "about"
+		"mode": "dark",
+		"color": "#666",
+		"title": "black 7"
 	},
 	{
-		"color": "#000",
-		"title": "black 8",
-		"link": "about"
+		"mode": "dark",
+		"color": "#777",
+		"title": "black 8"
+	},
+	{
+		"mode": "dark",
+		"color": "#888",
+		"title": "black 8"
+	},
+	{
+		"mode": "dark",
+		"color": "#999",
+		"title": "black 8"
 	}
 ]
