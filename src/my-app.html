@@ -31,6 +31,7 @@
 <link rel="lazy-import" href="my-projects.html">
 <link rel="lazy-import" href="my-about.html">
 <link rel="lazy-import" href="my-404.html">
+<link rel="lazy-import" href="my-shadow.html">
 
 <link rel="lazy-import" href="my-red.html">
 <link rel="lazy-import" href="my-pink.html">
@@ -85,6 +86,11 @@
 
 				color: var(--primary-text-color);
       }
+/*
+      :host([page=shadow]) .bottom {
+        display: none;
+      }
+*/
 			[hidden] {
 				display: none;
 			}
@@ -92,9 +98,6 @@
         text-decoration: none;
 				outline: none;
 				color: inherit;
-			}
-			.iron-selected {
-        color: var(--dark-accent-color);
 			}
       app-header {
 				background-color: var(--primary-color);
@@ -139,6 +142,9 @@
 				padding: 0 16px;
 				font-weight: 500;
   		}
+			.iron-selected {
+        color: var(--dark-accent-color);
+			}
       .pages {
         @apply --layout-flex;
       }
@@ -233,12 +239,21 @@
 		<paper-toast id="ready_toast" duration="5000" text="Click on any tile to copy the color code to clipboard!"></paper-toast>
       <!-- Main content -->
 		<app-header-layout fullbleed>
-			<app-header slot="header" fixed condenses effects="waterfall">
+			<app-header slot="header" fixed condenses reveals effects="waterfall">
 				<app-toolbar class="tab-nav">
-					<span main-title><div class="logo"><iron-icon icon="my-icons:format-color-fill"></iron-icon>Material Colors</div></span>
-					<a href="mailto:liyascthomas@gmail.com?&subject=Hello Liyas!&body=Hi, ">
-						<paper-icon-button icon="my-icons:mail"></paper-icon-button>
-					</a>
+					<paper-tabs selected="[[page]]" attr-for-selected="id" autoselect no-bar on-click="scrollTop">
+						<paper-tab id="home">
+							<a href="[[rootPath]]" tabindex="-1">
+								<iron-icon icon="my-icons:format-color-fill"></iron-icon>
+							</a>
+						</paper-tab>
+						<paper-tab id="shadow">
+							<a href="shadow" tabindex="-1">
+								<iron-icon icon="my-icons:layers"></iron-icon>
+							</a>
+						</paper-tab>
+					</paper-tabs>
+					<div class="logo" main-title></div>
 					<paper-icon-button icon="my-icons:share" on-tap="openShare"></paper-icon-button>
 					<template is="dom-if" if="{{loading}}">
 						<paper-progress value="{{progress}}" indeterminate active$="[[loading]]" top-item></paper-progress>
@@ -287,6 +302,7 @@
 					<my-projects name="projects"></my-projects>
 					<my-about name="about"></my-about>
 					<my-404 name="404"></my-404>
+					<my-shadow name="shadow"></my-shadow>
 					<my-red name="red"></my-red>
 					<my-pink name="pink"></my-pink>
 					<my-purple name="purple"></my-purple>

@@ -1,0 +1,66 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-shadow">
+	<template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+      }
+      div {
+        display: flex;
+        background: white;
+        margin: 32px 16px;
+        padding: 32px;
+        border-radius: 2px;
+      }
+			.dp2 {
+				@apply --shadow-elevation-2dp;				
+			}
+			.dp3 {
+				@apply --shadow-elevation-3dp;				
+			}
+			.dp4 {
+				@apply --shadow-elevation-4dp;				
+			}
+			.dp6 {
+				@apply --shadow-elevation-6dp;				
+			}
+			.dp8 {
+				@apply --shadow-elevation-8dp;				
+			}
+			.dp12 {
+				@apply --shadow-elevation-12dp;				
+			}
+			.dp16 {
+				@apply --shadow-elevation-16dp;				
+			}
+			.dp24 {
+				@apply --shadow-elevation-24dp;				
+			}
+    </style>
+		<div class="dp0">0dp</div>
+		<div class="dp2">2dp</div>
+		<div class="dp3">3dp</div>
+		<div class="dp4">4dp</div>
+		<div class="dp6">6dp</div>
+		<div class="dp8">8dp</div>
+		<div class="dp12">12dp</div>
+		<div class="dp16">16dp</div>
+		<div class="dp24">24dp</div>
+	</template>
+	<script>
+		class MyShadow extends Polymer.Element {
+			static get is() {
+				return 'my-shadow';
+			}
+
+			static get properties() {
+				return {};
+			}
+		}
+
+		window.customElements.define(MyShadow.is, MyShadow);
+
+	</script>
+</dom-module>

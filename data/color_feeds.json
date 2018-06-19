@@ -115,13 +115,13 @@
 	},
 	{
 		"mode": "dark",
-		"color": "#000",
+		"color": "#000000",
 		"title": "black",
 		"link": "black"
 	},
 	{
 		"mode": "light",
-		"color": "#fff",
+		"color": "#ffffff",
 		"title": "white",
 		"link": "white"
 	}
