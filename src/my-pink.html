@@ -33,7 +33,7 @@
     </template>
 		<paper-listbox selected="" attr-for-selected="id" class="listbox" role="listbox">
 			<template is="dom-repeat" items="[[ajaxResponse]]">
-				<paper-icon-item id="{{item.title}}" class$="[[_computeBgClass(item.mode)]] btn" style="background-color: {{item.color}}" onclick="copytoast.open()">
+				<paper-icon-item id="{{item.title}}" class$="[[_computeBgClass(item.mode)]]" style="background-color: {{item.color}}">
 					<iron-icon icon="my-icons:content-copy" item-icon slot="item-icon"></iron-icon>
 					<span class="name">Pink {{item.title}}</span>
 					<p id="message"><span class="hex">{{item.color}}</span></p>

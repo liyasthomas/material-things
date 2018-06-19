@@ -1,98 +1,116 @@
 [
 	{
+		"mode": "dark",
 		"color": "#f44336",
 		"title": "red",
 		"link": "red"
 	},
 	{
-		"color": "#fff",
+		"mode": "dark",
+		"color": "#e91e63",
 		"title": "pink",
 		"link": "pink"
 	},
 	{
-		"color": "#000",
+		"mode": "dark",
+		"color": "#9c27b0",
 		"title": "purple",
 		"link": "purple"
 	},
 	{
-		"color": "#fff",
+		"mode": "dark",
+		"color": "#673ab7",
 		"title": "deep purple",
 		"link": "deeppurple"
 	},
 	{
-		"color": "#000",
+		"mode": "dark",
+		"color": "#3f51b5",
 		"title": "indigo",
 		"link": "indigo"
 	},
 	{
-		"color": "#fff",
+		"mode": "dark",
+		"color": "#2196f3",
 		"title": "blue",
 		"link": "blue"
 	},
 	{
-		"color": "#000",
+		"mode": "dark",
+		"color": "#03a9f4",
 		"title": "light blue",
 		"link": "lightblue"
 	},
 	{
-		"color": "#fff",
+		"mode": "dark",
+		"color": "#00bcd4",
 		"title": "cyan",
 		"link": "cyan"
 	},
 	{
-		"color": "#000",
+		"mode": "dark",
+		"color": "#009688",
 		"title": "teal",
 		"link": "teal"
 	},
 	{
-		"color": "#fff",
+		"mode": "dark",
+		"color": "#4caf50",
 		"title": "green",
 		"link": "green"
 	},
 	{
-		"color": "#000",
+		"mode": "dark",
+		"color": "#8bc34a",
 		"title": "light green",
 		"link": "lightgreen"
 	},
 	{
-		"color": "#fff",
+		"mode": "dark",
+		"color": "#cddc39",
 		"title": "lime",
 		"link": "lime"
 	},
 	{
-		"color": "#000",
+		"mode": "dark",
+		"color": "#ffeb3b",
 		"title": "yellow",
 		"link": "yellow"
 	},
 	{
-		"color": "#fff",
+		"mode": "dark",
+		"color": "#ffc107",
 		"title": "amber",
 		"link": "amber"
 	},
 	{
-		"color": "#000",
+		"mode": "dark",
+		"color": "#ff9800",
 		"title": "orange",
 		"link": "orange"
 	},
 	{
-		"color": "#fff",
+		"mode": "dark",
+		"color": "#ff5722",
 		"title": "deep orange",
 		"link": "deeporange"
 	},
 	{
-		"color": "#000",
+		"mode": "dark",
+		"color": "#795548",
 		"title": "brown",
 		"link": "brown"
 
 	},
 	{
-		"color": "#fff",
+		"mode": "dark",
+		"color": "#9e9e9e",
 		"title": "grey",
 		"link": "grey"
 
 	},
-	{
-		"color": "#000",
+	{	"mode": "dark",
+		"color": "#607d8b",
 		"title": "blue grey",
 		"link": "bluegrey"
 

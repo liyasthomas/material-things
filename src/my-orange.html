@@ -3,7 +3,7 @@
 <link rel="import" href="app-grid-style.html">
 
 <dom-module id="my-orange">
-  <template>
+	<template>
 		<style include="app-grid-style">
 		</style>
     <style include="shared-styles">
@@ -24,7 +24,7 @@
 				<paper-spinner-lite active$="[[loading]]"></paper-spinner-lite>
 			</div>
 		</template>
-    <template is="dom-if" if="{{error}}">
+		<template is="dom-if" if="{{error}}">
 			<div class="error">
 				<div>Failed to load feeds.</div>
 				<div>Make sure you're connected to internet.</div>
@@ -41,10 +41,12 @@
 				</paper-icon-item>
 			</template>
 		</paper-listbox>
-  </template>
+	</template>
 	<script>
-    class MyOrange extends Polymer.Element {
-      static get is() { return 'my-orange'; }
+		class MyOrange extends Polymer.Element {
+			static get is() {
+				return 'my-orange';
+			}
 
 			_computeBgClass(color) {
 				return color + '-bg';
@@ -54,12 +56,12 @@
 				return color + '-fg';
 			}
 
-      static get properties() {
-        return {
-        };
-      }
-    }
+			static get properties() {
+				return {};
+			}
+		}
 
-    window.customElements.define(MyOrange.is, MyOrange);
-  </script>
+		window.customElements.define(MyOrange.is, MyOrange);
+
+	</script>
 </dom-module>
