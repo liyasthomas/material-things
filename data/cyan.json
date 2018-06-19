@@ -1,11 +1,11 @@
 [
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#e0f7fa",
 		"title": "50"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#b2ebf2",
 		"title": "100"
 	},
@@ -50,7 +50,7 @@
 		"title": "900"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#84ffff",
 		"title": "a100"
 	},

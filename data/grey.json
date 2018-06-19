@@ -1,21 +1,21 @@
 [
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#fafafa",
 		"title": "50"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#f5f5f5",
 		"title": "100"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#eeeeee",
 		"title": "200"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#e0e0e0",
 		"title": "300"
 	},

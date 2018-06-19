@@ -1,0 +1,37 @@
+[
+	{
+		"mode": "light",
+		"color": "#fff",
+		"title": "White"
+	},
+	{
+		"mode": "light",
+		"color": "rgba(255, 255, 255, 1)",
+		"title": "Light primary"
+	},
+	{
+		"mode": "dark",
+		"color": "rgba(255, 255, 255, 0.7)",
+		"title": "Light secondary"
+	},
+	{
+		"mode": "dark",
+		"color": "rgba(255, 255, 255, 0.5)",
+		"title": "Light disabled"
+	},
+	{
+		"mode": "dark",
+		"color": "rgba(255, 255, 255, 0.12)",
+		"title": "Light dividers"
+	},
+	{
+		"mode": "light",
+		"color": "rgba(255, 255, 255, 1)",
+		"title": "Light icon active"
+	},
+	{
+		"mode": "dark",
+		"color": "rgba(255, 255, 255, 0.5)",
+		"title": "Light icon inactive"
+	}
+]

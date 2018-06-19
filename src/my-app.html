@@ -51,6 +51,8 @@
 <link rel="lazy-import" href="my-brown.html">
 <link rel="lazy-import" href="my-grey.html">
 <link rel="lazy-import" href="my-bluegrey.html">
+<link rel="lazy-import" href="my-black.html">
+<link rel="lazy-import" href="my-white.html">
 
 <link rel="import" href="my-icons.html">
 
@@ -223,8 +225,8 @@
 					<template is="dom-repeat" items="[[social]]">
 						<a href="{{item.link}}" target="_blank"><paper-icon-button class="toast-button" src="../images/assets/social/{{item.icon}}.svg"></paper-icon-button></a>
 					</template>
-					<a href="mailto:liyascthomas@gmail.com?&subject=Hello Liyas!&body=Hi, " target="_blank"><paper-icon-button class="toast-button" icon="my-icons:mail"></paper-icon-button></a>
-					<paper-icon-button class="toast-button" icon="my-icons:content-copy"></paper-icon-button>
+					<a href="mailto:liyascthomas@gmail.com?&subject=Hello%20Liyas!&body=Hi," target="_blank"><paper-icon-button class="toast-button" icon="my-icons:mail"></paper-icon-button></a>
+					<a href="tel:+919539653962"><paper-icon-button class="toast-button" icon="my-icons:phone"></paper-icon-button></a>
 				</div>
 			</div>
 		</paper-toast>
@@ -237,7 +239,7 @@
 					<a href="mailto:liyascthomas@gmail.com?&subject=Hello Liyas!&body=Hi, ">
 						<paper-icon-button icon="my-icons:mail"></paper-icon-button>
 					</a>
-					<paper-icon-button icon="my-icons:more-vert" on-tap="openShare"></paper-icon-button>
+					<paper-icon-button icon="my-icons:share" on-tap="openShare"></paper-icon-button>
 					<template is="dom-if" if="{{loading}}">
 						<paper-progress value="{{progress}}" indeterminate active$="[[loading]]" top-item></paper-progress>
 					</template>
@@ -304,6 +306,8 @@
 					<my-brown name="brown"></my-brown>
 					<my-grey name="grey"></my-grey>
 					<my-bluegrey name="bluegrey"></my-bluegrey>
+					<my-black name="black"></my-black>
+					<my-white name="white"></my-white>
 				</neon-animated-pages>
 			</div>
 			<footer>
@@ -383,7 +387,7 @@
 									icon: "dribbble"
 								},
 								{
-									link: "tel:+919539653962",
+									link: "https://api.whatsapp.com/send?phone=919539653962&text=Hi%20Liyas,",
 									icon: "whatsapp"
 								}
 							]

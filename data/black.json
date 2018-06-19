@@ -1,0 +1,37 @@
+[
+	{
+		"mode": "dark",
+		"color": "#000",
+		"title": "Black"
+	},
+	{
+		"mode": "dark",
+		"color": "rgba(0, 0, 0, 0.87)",
+		"title": "Dark primary"
+	},
+	{
+		"mode": "dark",
+		"color": "rgba(0, 0, 0, 0.54)",
+		"title": "Dark secondary"
+	},
+	{
+		"mode": "dark",
+		"color": "rgba(0, 0, 0, 0.38)",
+		"title": "Dark disabled"
+	},
+	{
+		"mode": "light",
+		"color": "rgba(0, 0, 0, 0.12)",
+		"title": "Dark dividers"
+	},
+	{
+		"mode": "dark",
+		"color": "rgba(0, 0, 0, 0.54)",
+		"title": "Dark icon active"
+	},
+	{
+		"mode": "dark",
+		"color": "rgba(0, 0, 0, 0.38)",
+		"title": "Dark icon inactive"
+	}
+]

@@ -100,19 +100,29 @@
 		"color": "#795548",
 		"title": "brown",
 		"link": "brown"
-
 	},
 	{
 		"mode": "dark",
 		"color": "#9e9e9e",
 		"title": "grey",
 		"link": "grey"
-
 	},
-	{	"mode": "dark",
+	{
+		"mode": "dark",
 		"color": "#607d8b",
 		"title": "blue grey",
 		"link": "bluegrey"
-
+	},
+	{
+		"mode": "dark",
+		"color": "#000",
+		"title": "black",
+		"link": "black"
+	},
+	{
+		"mode": "light",
+		"color": "#fff",
+		"title": "white",
+		"link": "white"
 	}
 ]
