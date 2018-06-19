@@ -35,8 +35,8 @@
 			<template is="dom-repeat" items="[[ajaxResponse]]">
 				<paper-icon-item id="{{item.title}}" class$="[[_computeBgClass(item.mode)]]" style="background-color: {{item.color}}">
 					<iron-icon icon="my-icons:content-copy" item-icon slot="item-icon"></iron-icon>
-					<span>{{item.title}}</span>
-					<span>{{item.color}}</span>
+					<span class="name">Amber {{item.title}}</span>
+					<p id="message"><span class="hex">{{item.color}}</span></p>
 					<paper-ripple></paper-ripple>
 				</paper-icon-item>
 			</template>

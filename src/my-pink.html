@@ -3,7 +3,7 @@
 <link rel="import" href="app-grid-style.html">
 
 <dom-module id="my-pink">
-  <template>
+	<template>
 		<style include="app-grid-style">
 		</style>
     <style include="shared-styles">
@@ -24,7 +24,7 @@
 				<paper-spinner-lite active$="[[loading]]"></paper-spinner-lite>
 			</div>
 		</template>
-    <template is="dom-if" if="{{error}}">
+		<template is="dom-if" if="{{error}}">
 			<div class="error">
 				<div>Failed to load feeds.</div>
 				<div>Make sure you're connected to internet.</div>
@@ -33,18 +33,20 @@
     </template>
 		<paper-listbox selected="" attr-for-selected="id" class="listbox" role="listbox">
 			<template is="dom-repeat" items="[[ajaxResponse]]">
-				<paper-icon-item id="{{item.title}}" class$="[[_computeBgClass(item.mode)]]" style="background-color: {{item.color}}">
+				<paper-icon-item id="{{item.title}}" class$="[[_computeBgClass(item.mode)]] btn" style="background-color: {{item.color}}">
 					<iron-icon icon="my-icons:content-copy" item-icon slot="item-icon"></iron-icon>
-					<span>{{item.title}}</span>
-					<span>{{item.color}}</span>
+					<span class="name">Pink {{item.title}}</span>
+					<p id="message"><span class="hex">{{item.color}}</span></p>
 					<paper-ripple></paper-ripple>
 				</paper-icon-item>
 			</template>
 		</paper-listbox>
-  </template>
+	</template>
 	<script>
-    class MyPink extends Polymer.Element {
-      static get is() { return 'my-pink'; }
+		class MyPink extends Polymer.Element {
+			static get is() {
+				return 'my-pink';
+			}
 
 			_computeBgClass(color) {
 				return color + '-bg';
@@ -54,12 +56,12 @@
 				return color + '-fg';
 			}
 
-      static get properties() {
-        return {
-        };
-      }
-    }
+			static get properties() {
+				return {};
+			}
+		}
 
-    window.customElements.define(MyPink.is, MyPink);
-  </script>
+		window.customElements.define(MyPink.is, MyPink);
+
+	</script>
 </dom-module>

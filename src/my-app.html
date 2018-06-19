@@ -32,6 +32,26 @@
 <link rel="lazy-import" href="my-about.html">
 <link rel="lazy-import" href="my-404.html">
 
+<link rel="lazy-import" href="my-red.html">
+<link rel="lazy-import" href="my-pink.html">
+<link rel="lazy-import" href="my-purple.html">
+<link rel="lazy-import" href="my-deeppurple.html">
+<link rel="lazy-import" href="my-indigo.html">
+<link rel="lazy-import" href="my-blue.html">
+<link rel="lazy-import" href="my-lightblue.html">
+<link rel="lazy-import" href="my-cyan.html">
+<link rel="lazy-import" href="my-teal.html">
+<link rel="lazy-import" href="my-green.html">
+<link rel="lazy-import" href="my-lightgreen.html">
+<link rel="lazy-import" href="my-lime.html">
+<link rel="lazy-import" href="my-yellow.html">
+<link rel="lazy-import" href="my-amber.html">
+<link rel="lazy-import" href="my-orange.html">
+<link rel="lazy-import" href="my-deeporange.html">
+<link rel="lazy-import" href="my-brown.html">
+<link rel="lazy-import" href="my-grey.html">
+<link rel="lazy-import" href="my-bluegrey.html">
+
 <link rel="import" href="my-icons.html">
 
 <dom-module id="my-app">
@@ -83,7 +103,7 @@
 				color: var(--primary-text-color);
 				overflow: hidden;
 				text-overflow: ellipsis;
-				font-family: 'Roboto Mono', 'Product Sans', 'Roboto', 'Noto', sans-serif;
+				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
 				font-weight: 600;
 			}
 /*
@@ -245,8 +265,8 @@
 							</div>
 						</template>
 						<template is="dom-repeat" items="[[ajaxResponse2]]">
-							<paper-tab id="{{item.title}}">
-								<a href="{{item.title}}" tabindex="-1">
+							<paper-tab id="{{item.link}}">
+								<a href="{{item.link}}" tabindex="-1">
 									{{item.title}}
 								</a>
 							</paper-tab>
