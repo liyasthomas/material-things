@@ -79,6 +79,8 @@
 				--paper-progress-secondary-color: var(--dark-accent-color);
 				--paper-progress-container-color: var(--accent-color);
 
+				--paper-spinner-color: var(--light-accent-color);
+
 				color: var(--primary-text-color);
       }
 			[hidden] {
@@ -105,6 +107,9 @@
 				text-overflow: ellipsis;
 				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
 				font-weight: 600;
+			}
+			.logo iron-icon {
+				margin-right: 16px;
 			}
 /*
 			[main-title] {
@@ -223,12 +228,12 @@
 				</div>
 			</div>
 		</paper-toast>
-	<!--<paper-toast id="ready_toast" duration="5000" text="Page cached. Browse offline."></paper-toast>-->
+		<paper-toast id="ready_toast" duration="5000" text="Click on any tile to copy the color code to clipboard!"></paper-toast>
       <!-- Main content -->
 		<app-header-layout fullbleed>
 			<app-header slot="header" fixed condenses effects="waterfall">
 				<app-toolbar class="tab-nav">
-					<span main-title><div class="logo">Material Colors</div></span>
+					<span main-title><div class="logo"><iron-icon icon="my-icons:format-color-fill"></iron-icon> Material Colors</div></span>
 					<a href="mailto:liyascthomas@gmail.com?&subject=Hello Liyas!&body=Hi, ">
 						<paper-icon-button icon="my-icons:mail"></paper-icon-button>
 					</a>
@@ -416,12 +421,12 @@
 				this.$.sharehome.toggle();
 			}
 
-//			connectedCallback() {
-//				super.connectedCallback();
-//				Polymer.RenderStatus.beforeNextRender(this, function() {
-//					this.$.ready_toast.open();
-//				});
-//			}
+			connectedCallback() {
+				super.connectedCallback();
+				Polymer.RenderStatus.beforeNextRender(this, function() {
+					this.$.ready_toast.open();
+				});
+			}
 
 			_routePageChanged(page) {
 				// If no page was found in the route data, page will be an empty string.
