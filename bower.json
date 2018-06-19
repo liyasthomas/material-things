@@ -1,5 +1,5 @@
 {
-  "name": "mat-colors",
+  "name": "material-things",
   "authors": [
     "Liyas Thomas"
   ],
@@ -40,8 +40,7 @@
     "paper-dialog-scrollable": "PolymerElements/paper-dialog-scrollable#2.0.0",
     "paper-spinner": "PolymerElements/paper-spinner#2.0.0",
     "polymer": "Polymer/polymer#^2.0.0",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0",
-    "clipboard-copy": "advanced-rest-client/clipboard-copy#^2.0.1"
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
   },
   "resolutions": {
     "polymer": "^2.0.0"
