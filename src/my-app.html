@@ -21,7 +21,6 @@
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../bower_components/paper-spinner/paper-spinner-lite.html">
-<link rel="import" href="../bower_components/paper-fab/paper-fab.html">
 
 <link rel="import" href="../bower_components/neon-animation/web-animations.html">
 <link rel="import" href="../bower_components/neon-animation/neon-animated-pages.html">
@@ -45,9 +44,9 @@
 				--light-primary-color: #fff;
 				--dark-primary-color: #fff;
 
-				--accent-color: var(--paper-deep-purple-a400);
-				--light-accent-color: var(--paper-deep-purple-a200);
-				--dark-accent-color: var(--paper-deep-purple-a700);
+				--accent-color: var(--paper-grey-700);
+				--light-accent-color: var(--paper-grey-500);
+				--dark-accent-color: var(--paper-grey-800);
 
 				--primary-text-color: rgba(0,0,0,.87);
 				--secondary-text-color: rgba(0,0,0,.38);
@@ -56,22 +55,11 @@
 				--paper-tabs-selection-bar-color: var(--secondary-text-color);
 				--paper-tab-ink: var(--light-text-color);
 
-				--paper-fab-keyboard-focus-background: var(--accent-color);
-
 				--paper-progress-active-color: var(--light-accent-color);
 				--paper-progress-secondary-color: var(--dark-accent-color);
 				--paper-progress-container-color: var(--accent-color);
 
 				color: var(--primary-text-color);
-      }
-      :host([page=home]) .theme {
-        background: linear-gradient(45deg, #32fbfc, #3214f2);
-      }
-      :host([page=projects]) .theme {
-        background: linear-gradient(45deg, #e6683c, #dc2743);
-      }
-      :host([page=about]) .theme {
-        background: linear-gradient(45deg, #e458fc, #1d1279);
       }
 			[hidden] {
 				display: none;
@@ -81,23 +69,8 @@
 				outline: none;
 				color: inherit;
 			}
-			.category {
-				background-color: var(--paper-grey-100);
-				color: var(--paper-grey-500);
-				border-top: 1px solid var(--paper-grey-200);
-				border-bottom: 1px solid var(--paper-grey-200);
-			}
 			.iron-selected {
-        color: var(--paper-blue-a400);
-			}
-			#home.iron-selected {
-        color: var(--paper-blue-a400);
-			}
-			#projects.iron-selected {
-        color: var(--paper-deep-orange-a400);
-			}
-			#about.iron-selected {
-        color: var(--paper-deep-purple-a400);
+        color: var(--dark-accent-color);
 			}
       app-header {
 				background-color: var(--primary-color);
@@ -107,17 +80,18 @@
 				};
       }
 			.logo {
-				background: linear-gradient(45deg, #32fbfc, #3214f2);
-				-webkit-background-clip: text !important;
-				-webkit-text-fill-color: transparent !important;
-				vertical-align: middle;
-				display: inline-block;
+				color: var(--primary-text-color);
 				overflow: hidden;
 				text-overflow: ellipsis;
 				font-family: 'Roboto Mono', 'Product Sans', 'Roboto', 'Noto', sans-serif;
 				font-weight: 600;
 			}
+/*
 			[main-title] {
+			}
+*/
+			.bottom {
+				padding: 0;
 			}
       paper-tabs {
         height: 100%;
@@ -187,17 +161,6 @@
 			footer paper-icon-button {
 				margin: 4px;
 			}
-			#fab {
-				visibility: hidden;
-				@apply --shadow-elevation-4dp;
-				--paper-fab-background: inherit;
-				--paper-fab-keyboard-focus-background: inherit;
-				color: #fff;
-				position: fixed;
-				z-index: 6;
-				right: 20px;
-				bottom: 20px;          
-			}
 			@media (max-width: 640px) {
 				paper-toast {
 					margin: 0;
@@ -245,7 +208,7 @@
 		<app-header-layout fullbleed>
 			<app-header slot="header" fixed condenses effects="waterfall">
 				<app-toolbar class="tab-nav">
-					<span main-title><div class="logo theme">Paint Point</div></span>
+					<span main-title><div class="logo">Material Colors</div></span>
 					<a href="mailto:liyascthomas@gmail.com?&subject=Hello Liyas!&body=Hi, ">
 						<paper-icon-button icon="my-icons:mail"></paper-icon-button>
 					</a>
@@ -297,7 +260,25 @@
 					<my-projects name="projects"></my-projects>
 					<my-about name="about"></my-about>
 					<my-404 name="404"></my-404>
-					<my-black name="black"></my-black>
+					<my-red name="red"></my-red>
+					<my-pink name="pink"></my-pink>
+					<my-purple name="purple"></my-purple>
+					<my-deeppurple name="deeppurple"></my-deeppurple>
+					<my-indigo name="indigo"></my-indigo>
+					<my-blue name="blue"></my-blue>
+					<my-lightblue name="lightblue"></my-lightblue>
+					<my-cyan name="cyan"></my-cyan>
+					<my-teal name="teal"></my-teal>
+					<my-green name="green"></my-green>
+					<my-lightgreen name="lightgreen"></my-lightgreen>
+					<my-lime name="lime"></my-lime>
+					<my-yellow name="yellow"></my-yellow>
+					<my-amber name="amber"></my-amber>
+					<my-orange name="orange"></my-orange>
+					<my-deeporange name="deeporange"></my-deeporange>
+					<my-brown name="brown"></my-brown>
+					<my-grey name="grey"></my-grey>
+					<my-bluegrey name="bluegrey"></my-bluegrey>
 				</neon-animated-pages>
 			</div>
 			<footer>
@@ -316,7 +297,6 @@
 					</a>
 				</div>
 			</footer>
-			<paper-fab id="fab" class="theme" icon="my-icons:arrow-upward" on-click="scrollTop"></paper-fab>
 		</app-header-layout>
 	</template>
 	<script>

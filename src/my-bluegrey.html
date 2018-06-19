@@ -2,7 +2,7 @@
 <link rel="import" href="shared-styles.html">
 <link rel="import" href="app-grid-style.html">
 
-<dom-module id="my-black">
+<dom-module id="my-bluegrey">
   <template>
 		<style include="app-grid-style">
 		</style>
@@ -12,7 +12,7 @@
       }
     </style>
 		<iron-ajax auto
-			url="data/p_black.json"
+			url="data/bluegrey.json"
 			id="ajax"
 			loading="{{loading}}"
 			handle-as="json"
@@ -34,16 +34,17 @@
 		<paper-listbox selected="" attr-for-selected="id" class="listbox" role="listbox">
 			<template is="dom-repeat" items="[[ajaxResponse]]">
 				<paper-icon-item id="{{item.title}}" class$="[[_computeBgClass(item.mode)]]" style="background-color: {{item.color}}">
-					<iron-icon icon="my-icons:home" item-icon slot="item-icon"></iron-icon>
+					<iron-icon icon="my-icons:content-copy" item-icon slot="item-icon"></iron-icon>
 					<span>{{item.title}}</span>
+					<span>{{item.color}}</span>
 					<paper-ripple></paper-ripple>
 				</paper-icon-item>
 			</template>
 		</paper-listbox>
   </template>
 	<script>
-    class MyBlack extends Polymer.Element {
-      static get is() { return 'my-black'; }
+    class MyBluegrey extends Polymer.Element {
+      static get is() { return 'my-bluegrey'; }
 
 			_computeBgClass(color) {
 				return color + '-bg';
@@ -59,6 +60,6 @@
       }
     }
 
-    window.customElements.define(MyBlack.is, MyBlack);
+    window.customElements.define(MyBluegrey.is, MyBluegrey);
   </script>
 </dom-module>

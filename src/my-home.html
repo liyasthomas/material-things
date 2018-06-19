@@ -10,8 +10,6 @@
     <style include="shared-styles">
       :host {
         display: block;
-				padding: 16px 0;
-				--app-grid-item-height: 100%;
       }
   		@media all and (min-width: 0) and (max-width: 360px) {
 				:host {
@@ -74,12 +72,14 @@
 			}
     </style>
 		<iron-media-query query="min-width: 641px" query-matches="{{wideLayout}}"></iron-media-query>
+<!--
 		<div class="content">
 			<div class="title">
 				<p>Hi, select your color.</p>
 			</div>
 			<p><a href="projects"><paper-button raised class="primary">Say hello!</paper-button></a> or keep scrolling.</p>
 		</div>
+-->
 <!--
 		<template is="dom-if" if="{{!error}}">
 			<div class="actions">

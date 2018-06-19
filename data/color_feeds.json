@@ -1,102 +1,81 @@
 [
 	{
-		"color": "#000",
-		"title": "black",
-		"link": "about"
+		"color": "#f44336",
+		"title": "red"
 	},
 	{
 		"color": "#fff",
-		"title": "white",
-		"link": ""
+		"title": "pink"
 	},
 	{
 		"color": "#000",
-		"title": "black",
-		"link": "about"
+		"title": "purple"
 	},
 	{
 		"color": "#fff",
-		"title": "white",
-		"link": ""
+		"title": "deeppurple"
 	},
 	{
 		"color": "#000",
-		"title": "black",
-		"link": "about"
+		"title": "indigo"
 	},
 	{
 		"color": "#fff",
-		"title": "white",
-		"link": ""
+		"title": "blue"
 	},
 	{
 		"color": "#000",
-		"title": "black",
-		"link": "about"
+		"title": "lightblue"
 	},
 	{
 		"color": "#fff",
-		"title": "white",
-		"link": ""
+		"title": "cyan"
 	},
 	{
 		"color": "#000",
-		"title": "black",
-		"link": "about"
+		"title": "teal"
 	},
 	{
 		"color": "#fff",
-		"title": "white",
-		"link": ""
+		"title": "green"
 	},
 	{
 		"color": "#000",
-		"title": "black",
-		"link": "about"
+		"title": "lightgreen"
 	},
 	{
 		"color": "#fff",
-		"title": "white",
-		"link": ""
+		"title": "lime"
 	},
 	{
 		"color": "#000",
-		"title": "black",
-		"link": "about"
+		"title": "yellow"
 	},
 	{
 		"color": "#fff",
-		"title": "white",
-		"link": ""
+		"title": "amber"
 	},
 	{
 		"color": "#000",
-		"title": "black",
-		"link": "about"
+		"title": "orange"
 	},
 	{
 		"color": "#fff",
-		"title": "white",
-		"link": ""
+		"title": "deeporange"
 	},
 	{
 		"color": "#000",
-		"title": "black",
-		"link": "about"
+		"title": "brown"
+
 	},
 	{
 		"color": "#fff",
-		"title": "white",
-		"link": ""
+		"title": "grey"
+
 	},
 	{
 		"color": "#000",
-		"title": "black",
-		"link": "about"
-	},
-	{
-		"color": "#fff",
-		"title": "white",
-		"link": ""
+		"title": "bluegrey"
+
 	}
 ]

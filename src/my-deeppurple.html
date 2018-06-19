@@ -1,0 +1,65 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="app-grid-style.html">
+
+<dom-module id="my-deeppurple">
+  <template>
+		<style include="app-grid-style">
+		</style>
+    <style include="shared-styles">
+      :host {
+        display: block;
+      }
+    </style>
+		<iron-ajax auto
+			url="data/deeppurple.json"
+			id="ajax"
+			loading="{{loading}}"
+			handle-as="json"
+			last-error="{{error}}"
+			last-response="{{ajaxResponse}}">
+		</iron-ajax>
+		<template is="dom-if" if="{{loading}}">
+			<div class="actions flex-center-center" hidden$="[[!loading]]">
+				<paper-spinner-lite active$="[[loading]]"></paper-spinner-lite>
+			</div>
+		</template>
+    <template is="dom-if" if="{{error}}">
+			<div class="error">
+				<div>Failed to load feeds.</div>
+				<div>Make sure you're connected to internet.</div>
+				<a href="javascript:location.reload();"><paper-icon-button icon="my-icons:refresh"></paper-icon-button></a>
+			</div>
+    </template>
+		<paper-listbox selected="" attr-for-selected="id" class="listbox" role="listbox">
+			<template is="dom-repeat" items="[[ajaxResponse]]">
+				<paper-icon-item id="{{item.title}}" class$="[[_computeBgClass(item.mode)]]" style="background-color: {{item.color}}">
+					<iron-icon icon="my-icons:content-copy" item-icon slot="item-icon"></iron-icon>
+					<span>{{item.title}}</span>
+					<span>{{item.color}}</span>
+					<paper-ripple></paper-ripple>
+				</paper-icon-item>
+			</template>
+		</paper-listbox>
+  </template>
+	<script>
+    class MyDeeppurple extends Polymer.Element {
+      static get is() { return 'my-deeppurple'; }
+
+			_computeBgClass(color) {
+				return color + '-bg';
+			}
+
+			_computeFgClass(color) {
+				return color + '-fg';
+			}
+
+      static get properties() {
+        return {
+        };
+      }
+    }
+
+    window.customElements.define(MyDeeppurple.is, MyDeeppurple);
+  </script>
+</dom-module>

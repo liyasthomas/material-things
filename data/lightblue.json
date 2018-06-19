@@ -1,0 +1,72 @@
+[
+	{
+		"mode": "dark",
+		"color": "#e1f5fe",
+		"title": "50"
+	},
+	{
+		"mode": "dark",
+		"color": "#b3e5fc",
+		"title": "100"
+	},
+	{
+		"mode": "dark",
+		"color": "#81d4fa",
+		"title": "200"
+	},
+	{
+		"mode": "dark",
+		"color": "#4fc3f7",
+		"title": "300"
+	},
+	{
+		"mode": "dark",
+		"color": "#29b6f6",
+		"title": "400"
+	},
+	{
+		"mode": "dark",
+		"color": "#03a9f4",
+		"title": "500"
+	},
+	{
+		"mode": "dark",
+		"color": "#039be5",
+		"title": "600"
+	},
+	{
+		"mode": "dark",
+		"color": "#0288d1",
+		"title": "700"
+	},
+	{
+		"mode": "dark",
+		"color": "#0277bd",
+		"title": "800"
+	},
+	{
+		"mode": "dark",
+		"color": "#01579b",
+		"title": "900"
+	},
+	{
+		"mode": "dark",
+		"color": "#80d8ff",
+		"title": "a100"
+	},
+	{
+		"mode": "dark",
+		"color": "#40c4ff",
+		"title": "a200"
+	},
+	{
+		"mode": "dark",
+		"color": "#00b0ff",
+		"title": "a400"
+	},
+	{
+		"mode": "dark",
+		"color": "#0091ea",
+		"title": "a700"
+	}
+]
