@@ -48,8 +48,11 @@
 				padding: 32px 16px;
 				cursor: pointer;
       }
-			[item-icon] {
-				filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+			.dark-bg {
+				color: #fff;
+			}
+			.light-bg {
+				color: rgba(0,0,0,.87);
 			}
 			.name {
 				text-transform: uppercase;
@@ -57,13 +60,6 @@
 			.hex {
 				margin-left: 32px;
 				text-transform: uppercase;
-			}
-			.dark-bg {
-				color: #fff;
-				text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-			}
-			.light-bg {
-				color: rgba(0,0,0,.87);
 			}
 			@media (max-width: 640px) {
 				paper-ripple {
