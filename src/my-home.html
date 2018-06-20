@@ -36,7 +36,7 @@
 				<a href="{{item.link}}">
 					<paper-icon-item id="{{item.title}}" class$="[[_computeBgClass(item.mode)]]" style="background-color: {{item.color}}">
 						<iron-icon icon="my-icons:format-color-fill" item-icon slot="item-icon"></iron-icon>
-						<span class="name">{{item.title}} 500</span>
+						<span class="name">{{item.title}}</span>
 						<p id="message"><span class="hex">{{item.color}}</span></p>
 						<paper-ripple></paper-ripple>
 					</paper-icon-item>
@@ -52,10 +52,6 @@
 
 			_computeBgClass(color) {
 				return color + '-bg';
-			}
-
-			_computeFgClass(color) {
-				return color + '-fg';
 			}
 
 			static get properties() {
