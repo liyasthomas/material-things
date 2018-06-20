@@ -10,17 +10,17 @@
 		"title": "100"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#80cbc4",
 		"title": "200"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#4db6ac",
 		"title": "300"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#26a69a",
 		"title": "400"
 	},
@@ -55,17 +55,17 @@
 		"title": "a100"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#64ffda",
 		"title": "a200"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#1de9b6",
 		"title": "a400"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#00bfa5",
 		"title": "a700"
 	}

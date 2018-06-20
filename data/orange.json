@@ -10,37 +10,37 @@
 		"title": "100"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#ffcc80",
 		"title": "200"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#ffb74d",
 		"title": "300"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#ffa726",
 		"title": "400"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#ff9800",
 		"title": "500"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#fb8c00",
 		"title": "600"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#f57c00",
 		"title": "700"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#ef6c00",
 		"title": "800"
 	},
@@ -55,17 +55,17 @@
 		"title": "a100"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#ffab40",
 		"title": "a200"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#ff9100",
 		"title": "a400"
 	},
 	{
-		"mode": "dark",
+		"mode": "light",
 		"color": "#ff6d00",
 		"title": "a700"
 	}

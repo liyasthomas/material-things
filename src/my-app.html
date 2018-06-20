@@ -86,7 +86,7 @@
 
 				color: var(--primary-text-color);
       }
-.red-bg { background-color: var(--paper-red-500); color: #fff; } .pink-bg { background-color: var(--paper-pink-500); color: #fff; } .purple-bg { background-color: var(--paper-purple-500); color: #fff; } .deeppurple-bg { background-color: var(--paper-deep-purple-500); color: #fff; } .indigo-bg { background-color: var(--paper-indigo-500); color: #fff; } .blue-bg { background-color: var(--paper-blue-500); color: #fff; } .lightblue-bg { background-color: var(--paper-light-blue-500); color: #fff; } .cyan-bg { background-color: var(--paper-cyan-500); color: #fff; } .teal-bg { background-color: var(--paper-teal-500); color: #fff; } .green-bg { background-color: var(--paper-green-500); color: #fff; } .lightgreen-bg { background-color: var(--paper-light-green-500); color: #fff; } .lime-bg { background-color: var(--paper-lime-500); color: #fff; } .yellow-bg { background-color: var(--paper-yellow-500); color: #fff; } .amber-bg { background-color: var(--paper-amber-500); color: #fff; } .orange-bg { background-color: var(--paper-orange-500); color: #fff; } .deeporange-bg { background-color: var(--paper-deep-orange-500); color: #fff; } .brown-bg { background-color: var(--paper-brown-500); color: #fff; } .grey-bg { background-color: var(--paper-grey-500); color: #fff; } .bluegrey-bg { background-color: var(--paper-blue-grey-500); color: #fff; } .black-bg { background-color: #000; color: #fff; } :host([page=red]) .iron-selected { color: #fff; } :host([page=pink]) .iron-selected { color: #fff; } :host([page=purple]) .iron-selected { color: #fff; } :host([page=deeppurple]) .iron-selected { color: #fff; } :host([page=indigo]) .iron-selected { color: #fff; } :host([page=blue]) .iron-selected { color: #fff; } :host([page=lightblue]) .iron-selected { color: #fff; } :host([page=cyan]) .iron-selected { color: #fff; } :host([page=teal]) .iron-selected { color: #fff; } :host([page=green]) .iron-selected { color: #fff; } :host([page=lightgreen]) .iron-selected { color: #fff; } :host([page=lime]) .iron-selected { color: #fff; } :host([page=yellow]) .iron-selected { color: #fff; } :host([page=amber]) .iron-selected { color: #fff; } :host([page=orange]) .iron-selected { color: #fff; } :host([page=deeporange]) .iron-selected { color: #fff; } :host([page=brown]) .iron-selected { color: #fff; } :host([page=grey]) .iron-selected { color: #fff; } :host([page=bluegrey]) .iron-selected { color: #fff; } :host([page=black]) .iron-selected { color: #fff; }
+.red-bg { background-color: var(--paper-red-500); color: #fff; } .pink-bg { background-color: var(--paper-pink-500); color: #fff; } .purple-bg { background-color: var(--paper-purple-500); color: #fff; } .deeppurple-bg { background-color: var(--paper-deep-purple-500); color: #fff; } .indigo-bg { background-color: var(--paper-indigo-500); color: #fff; } .blue-bg { background-color: var(--paper-blue-500); } .lightblue-bg { background-color: var(--paper-light-blue-500); } .cyan-bg { background-color: var(--paper-cyan-500); } .teal-bg { background-color: var(--paper-teal-500); color: #fff; } .green-bg { background-color: var(--paper-green-500); } .lightgreen-bg { background-color: var(--paper-light-green-500); } .lime-bg { background-color: var(--paper-lime-500); } .yellow-bg { background-color: var(--paper-yellow-500); } .amber-bg { background-color: var(--paper-amber-500); } .orange-bg { background-color: var(--paper-orange-500); } .deeporange-bg { background-color: var(--paper-deep-orange-500); } .brown-bg { background-color: var(--paper-brown-500); color: #fff; } .grey-bg { background-color: var(--paper-grey-500); color: #fff; } .bluegrey-bg { background-color: var(--paper-blue-grey-500); color: #fff; } .black-bg { background-color: #000; color: #fff; } :host([page=red]) .iron-selected { color: #fff; } :host([page=pink]) .iron-selected { color: #fff; } :host([page=purple]) .iron-selected { color: #fff; } :host([page=deeppurple]) .iron-selected { color: #fff; } :host([page=indigo]) .iron-selected { color: #fff; } :host([page=blue]) .iron-selected { color: rgba(0,0,0,.87); } :host([page=lightblue]) .iron-selected { color: rgba(0,0,0,.87); } :host([page=cyan]) .iron-selected { color: rgba(0,0,0,.87); } :host([page=teal]) .iron-selected { color: #fff; } :host([page=green]) .iron-selected { color: rgba(0,0,0,.87); } :host([page=lightgreen]) .iron-selected { color: rgba(0,0,0,.87); } :host([page=lime]) .iron-selected { color: rgba(0,0,0,.87); } :host([page=yellow]) .iron-selected { color: rgba(0,0,0,.87); } :host([page=amber]) .iron-selected { color: rgba(0,0,0,.87); } :host([page=orange]) .iron-selected { color: rgba(0,0,0,.87); } :host([page=deeporange]) .iron-selected { color: rgba(0,0,0,.87); } :host([page=brown]) .iron-selected { color: #fff; } :host([page=grey]) .iron-selected { color: rgba(0,0,0,.87); } :host([page=bluegrey]) .iron-selected { color: #fff; } :host([page=black]) .iron-selected { color: #fff; }
       app-header {
 				background-color: var(--primary-color);
 				color: var(--secondary-text-color);
@@ -168,112 +168,110 @@
 					<template is="dom-repeat" items="[[social]]">
 						<a href="{{item.link}}" target="_blank"><paper-icon-button class="toast-button" src="../images/assets/social/{{item.icon}}.svg"></paper-icon-button></a>
 					</template>
-					<a href="mailto:liyascthomas@gmail.com?&subject=Hello%20Liyas!&body=Hi," target="_blank"><paper-icon-button class="toast-button" icon="my-icons:mail"></paper-icon-button></a>
-					<a href="tel:+919539653962"><paper-icon-button class="toast-button" icon="my-icons:phone"></paper-icon-button></a>
-				</div>
-			</div>
-		</paper-toast>
-		<paper-toast id="ready_toast" duration="5000" text="Click on any tile to copy the color code to clipboard!"></paper-toast>
-      <!-- Main content -->
-		<app-header-layout fullbleed>
-			<app-header slot="header" fixed condenses reveals effects="waterfall" class$="[[_computeBgClass(page)]]">
-				<app-toolbar class="tab-nav">
-					<paper-tabs selected="[[page]]" attr-for-selected="id" autoselect no-bar on-click="scrollTop">
-						<paper-tab id="home">
-							<a href="[[rootPath]]" tabindex="-1">
-								<iron-icon icon="my-icons:format-color-fill"></iron-icon>
-							</a>
-						</paper-tab>
-						<paper-tab id="shadow">
-							<a href="shadow" tabindex="-1">
-								<iron-icon icon="my-icons:layers"></iron-icon>
-							</a>
-						</paper-tab>
-					</paper-tabs>
-					<div class="logo" main-title></div>
-					<paper-icon-button icon="my-icons:share" on-tap="openShare"></paper-icon-button>
-					<template is="dom-if" if="{{loading}}">
+	<a href="mailto:liyascthomas@gmail.com?&subject=Hello%20Liyas!&body=Hi," target="_blank">
+		<paper-icon-button class="toast-button" icon="my-icons:mail"></paper-icon-button>
+	</a>
+	<a href="tel:+919539653962">
+		<paper-icon-button class="toast-button" icon="my-icons:phone"></paper-icon-button>
+	</a>
+	</div>
+	</div>
+	</paper-toast>
+	<paper-toast id="ready_toast" duration="5000" text="Click on any tile to copy the color code to clipboard!"></paper-toast>
+	<!-- Main content -->
+	<app-header-layout fullbleed>
+		<app-header slot="header" fixed condenses reveals effects="waterfall" class$="[[_computeBgClass(page)]]">
+			<app-toolbar class="tab-nav">
+				<paper-tabs selected="[[page]]" attr-for-selected="id" autoselect no-bar on-click="scrollTop">
+					<paper-tab id="home">
+						<a href="[[rootPath]]" tabindex="-1">
+							<iron-icon icon="my-icons:format-color-fill"></iron-icon>
+						</a>
+					</paper-tab>
+					<paper-tab id="shadow">
+						<a href="shadow" tabindex="-1">
+							<iron-icon icon="my-icons:layers"></iron-icon>
+						</a>
+					</paper-tab>
+				</paper-tabs>
+				<div class="logo" main-title></div>
+				<paper-icon-button icon="my-icons:share" on-tap="openShare"></paper-icon-button>
+				<template is="dom-if" if="{{loading}}">
 						<paper-progress value="{{progress}}" indeterminate active$="[[loading]]" top-item></paper-progress>
 					</template>
-				</app-toolbar>
-				<app-toolbar class="bottom" sticky>
-					<paper-tabs selected="[[page]]" attr-for-selected="id" autoselect on-click="scrollTop" scrollable fit-container>
-						<paper-tab id="home">
-							<a href="[[rootPath]]" tabindex="-1">
-								<iron-icon icon="my-icons:home"></iron-icon>
-							</a>
-						</paper-tab>
-						<iron-ajax auto
-							url="data/color_feeds.json"
-							id="ajax"
-							loading="{{loading}}"
-							handle-as="json"
-							last-error="{{error}}"
-							last-response="{{ajaxResponse2}}">
-						</iron-ajax>
-						<template is="dom-if" if="{{loading}}">
+			</app-toolbar>
+			<app-toolbar class="bottom" sticky>
+				<paper-tabs selected="[[page]]" attr-for-selected="id" autoselect on-click="scrollTop" scrollable fit-container>
+					<paper-tab id="home">
+						<a href="[[rootPath]]" tabindex="-1">
+							<iron-icon icon="my-icons:home"></iron-icon>
+						</a>
+					</paper-tab>
+					<iron-ajax auto url="data/color_feeds.json" id="ajax" loading="{{loading}}" handle-as="json" last-error="{{error}}" last-response="{{ajaxResponse2}}">
+					</iron-ajax>
+					<template is="dom-if" if="{{loading}}">
 							<div class="actions flex-center-center" hidden$="[[!loading]]">
 								<paper-spinner-lite active$="[[loading]]"></paper-spinner-lite>
 							</div>
 						</template>
-						<template is="dom-if" if="{{error}}">
+					<template is="dom-if" if="{{error}}">
 							<div class="error">
 								<div>Failed to load feeds.</div>
 								<div>Make sure you're connected to internet.</div>
 								<a href="javascript:location.reload();"><paper-icon-button icon="my-icons:refresh"></paper-icon-button></a>
 							</div>
 						</template>
-						<template is="dom-repeat" items="[[ajaxResponse2]]">
+					<template is="dom-repeat" items="[[ajaxResponse2]]">
 							<paper-tab id="{{item.link}}">
 								<a href="{{item.link}}" tabindex="-1">
 									{{item.title}}
 								</a>
 							</paper-tab>
 						</template>
-					</paper-tabs>
-				</app-toolbar>
-			</app-header>
-			<div class="pages">
-				<neon-animated-pages selected="[[page]]" attr-for-selected="name" fallback-selection="404" role="main" entry-animation="fade-in-animation" exit-animation="fade-out-animation">
-					<my-home name="home"></my-home>
-					<my-projects name="projects"></my-projects>
-					<my-about name="about"></my-about>
-					<my-404 name="404"></my-404>
-					<my-shadow name="shadow"></my-shadow>
-					<my-red name="red"></my-red>
-					<my-pink name="pink"></my-pink>
-					<my-purple name="purple"></my-purple>
-					<my-deeppurple name="deeppurple"></my-deeppurple>
-					<my-indigo name="indigo"></my-indigo>
-					<my-blue name="blue"></my-blue>
-					<my-lightblue name="lightblue"></my-lightblue>
-					<my-cyan name="cyan"></my-cyan>
-					<my-teal name="teal"></my-teal>
-					<my-green name="green"></my-green>
-					<my-lightgreen name="lightgreen"></my-lightgreen>
-					<my-lime name="lime"></my-lime>
-					<my-yellow name="yellow"></my-yellow>
-					<my-amber name="amber"></my-amber>
-					<my-orange name="orange"></my-orange>
-					<my-deeporange name="deeporange"></my-deeporange>
-					<my-brown name="brown"></my-brown>
-					<my-grey name="grey"></my-grey>
-					<my-bluegrey name="bluegrey"></my-bluegrey>
-					<my-black name="black"></my-black>
-					<my-white name="white"></my-white>
-				</neon-animated-pages>
+				</paper-tabs>
+			</app-toolbar>
+		</app-header>
+		<div class="pages">
+			<neon-animated-pages selected="[[page]]" attr-for-selected="name" fallback-selection="404" role="main" entry-animation="fade-in-animation" exit-animation="fade-out-animation">
+				<my-home name="home"></my-home>
+				<my-projects name="projects"></my-projects>
+				<my-about name="about"></my-about>
+				<my-404 name="404"></my-404>
+				<my-shadow name="shadow"></my-shadow>
+				<my-red name="red"></my-red>
+				<my-pink name="pink"></my-pink>
+				<my-purple name="purple"></my-purple>
+				<my-deeppurple name="deeppurple"></my-deeppurple>
+				<my-indigo name="indigo"></my-indigo>
+				<my-blue name="blue"></my-blue>
+				<my-lightblue name="lightblue"></my-lightblue>
+				<my-cyan name="cyan"></my-cyan>
+				<my-teal name="teal"></my-teal>
+				<my-green name="green"></my-green>
+				<my-lightgreen name="lightgreen"></my-lightgreen>
+				<my-lime name="lime"></my-lime>
+				<my-yellow name="yellow"></my-yellow>
+				<my-amber name="amber"></my-amber>
+				<my-orange name="orange"></my-orange>
+				<my-deeporange name="deeporange"></my-deeporange>
+				<my-brown name="brown"></my-brown>
+				<my-grey name="grey"></my-grey>
+				<my-bluegrey name="bluegrey"></my-bluegrey>
+				<my-black name="black"></my-black>
+				<my-white name="white"></my-white>
+			</neon-animated-pages>
+		</div>
+		<footer>
+			<div>
+				&copy; 2018 Liyas Thomas
 			</div>
-			<footer>
-				<div>
-					&copy; 2018 Liyas Thomas
-				</div>
-				<div>
-					<a href="https://liyas-thomas.firebaseapp.com" target="_blank">
-						<paper-icon-button icon="my-icons:info-outline"></paper-icon-button>
-					</a>
-				</div>
-			</footer>
-		</app-header-layout>
+			<div>
+				<a href="https://liyas-thomas.firebaseapp.com" target="_blank">
+					<paper-icon-button icon="my-icons:info-outline"></paper-icon-button>
+				</a>
+			</div>
+		</footer>
+	</app-header-layout>
 	</template>
 	<script>
 		// Gesture events like tap and track generated from touch will not be
@@ -389,9 +387,9 @@
 				this.page = page || 'home';
 
 				// Close a non-persistent drawer when the page & route are changed.
-//				if (!this.$.drawer.persistent) {
-//					this.$.drawer.close();
-//				}
+				//				if (!this.$.drawer.persistent) {
+				//					this.$.drawer.close();
+				//				}
 			}
 
 			_pageChanged(page) {
@@ -404,13 +402,13 @@
 					true);
 			}
 
-//			onLayoutChange(wide) {
-//				var drawer = this.$.drawer;
-//
-//				if (wide && drawer.opened) {
-//					drawer.opened = false;
-//				}
-//			}
+			//			onLayoutChange(wide) {
+			//				var drawer = this.$.drawer;
+			//
+			//				if (wide && drawer.opened) {
+			//					drawer.opened = false;
+			//				}
+			//			}
 
 			_showPage404() {
 				this.page = '404';
