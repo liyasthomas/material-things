@@ -11,7 +11,6 @@
 <link rel="import" href="../bower_components/iron-media-query/iron-media-query.html">
 <link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../bower_components/iron-selector/iron-selector.html">
-<link rel="import" href="../bower_components/iron-image/iron-image.html">
 
 <link rel="import" href="../bower_components/paper-toast/paper-toast.html">
 <link rel="import" href="../bower_components/paper-listbox/paper-listbox.html">
@@ -56,10 +55,11 @@
 <link rel="lazy-import" href="my-white.html">
 
 <link rel="import" href="my-icons.html">
+<link rel="import" href="shared-styles.html">
 
 <dom-module id="my-app">
 	<template>
-    <style is="custom-style">
+    <style is="custom-style" include="shared-styles">
       :host {
         display: block;
 
@@ -75,7 +75,7 @@
 				--secondary-text-color: rgba(0,0,0,.38);
 				--light-text-color: rgba(0,0,0,.12);
 
-				--paper-tabs-selection-bar-color: var(--secondary-text-color);
+				--paper-tabs-selection-bar-color: #fff;
 				--paper-tab-ink: var(--light-text-color);
 
 				--paper-progress-active-color: var(--light-accent-color);
@@ -86,19 +86,7 @@
 
 				color: var(--primary-text-color);
       }
-/*
-      :host([page=shadow]) .bottom {
-        display: none;
-      }
-*/
-			[hidden] {
-				display: none;
-			}
-			a {
-        text-decoration: none;
-				outline: none;
-				color: inherit;
-			}
+.red-bg { background-color: var(--paper-red-500); color: #fff; } .pink-bg { background-color: var(--paper-pink-500); color: #fff; } .purple-bg { background-color: var(--paper-purple-500); color: #fff; } .deeppurple-bg { background-color: var(--paper-deep-purple-500); color: #fff; } .indigo-bg { background-color: var(--paper-indigo-500); color: #fff; } .blue-bg { background-color: var(--paper-blue-500); color: #fff; } .lightblue-bg { background-color: var(--paper-light-blue-500); color: #fff; } .cyan-bg { background-color: var(--paper-cyan-500); color: #fff; } .teal-bg { background-color: var(--paper-teal-500); color: #fff; } .green-bg { background-color: var(--paper-green-500); color: #fff; } .lightgreen-bg { background-color: var(--paper-light-green-500); color: #fff; } .lime-bg { background-color: var(--paper-lime-500); color: #fff; } .yellow-bg { background-color: var(--paper-yellow-500); color: #fff; } .amber-bg { background-color: var(--paper-amber-500); color: #fff; } .orange-bg { background-color: var(--paper-orange-500); color: #fff; } .deeporange-bg { background-color: var(--paper-deep-orange-500); color: #fff; } .brown-bg { background-color: var(--paper-brown-500); color: #fff; } .grey-bg { background-color: var(--paper-grey-500); color: #fff; } .bluegrey-bg { background-color: var(--paper-blue-grey-500); color: #fff; } .black-bg { background-color: #000; color: #fff; } :host([page=red]) .iron-selected { color: #fff; } :host([page=pink]) .iron-selected { color: #fff; } :host([page=purple]) .iron-selected { color: #fff; } :host([page=deeppurple]) .iron-selected { color: #fff; } :host([page=indigo]) .iron-selected { color: #fff; } :host([page=blue]) .iron-selected { color: #fff; } :host([page=lightblue]) .iron-selected { color: #fff; } :host([page=cyan]) .iron-selected { color: #fff; } :host([page=teal]) .iron-selected { color: #fff; } :host([page=green]) .iron-selected { color: #fff; } :host([page=lightgreen]) .iron-selected { color: #fff; } :host([page=lime]) .iron-selected { color: #fff; } :host([page=yellow]) .iron-selected { color: #fff; } :host([page=amber]) .iron-selected { color: #fff; } :host([page=orange]) .iron-selected { color: #fff; } :host([page=deeporange]) .iron-selected { color: #fff; } :host([page=brown]) .iron-selected { color: #fff; } :host([page=grey]) .iron-selected { color: #fff; } :host([page=bluegrey]) .iron-selected { color: #fff; } :host([page=black]) .iron-selected { color: #fff; }
       app-header {
 				background-color: var(--primary-color);
 				color: var(--secondary-text-color);
@@ -113,35 +101,16 @@
 				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
 				font-weight: 600;
 			}
+/*
 			.logo iron-icon {
 				margin-right: 16px;
 			}
-/*
 			[main-title] {
 			}
 */
 			.bottom {
 				padding: 0;
 			}
-      paper-tabs {
-        height: 100%;
-      }
-			[fit-container] {
-				width: 100%;
-			}
-      paper-tab {
-        --iron-icon-height: 26px;
-        --iron-icon-width: 26px;
-				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
-				text-transform: capitalize;
-				padding: 0;
-      }
-			paper-tab a {
-				@apply --layout-vertical;
-				@apply --layout-center-center;
-				padding: 0 16px;
-				font-weight: 500;
-  		}
 			.iron-selected {
         color: var(--dark-accent-color);
 			}
@@ -152,55 +121,22 @@
         @apply --layout-flex;
 				position: relative;
 			}
-			paper-progress {
-        display: block;
-        width: 100%;
-			}
-			.error {
-				padding: 16px;
-				font-family: 'Roboto Mono', Consolas, Menlo, Monaco, monospace;
-				font-size: 14px;
-				color: var(--secondary-text-color);
-			}
-			paper-toast {
-				@apply --layout-horizontal;
-				@apply --layout-center;
-				@apply --layout-justified;
-				@apply --shadow-elevation-12dp;
-				max-width: 320px;
-				background-color: #fff !important;
-				color: var(--paper-grey-500);
-			}
 			.toast-button {
 				text-transform: none;
 				margin: 4px;
-			}
-			.flexchild {
-				@apply --layout-flex;
-			}
-			.flex-horizontal {
-				@apply --layout-horizontal;
-			}
-			.flex-center-center {
-				@apply --layout-horizontal;
-				@apply --layout-center-center;
 			}
 			footer {
 				@apply --layout-horizontal;
 				@apply --layout-center;
     		@apply --layout-justified;
 				color: var(--secondary-text-color);
-				padding: 64px 32px 32px;
+				font-size: 16px;
+				padding: 64px 16px 16px;
 			}
 			footer paper-icon-button {
 				margin: 4px;
 			}
 			@media (max-width: 640px) {
-				paper-toast {
-					margin: 0;
-					max-width: none;
-					width: 100%;
-				}
 				.toast-button {
 					margin: 16px 8px;
 				}
@@ -240,7 +176,7 @@
 		<paper-toast id="ready_toast" duration="5000" text="Click on any tile to copy the color code to clipboard!"></paper-toast>
       <!-- Main content -->
 		<app-header-layout fullbleed>
-			<app-header slot="header" fixed condenses reveals effects="waterfall">
+			<app-header slot="header" fixed condenses reveals effects="waterfall" class$="[[_computeBgClass(page)]]">
 				<app-toolbar class="tab-nav">
 					<paper-tabs selected="[[page]]" attr-for-selected="id" autoselect no-bar on-click="scrollTop">
 						<paper-tab id="home">
@@ -261,7 +197,7 @@
 					</template>
 				</app-toolbar>
 				<app-toolbar class="bottom" sticky>
-					<paper-tabs selected="[[page]]" attr-for-selected="id" autoselect no-bar on-click="scrollTop" scrollable fit-container>
+					<paper-tabs selected="[[page]]" attr-for-selected="id" autoselect on-click="scrollTop" scrollable fit-container>
 						<paper-tab id="home">
 							<a href="[[rootPath]]" tabindex="-1">
 								<iron-icon icon="my-icons:home"></iron-icon>
@@ -333,7 +269,7 @@
 				</div>
 				<div>
 					<a href="https://liyas-thomas.firebaseapp.com" target="_blank">
-						<paper-icon-button icon="my-icons:help-outline"></paper-icon-button>
+						<paper-icon-button icon="my-icons:info-outline"></paper-icon-button>
 					</a>
 				</div>
 			</footer>
@@ -347,6 +283,10 @@
 		class MyApp extends Polymer.Element {
 			static get is() {
 				return 'my-app';
+			}
+
+			_computeBgClass(color) {
+				return color + '-bg';
 			}
 
 			static get properties() {

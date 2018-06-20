@@ -4,8 +4,11 @@
 <dom-module id="shared-styles">
 	<template>
     <style is="custom-style">
+			[hidden] {
+				display: none;
+			}
 			a {
-        text-decoration: none !important;
+        text-decoration: none;
 				outline: none;
 				color: inherit;
 			}
@@ -25,6 +28,25 @@
 				font-weight: normal;
 				margin: 0;
 			}
+			paper-toast {
+				@apply --layout-horizontal;
+				@apply --layout-center;
+				@apply --layout-justified;
+				@apply --shadow-elevation-12dp;
+				max-width: 320px;
+				background-color: #fff !important;
+				color: var(--paper-grey-500);
+			}
+			.flexchild {
+				@apply --layout-flex;
+			}
+			.flex-horizontal {
+				@apply --layout-horizontal;
+			}
+			.flex-center-center {
+				@apply --layout-horizontal;
+				@apply --layout-center-center;
+			}
 			.listbox {
 				padding: 0;
 			}
@@ -38,14 +60,27 @@
 					opacity: 0;
 				};
 			}
+      paper-tabs {
+        height: 100%;
+      }
+			[fit-container] {
+				width: 100%;
+			}
+      paper-tab {
+        --iron-icon-height: 26px;
+        --iron-icon-width: 26px;
+				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
+				text-transform: capitalize;
+				padding: 0;
+      }
+			paper-tab a {
+				@apply --layout-vertical;
+				@apply --layout-center-center;
+				padding: 0 16px;
+				font-weight: 500;
+  		}
 			paper-icon-button.link {
 				margin: 4px;
-			}
-			paper-icon-button {
-				color: var(--secondary-text-color);
-			}
-			paper-icon-button:hover {
-				color: var(--secondary-text-color);
 			}
 			paper-button {
 				border-radius: 46px;
@@ -82,13 +117,19 @@
 			paper-progress {
         display: block;
         width: 100%;
-				position: fixed;
-				top: 0;
 			}
 			.error {
 				padding: 16px;
-				color: var(--paper-grey-500);
-				text-align: center;
+				font-family: 'Roboto Mono', Consolas, Menlo, Monaco, monospace;
+				font-size: 14px;
+				color: var(--secondary-text-color);
+			}
+			@media (max-width: 640px) {
+				paper-toast {
+					margin: 0;
+					max-width: none;
+					width: 100%;
+				}
 			}
     </style>
   </template>
