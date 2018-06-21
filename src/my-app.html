@@ -121,9 +121,28 @@
         @apply --layout-flex;
 				position: relative;
 			}
+			paper-toast {
+				@apply --layout-horizontal;
+				@apply --layout-center;
+				@apply --layout-justified;
+				@apply --shadow-elevation-12dp;
+				max-width: 320px;
+				background-color: #fff !important;
+				color: var(--paper-grey-500);
+			}
 			.toast-button {
 				text-transform: none;
 				margin: 4px;
+			}
+			.flexchild {
+				@apply --layout-flex;
+			}
+			.flex-horizontal {
+				@apply --layout-horizontal;
+			}
+			.flex-center-center {
+				@apply --layout-horizontal;
+				@apply --layout-center-center;
 			}
 			footer {
 				@apply --layout-horizontal;
@@ -137,6 +156,11 @@
 				margin: 4px;
 			}
 			@media (max-width: 640px) {
+				paper-toast {
+					margin: 0;
+					max-width: none;
+					width: 100%;
+				}
 				.toast-button {
 					margin: 16px 8px;
 				}
@@ -178,7 +202,7 @@
 				</div>
 			</div>
 		</paper-toast>
-		<paper-toast id="ready_toast" duration="5000" text="Click on any tile to copy the color code to clipboard!"></paper-toast>
+		<paper-toast id="ready_toast" duration="5000" text="Click on any tile to copy the code to clipboard!"></paper-toast>
 		<!-- Main content -->
 		<app-header-layout fullbleed>
 			<app-header slot="header" fixed condenses reveals effects="waterfall" class$="[[_computeBgClass(page)]]">
@@ -207,34 +231,6 @@
 					</template>
 				</app-toolbar>
 				<app-toolbar class="sticky-nav" sticky>
-					<paper-tabs id="icons-nav" selected="[[page]]" attr-for-selected="id" autoselect on-click="scrollTop" scrollable fit-container>
-						<paper-tab id="iconshome">
-							<a href="iconshome" tabindex="-1">
-								<iron-icon icon="my-icons:home"></iron-icon>
-							</a>
-						</paper-tab>
-						<iron-ajax auto url="data/icon_feeds.json" id="ajax2" loading="{{loading2}}" handle-as="json" last-error="{{error2}}" last-response="{{ajaxResponse2}}">
-						</iron-ajax>
-						<template is="dom-if" if="{{loading2}}">
-							<div class="actions flex-center-center" hidden$="[[!loading2]]">
-								<paper-spinner-lite active$="[[loading2]]"></paper-spinner-lite>
-							</div>
-						</template>
-						<template is="dom-if" if="{{error2}}">
-							<div class="error">
-								<div>Failed to load feeds.</div>
-								<div>Make sure you're connected to internet.</div>
-								<a href="javascript:location.reload();"><paper-icon-button icon="my-icons:refresh"></paper-icon-button></a>
-							</div>
-						</template>
-						<template is="dom-repeat" items="[[ajaxResponse2]]">
-							<paper-tab id="{{item.link}}">
-								<a href="{{item.link}}" tabindex="-1">
-									{{item.title}}
-								</a>
-							</paper-tab>
-						</template>
-					</paper-tabs>
 					<paper-tabs id="colors-nav" selected="[[page]]" attr-for-selected="id" autoselect on-click="scrollTop" scrollable fit-container>
 						<paper-tab id="colorshome">
 							<a href="colorshome" tabindex="-1">
@@ -244,7 +240,7 @@
 						<iron-ajax auto url="data/color_feeds.json" id="ajax1" loading="{{loading1}}" handle-as="json" last-error="{{error1}}" last-response="{{ajaxResponse1}}">
 						</iron-ajax>
 						<template is="dom-if" if="{{loading1}}">
-							<div class="actions flex-center-center" hidden$="[[!loading1]]">
+							<div class="actions" hidden$="[[!loading1]]">
 								<paper-spinner-lite active$="[[loading1]]"></paper-spinner-lite>
 							</div>
 						</template>
@@ -256,6 +252,34 @@
 							</div>
 						</template>
 						<template is="dom-repeat" items="[[ajaxResponse1]]">
+							<paper-tab id="{{item.link}}">
+								<a href="{{item.link}}" tabindex="-1">
+									{{item.title}}
+								</a>
+							</paper-tab>
+						</template>
+					</paper-tabs>
+					<paper-tabs id="icons-nav" selected="[[page]]" attr-for-selected="id" autoselect on-click="scrollTop" scrollable fit-container>
+						<paper-tab id="iconshome">
+							<a href="iconshome" tabindex="-1">
+								<iron-icon icon="my-icons:home"></iron-icon>
+							</a>
+						</paper-tab>
+						<iron-ajax auto url="data/icon_feeds.json" id="ajax2" loading="{{loading2}}" handle-as="json" last-error="{{error2}}" last-response="{{ajaxResponse2}}">
+						</iron-ajax>
+						<template is="dom-if" if="{{loading2}}">
+							<div class="actions" hidden$="[[!loading2]]">
+								<paper-spinner-lite active$="[[loading2]]"></paper-spinner-lite>
+							</div>
+						</template>
+						<template is="dom-if" if="{{error2}}">
+							<div class="error">
+								<div>Failed to load feeds.</div>
+								<div>Make sure you're connected to internet.</div>
+								<a href="javascript:location.reload();"><paper-icon-button icon="my-icons:refresh"></paper-icon-button></a>
+							</div>
+						</template>
+						<template is="dom-repeat" items="[[ajaxResponse2]]">
 							<paper-tab id="{{item.link}}">
 								<a href="{{item.link}}" tabindex="-1">
 									{{item.title}}

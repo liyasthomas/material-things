@@ -28,25 +28,6 @@
 				font-weight: normal;
 				margin: 0;
 			}
-			paper-toast {
-				@apply --layout-horizontal;
-				@apply --layout-center;
-				@apply --layout-justified;
-				@apply --shadow-elevation-12dp;
-				max-width: 320px;
-				background-color: #fff !important;
-				color: var(--paper-grey-500);
-			}
-			.flexchild {
-				@apply --layout-flex;
-			}
-			.flex-horizontal {
-				@apply --layout-horizontal;
-			}
-			.flex-center-center {
-				@apply --layout-horizontal;
-				@apply --layout-center-center;
-			}
 			.listbox {
 				padding: 0;
 			}
@@ -126,34 +107,9 @@
 			}
 			.actions {
 				@apply --layout-horizontal;
-				@apply --layout-center;
 				@apply --layout-justified;
-				padding: 16px;
-			}
-			.flexchild {
-				@apply --layout-flex;
-			}
-			.flex-vertical {
-				@apply --layout-vertical;
-			}
-			.flex-horizontal {
-				@apply --layout-horizontal;
-			}
-			.flex-center-center {
-				@apply --layout-horizontal;
 				@apply --layout-center-center;
-			}
-			.flex-end-align {
-				@apply --layout-horizontal;
-				@apply --layout-end;
-				height: 100%
-			}
-			@media (max-width: 640px) {
-				paper-toast {
-					margin: 0;
-					max-width: none;
-					width: 100%;
-				}
+				padding: 16px;
 			}
     </style>
   </template>
