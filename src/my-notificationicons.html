@@ -8,18 +8,19 @@
 				border-top: 1px solid #eee;
       }
       .container {
-				margin: 0 auto;
-				text-align: center;
-				max-width: 90vw;
+				@apply --layout-horizontal;
+				@apply --layout-wrap;
+				padding: 16px;
       }
       .set {
-        display: inline-block;
-        text-align: center;
-        margin: 0 auto;
+				@apply --layout-vertical;
+				@apply --layout-center-center;
+				flex: 1;
         padding: 32px;
       }
-			.set span {
-				display: block;
+			.set div {
+				@apply --layout-flex;
+        text-align: center;
 				margin-top: 8px;
 				font-size: 12px;
 			}
@@ -47,8 +48,8 @@
     <div class="container">
 			<template is="dom-repeat" items="[[ajaxResponse]]">
 				<div class="set">
-					<iron-icon id="{{item.icon}}" icon="notification:{{item.icon}}"></iron-icon>
-					<span>{{item.icon}}</span>
+					<div><iron-icon id="{{item.icon}}" icon="notification:{{item.icon}}"></iron-icon></div>
+					<div>{{item.icon}}</div>
 				</div>
 			</template>
 		</div>

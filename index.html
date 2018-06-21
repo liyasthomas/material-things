@@ -160,6 +160,14 @@
 
 	<!-- Add any global styles for body, document, etc. -->
 	<style>
+		*,
+		*:focus,
+		*::before,
+		*::after {
+			box-sizing: border-box;
+			outline: 0;
+		}
+
 		body {
 			margin: 0;
 			padding: 0;
@@ -225,6 +233,12 @@
 	<noscript>
 		Please enable JavaScript to view this website.
 	</noscript>
+	<script>
+		window.addEventListener('WebComponentsReady', function() {
+			document.querySelector('my-app').show();
+		});
+
+	</script>
 	<!-- Built with love using Polymer -->
 </body>
 
