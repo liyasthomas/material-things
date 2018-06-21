@@ -17,7 +17,6 @@
 <link rel="import" href="../bower_components/paper-item/paper-icon-item.html">
 <link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
 <link rel="import" href="../bower_components/paper-progress/paper-progress.html">
-<link rel="import" href="../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../bower_components/paper-spinner/paper-spinner-lite.html">
 
@@ -25,7 +24,6 @@
 <link rel="import" href="../bower_components/neon-animation/neon-animated-pages.html">
 <link rel="import" href="../bower_components/neon-animation/neon-animatable.html">
 <link rel="import" href="../bower_components/neon-animation/neon-animations.html">
-<link rel="import" href="../bower_components/neon-animation/web-animations.html">
 
 <link rel="import" href="my-icons.html">
 <link rel="import" href="shared-styles.html">
@@ -34,7 +32,7 @@
 <link rel="lazy-import" href="my-colorshome.html">
 <link rel="lazy-import" href="my-iconshome.html">
 <link rel="lazy-import" href="my-shadow.html">
-<link rel="lazy-import" href="my-about.html">
+<link rel="lazy-import" href="my-buttons.html">
 <link rel="lazy-import" href="my-404.html">
 
 <link rel="lazy-import" href="my-red.html">
@@ -109,8 +107,15 @@
 			.sticky-nav {
 				padding: 0;
 			}
-			#colors-nav, #icons-nav {
+			#colors-nav, #icons-nav, #page-nav {
 				display: none;
+			}
+			[main-title] {
+				margin-left: 32px;
+				text-transform: capitalize;
+				text-overflow: ellipsis;
+				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
+				font-weight: 600;
 			}
 			.iron-selected {
         color: var(--dark-accent-color);
@@ -130,10 +135,6 @@
 				max-width: 320px;
 				background-color: #fff !important;
 				color: var(--paper-grey-500);
-			}
-			.toast-button {
-				text-transform: none;
-				margin: 4px;
 			}
 			.flexchild {
 				@apply --layout-flex;
@@ -224,6 +225,11 @@
 								<iron-icon icon="my-icons:layers"></iron-icon>
 							</a>
 						</paper-tab>
+						<paper-tab id="buttons">
+							<a href="buttons" tabindex="-1">
+								<iron-icon icon="my-icons:play-arrow"></iron-icon>
+							</a>
+						</paper-tab>
 					</paper-tabs>
 					<div main-title></div>
 					<paper-icon-button icon="my-icons:share" on-tap="openShare"></paper-icon-button>
@@ -288,6 +294,7 @@
 							</paper-tab>
 						</template>
 					</paper-tabs>
+					<div id="page-nav" main-title>{{page}}</div>
 				</app-toolbar>
 			</app-header>
 			<div class="pages">
@@ -295,7 +302,7 @@
 					<my-colorshome name="colorshome"></my-colorshome>
 					<my-iconshome name="iconshome"></my-iconshome>
 					<my-shadow name="shadow"></my-shadow>
-					<my-about name="about"></my-about>
+					<my-buttons name="buttons"></my-buttons>
 					<my-404 name="404"></my-404>
 					<my-red name="red"></my-red>
 					<my-pink name="pink"></my-pink>

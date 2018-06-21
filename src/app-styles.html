@@ -2,6 +2,11 @@
 <dom-module id="app-styles">
 	<template>
     <style is="custom-style">
+:host([page=shadow]) #page-nav,
+:host([page=buttons]) #page-nav {
+	display: flex;
+}
+
 :host([page=iconshome]) #icons-nav,
 :host([page=avicons]) #icons-nav,
 :host([page=communicationicons]) #icons-nav,

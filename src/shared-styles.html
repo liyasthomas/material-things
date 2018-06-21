@@ -1,6 +1,4 @@
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
-
-<!-- shared styles for all views -->
 <dom-module id="shared-styles">
 	<template>
     <style is="custom-style">
@@ -64,8 +62,8 @@
 				margin: 4px;
 			}
 			paper-button {
-				border-radius: 46px;
-				margin: 0;
+				border-radius: 24px;
+				margin: 8px;
 				padding: 0.7em 1.2em;
 				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
 				font-weight: 500;
@@ -110,6 +108,12 @@
 				@apply --layout-justified;
 				@apply --layout-center-center;
 				padding: 16px;
+			}
+			.title {
+				font-size: 20px;
+				text-overflow: ellipsis;
+				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
+				font-weight: 600;
 			}
     </style>
   </template>

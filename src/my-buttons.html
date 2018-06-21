@@ -1,0 +1,124 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-buttons">
+	<template>
+    <style include="shared-styles">
+      :host {
+				display: block;
+				border-top: 1px solid #eee;
+      }
+      .container {
+				padding: 32px;
+      }
+      .content {
+				margin-bottom: 64px;
+      }
+      .element {
+				@apply --shadow-elevation-2dp;
+				background-color: #fff;
+				margin-top: 32px;
+				padding: 16px;
+      }
+			paper-button.custom {
+				--paper-button-ink-color: var(--paper-pink-a200);
+				/* These could also be individually defined for each of the
+					specific css classes, but we'll just do it once as an example */
+				--paper-button-flat-keyboard-focus: {
+					background-color: var(--paper-pink-a200);
+					color: white !important;
+				};
+				--paper-button-raised-keyboard-focus: {
+					background-color: var(--paper-pink-a200) !important;
+					color: white !important;
+				};
+			}
+			paper-button.custom:hover {
+				background-color: var(--paper-indigo-100);
+			}
+			paper-button.pink {
+				color: var(--paper-pink-a200);
+
+			}
+			paper-button.indigo {
+				background-color: var(--paper-indigo-500);
+				color: white;
+				--paper-button-raised-keyboard-focus: {
+					background-color: var(--paper-pink-a200) !important;
+					color: white !important;
+				};
+			}
+			paper-button.green {
+				background-color: var(--paper-green-500);
+				color: white;
+			}
+			paper-button.green[active] {
+				background-color: var(--paper-red-500);
+			}
+			paper-button.disabled {
+				color: white;
+			}
+    </style>
+		<div class="container">
+			<div class="content">
+				<h3 class="title">Buttons can be flat, raised, toggleable, or disabled</h3>
+				<div class="element">
+					<paper-button>link</paper-button>
+					<paper-button raised>raised</paper-button>
+					<paper-button toggles raised>toggles</paper-button>
+					<paper-button disabled>disabled</paper-button>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Buttons can have icons</h3>
+				<div class="element">
+					<paper-button>link<iron-icon icon="my-icons:add"></iron-icon></paper-button>
+					<paper-button raised>raised<iron-icon icon="my-icons:file-download"></iron-icon></paper-button>
+					<paper-button toggles raised>toggles<iron-icon icon="my-icons:favorite"></iron-icon></paper-button>
+					<paper-button disabled>disabled<iron-icon icon="my-icons:block"></iron-icon></paper-button>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Buttons can hide the ripple effect using the noink attribute</h3>
+				<div class="element">
+					<paper-button noink>link</paper-button>
+					<paper-button raised noink>raised</paper-button>
+					<paper-button toggles raised noink>toggles</paper-button>
+					<paper-button disabled noink>disabled</paper-button>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Buttons can be styled using custom properties</h3>
+				<div class="element">
+					<paper-button class="custom pink">link</paper-button>
+					<paper-button raised class="custom indigo">raised</paper-button>
+					<paper-button toggles raised class="custom green">toggles</paper-button>
+					<paper-button disabled class="custom disabled">disabled</paper-button>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Buttons can be used as a link</h3>
+				<div class="element">
+					<a href="https://liyas-thomas.firebaseapp.com" tabindex="-1">
+						<paper-button raised>website</paper-button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</template>
+	<script>
+		class MyButtons extends Polymer.Element {
+			static get is() {
+				return 'my-buttons';
+			}
+
+			static get properties() {
+				return {};
+			}
+		}
+
+		window.customElements.define(MyButtons.is, MyButtons);
+
+	</script>
+</dom-module>
