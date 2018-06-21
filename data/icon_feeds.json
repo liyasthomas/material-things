@@ -1,0 +1,128 @@
+[
+	{
+		"mode": "dark",
+		"color": "#f44336",
+		"title": "red",
+		"link": "red"
+	},
+	{
+		"mode": "dark",
+		"color": "#e91e63",
+		"title": "pink",
+		"link": "pink"
+	},
+	{
+		"mode": "dark",
+		"color": "#9c27b0",
+		"title": "purple",
+		"link": "purple"
+	},
+	{
+		"mode": "dark",
+		"color": "#673ab7",
+		"title": "deep purple",
+		"link": "deeppurple"
+	},
+	{
+		"mode": "dark",
+		"color": "#3f51b5",
+		"title": "indigo",
+		"link": "indigo"
+	},
+	{
+		"mode": "light",
+		"color": "#2196f3",
+		"title": "blue",
+		"link": "blue"
+	},
+	{
+		"mode": "light",
+		"color": "#03a9f4",
+		"title": "light blue",
+		"link": "lightblue"
+	},
+	{
+		"mode": "light",
+		"color": "#00bcd4",
+		"title": "cyan",
+		"link": "cyan"
+	},
+	{
+		"mode": "dark",
+		"color": "#009688",
+		"title": "teal",
+		"link": "teal"
+	},
+	{
+		"mode": "light",
+		"color": "#4caf50",
+		"title": "green",
+		"link": "green"
+	},
+	{
+		"mode": "light",
+		"color": "#8bc34a",
+		"title": "light green",
+		"link": "lightgreen"
+	},
+	{
+		"mode": "light",
+		"color": "#cddc39",
+		"title": "lime",
+		"link": "lime"
+	},
+	{
+		"mode": "light",
+		"color": "#ffeb3b",
+		"title": "yellow",
+		"link": "yellow"
+	},
+	{
+		"mode": "light",
+		"color": "#ffc107",
+		"title": "amber",
+		"link": "amber"
+	},
+	{
+		"mode": "light",
+		"color": "#ff9800",
+		"title": "orange",
+		"link": "orange"
+	},
+	{
+		"mode": "light",
+		"color": "#ff5722",
+		"title": "deep orange",
+		"link": "deeporange"
+	},
+	{
+		"mode": "dark",
+		"color": "#795548",
+		"title": "brown",
+		"link": "brown"
+	},
+	{
+		"mode": "light",
+		"color": "#9e9e9e",
+		"title": "grey",
+		"link": "grey"
+	},
+	{
+		"mode": "dark",
+		"color": "#607d8b",
+		"title": "blue grey",
+		"link": "bluegrey"
+	},
+	{
+		"mode": "dark",
+		"color": "#000000",
+		"title": "black",
+		"link": "black"
+	},
+	{
+		"mode": "light",
+		"color": "#ffffff",
+		"title": "white",
+		"link": "white"
+	}
+]

@@ -2,7 +2,7 @@
 <link rel="import" href="shared-styles.html">
 <link rel="import" href="app-grid-style.html">
 
-<dom-module id="my-home">
+<dom-module id="my-colorshome">
 	<template>
 		<style include="app-grid-style">
 		</style>
@@ -45,9 +45,9 @@
 		</paper-listbox>
 	</template>
 	<script>
-		class MyHome extends Polymer.Element {
+		class MyColorshome extends Polymer.Element {
 			static get is() {
-				return 'my-home';
+				return 'my-colorshome';
 			}
 
 			_computeBgClass(color) {
@@ -59,7 +59,7 @@
 			}
 		}
 
-		window.customElements.define(MyHome.is, MyHome);
+		window.customElements.define(MyColorshome.is, MyColorshome);
 
 	</script>
 </dom-module>
