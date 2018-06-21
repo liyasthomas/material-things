@@ -1,0 +1,206 @@
+[
+	{
+		"icon": "attach-file"
+	},
+	{
+		"icon": "attach-money"
+	},
+	{
+		"icon": "border-all"
+	},
+	{
+		"icon": "border-bottom"
+	},
+	{
+		"icon": "border-clear"
+	},
+	{
+		"icon": "border-color"
+	},
+	{
+		"icon": "border-horizontal"
+	},
+	{
+		"icon": "border-inner"
+	},
+	{
+		"icon": "border-left"
+	},
+	{
+		"icon": "border-outer"
+	},
+	{
+		"icon": "border-right"
+	},
+	{
+		"icon": "border-style"
+	},
+	{
+		"icon": "border-top"
+	},
+	{
+		"icon": "border-vertical"
+	},
+	{
+		"icon": "bubble-chart"
+	},
+	{
+		"icon": "drag-handle"
+	},
+	{
+		"icon": "format-align-center"
+	},
+	{
+		"icon": "format-align-justify"
+	},
+	{
+		"icon": "format-align-left"
+	},
+	{
+		"icon": "format-align-right"
+	},
+	{
+		"icon": "format-bold"
+	},
+	{
+		"icon": "format-clear"
+	},
+	{
+		"icon": "format-color-fill"
+	},
+	{
+		"icon": "format-color-reset"
+	},
+	{
+		"icon": "format-color-text"
+	},
+	{
+		"icon": "format-indent-decrease"
+	},
+	{
+		"icon": "format-indent-increase"
+	},
+	{
+		"icon": "format-italic"
+	},
+	{
+		"icon": "format-line-spacing"
+	},
+	{
+		"icon": "format-list-bulleted"
+	},
+	{
+		"icon": "format-list-numbered"
+	},
+	{
+		"icon": "format-paint"
+	},
+	{
+		"icon": "format-quote"
+	},
+	{
+		"icon": "format-shapes"
+	},
+	{
+		"icon": "format-size"
+	},
+	{
+		"icon": "format-strikethrough"
+	},
+	{
+		"icon": "format-textdirection-l-to-r"
+	},
+	{
+		"icon": "format-textdirection-r-to-l"
+	},
+	{
+		"icon": "format-underlined"
+	},
+	{
+		"icon": "functions"
+	},
+	{
+		"icon": "highlight"
+	},
+	{
+		"icon": "insert-chart"
+	},
+	{
+		"icon": "insert-comment"
+	},
+	{
+		"icon": "insert-drive-file"
+	},
+	{
+		"icon": "insert-emoticon"
+	},
+	{
+		"icon": "insert-invitation"
+	},
+	{
+		"icon": "insert-link"
+	},
+	{
+		"icon": "insert-photo"
+	},
+	{
+		"icon": "linear-scale"
+	},
+	{
+		"icon": "merge-type"
+	},
+	{
+		"icon": "mode-comment"
+	},
+	{
+		"icon": "mode-edit"
+	},
+	{
+		"icon": "monetization-on"
+	},
+	{
+		"icon": "money-off"
+	},
+	{
+		"icon": "multiline-chart"
+	},
+	{
+		"icon": "pie-chart"
+	},
+	{
+		"icon": "pie-chart-outlined"
+	},
+	{
+		"icon": "publish"
+	},
+	{
+		"icon": "short-text"
+	},
+	{
+		"icon": "show-chart"
+	},
+	{
+		"icon": "space-bar"
+	},
+	{
+		"icon": "strikethrough-s"
+	},
+	{
+		"icon": "text-fields"
+	},
+	{
+		"icon": "title"
+	},
+	{
+		"icon": "vertical-align-bottom"
+	},
+	{
+		"icon": "vertical-align-center"
+	},
+	{
+		"icon": "vertical-align-top"
+	},
+	{
+		"icon": "wrap-text"
+	}
+]

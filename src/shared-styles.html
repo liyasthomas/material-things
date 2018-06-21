@@ -124,6 +124,30 @@
 				font-size: 14px;
 				color: var(--secondary-text-color);
 			}
+			.actions {
+				@apply --layout-horizontal;
+				@apply --layout-center;
+				@apply --layout-justified;
+				padding: 16px;
+			}
+			.flexchild {
+				@apply --layout-flex;
+			}
+			.flex-vertical {
+				@apply --layout-vertical;
+			}
+			.flex-horizontal {
+				@apply --layout-horizontal;
+			}
+			.flex-center-center {
+				@apply --layout-horizontal;
+				@apply --layout-center-center;
+			}
+			.flex-end-align {
+				@apply --layout-horizontal;
+				@apply --layout-end;
+				height: 100%
+			}
 			@media (max-width: 640px) {
 				paper-toast {
 					margin: 0;

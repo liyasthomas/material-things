@@ -1,0 +1,242 @@
+[
+	{
+		"icon": "add-to-queue"
+	},
+	{
+		"icon": "airplay"
+	},
+	{
+		"icon": "album"
+	},
+	{
+		"icon": "art-track"
+	},
+	{
+		"icon": "av-timer"
+	},
+	{
+		"icon": "branding-watermark"
+	},
+	{
+		"icon": "call-to-action"
+	},
+	{
+		"icon": "closed-caption"
+	},
+	{
+		"icon": "equalizer"
+	},
+	{
+		"icon": "explicit"
+	},
+	{
+		"icon": "fast-forward"
+	},
+	{
+		"icon": "fast-rewind"
+	},
+	{
+		"icon": "featured-play-list"
+	},
+	{
+		"icon": "featured-video"
+	},
+	{
+		"icon": "fiber-dvr"
+	},
+	{
+		"icon": "fiber-manual-record"
+	},
+	{
+		"icon": "fiber-new"
+	},
+	{
+		"icon": "fiber-pin"
+	},
+	{
+		"icon": "fiber-smart-record"
+	},
+	{
+		"icon": "forward-10"
+	},
+	{
+		"icon": "forward-30"
+	},
+	{
+		"icon": "forward-5"
+	},
+	{
+		"icon": "games"
+	},
+	{
+		"icon": "hd"
+	},
+	{
+		"icon": "hearing"
+	},
+	{
+		"icon": "high-quality"
+	},
+	{
+		"icon": "library-add"
+	},
+	{
+		"icon": "library-books"
+	},
+	{
+		"icon": "library-music"
+	},
+	{
+		"icon": "loop"
+	},
+	{
+		"icon": "mic"
+	},
+	{
+		"icon": "mic-none"
+	},
+	{
+		"icon": "mic-off"
+	},
+	{
+		"icon": "movie"
+	},
+	{
+		"icon": "music-video"
+	},
+	{
+		"icon": "new-releases"
+	},
+	{
+		"icon": "not-interested"
+	},
+	{
+		"icon": "note"
+	},
+	{
+		"icon": "pause"
+	},
+	{
+		"icon": "pause-circle-filled"
+	},
+	{
+		"icon": "pause-circle-outline"
+	},
+	{
+		"icon": "play-arrow"
+	},
+	{
+		"icon": "play-circle-filled"
+	},
+	{
+		"icon": "play-circle-outline"
+	},
+	{
+		"icon": "playlist-add"
+	},
+	{
+		"icon": "playlist-add-check"
+	},
+	{
+		"icon": "playlist-play"
+	},
+	{
+		"icon": "queue"
+	},
+	{
+		"icon": "queue-music"
+	},
+	{
+		"icon": "queue-play-next"
+	},
+	{
+		"icon": "radio"
+	},
+	{
+		"icon": "recent-actors"
+	},
+	{
+		"icon": "remove-from-queue"
+	},
+	{
+		"icon": "repeat"
+	},
+	{
+		"icon": "repeat-one"
+	},
+	{
+		"icon": "replay"
+	},
+	{
+		"icon": "replay-10"
+	},
+	{
+		"icon": "replay-30"
+	},
+	{
+		"icon": "replay-5"
+	},
+	{
+		"icon": "shuffle"
+	},
+	{
+		"icon": "skip-next"
+	},
+	{
+		"icon": "skip-previous"
+	},
+	{
+		"icon": "slow-motion-video"
+	},
+	{
+		"icon": "snooze"
+	},
+	{
+		"icon": "sort-by-alpha"
+	},
+	{
+		"icon": "stop"
+	},
+	{
+		"icon": "subscriptions"
+	},
+	{
+		"icon": "subtitles"
+	},
+	{
+		"icon": "surround-sound"
+	},
+	{
+		"icon": "video-call"
+	},
+	{
+		"icon": "video-label"
+	},
+	{
+		"icon": "video-library"
+	},
+	{
+		"icon": "videocam"
+	},
+	{
+		"icon": "videocam-off"
+	},
+	{
+		"icon": "volume-down"
+	},
+	{
+		"icon": "volume-mute"
+	},
+	{
+		"icon": "volume-off"
+	},
+	{
+		"icon": "volume-up"
+	},
+	{
+		"icon": "web"
+	},
+	{
+		"icon": "web-asset"
+	}
+]

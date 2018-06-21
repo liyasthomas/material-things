@@ -1,16 +1,6 @@
-<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
-<link rel="import" href="shared-styles.html">
 <link rel="import" href="../bower_components/iron-icons/av-icons.html">
-<link rel="import" href="../bower_components/iron-icons/communication-icons.html">
-<link rel="import" href="../bower_components/iron-icons/device-icons.html">
-<link rel="import" href="../bower_components/iron-icons/editor-icons.html">
-<link rel="import" href="../bower_components/iron-icons/hardware-icons.html">
-<link rel="import" href="../bower_components/iron-icons/image-icons.html">
-<link rel="import" href="../bower_components/iron-icons/maps-icons.html">
-<link rel="import" href="../bower_components/iron-icons/notification-icons.html">
-<link rel="import" href="../bower_components/iron-icons/social-icons.html">
-<link rel="import" href="../bower_components/iron-icons/places-icons.html">
-<dom-module id="my-iconshome">
+<link rel="import" href="shared-styles.html">
+<dom-module id="my-avicons">
 	<template>
     <style include="shared-styles">
       :host {
@@ -35,7 +25,7 @@
 			}
     </style>
 		<iron-ajax auto
-			url="data/ironicons.json"
+			url="data/avicons.json"
 			id="ajax"
 			loading="{{loading}}"
 			handle-as="json"
@@ -57,16 +47,16 @@
     <div class="container">
 			<template is="dom-repeat" items="[[ajaxResponse]]">
 				<div class="set">
-					<iron-icon id="{{item.icon}}" icon="{{item.icon}}"></iron-icon>
+					<iron-icon id="{{item.icon}}" icon="av:{{item.icon}}"></iron-icon>
 					<span>{{item.icon}}</span>
 				</div>
 			</template>
 		</div>
 	</template>
 	<script>
-		class Iconshome extends Polymer.Element {
+		class Avicons extends Polymer.Element {
 			static get is() {
-				return 'my-iconshome';
+				return 'my-avicons';
 			}
 
 			static get properties() {
@@ -74,7 +64,7 @@
 			}
 		}
 
-		window.customElements.define(Iconshome.is, Iconshome);
+		window.customElements.define(Avicons.is, Avicons);
 
 	</script>
 </dom-module>

@@ -1,0 +1,467 @@
+[
+	{
+		"icon": "add-a-photo"
+	},
+	{
+		"icon": "add-to-photos"
+	},
+	{
+		"icon": "adjust"
+	},
+	{
+		"icon": "assistant"
+	},
+	{
+		"icon": "assistant-photo"
+	},
+	{
+		"icon": "audiotrack"
+	},
+	{
+		"icon": "blur-circular"
+	},
+	{
+		"icon": "blur-linear"
+	},
+	{
+		"icon": "blur-off"
+	},
+	{
+		"icon": "blur-on"
+	},
+	{
+		"icon": "brightness-1"
+	},
+	{
+		"icon": "brightness-2"
+	},
+	{
+		"icon": "brightness-3"
+	},
+	{
+		"icon": "brightness-4"
+	},
+	{
+		"icon": "brightness-5"
+	},
+	{
+		"icon": "brightness-6"
+	},
+	{
+		"icon": "brightness-7"
+	},
+	{
+		"icon": "broken-image"
+	},
+	{
+		"icon": "brush"
+	},
+	{
+		"icon": "burst-mode"
+	},
+	{
+		"icon": "camera"
+	},
+	{
+		"icon": "camera-alt"
+	},
+	{
+		"icon": "camera-front"
+	},
+	{
+		"icon": "camera-rear"
+	},
+	{
+		"icon": "camera-roll"
+	},
+	{
+		"icon": "center-focus-strong"
+	},
+	{
+		"icon": "center-focus-weak"
+	},
+	{
+		"icon": "collections"
+	},
+	{
+		"icon": "collections-bookmark"
+	},
+	{
+		"icon": "color-lens"
+	},
+	{
+		"icon": "colorize"
+	},
+	{
+		"icon": "compare"
+	},
+	{
+		"icon": "control-point"
+	},
+	{
+		"icon": "control-point-duplicate"
+	},
+	{
+		"icon": "crop"
+	},
+	{
+		"icon": "crop-16-9"
+	},
+	{
+		"icon": "crop-3-2"
+	},
+	{
+		"icon": "crop-5-4"
+	},
+	{
+		"icon": "crop-7-5"
+	},
+	{
+		"icon": "crop-din"
+	},
+	{
+		"icon": "crop-free"
+	},
+	{
+		"icon": "crop-landscape"
+	},
+	{
+		"icon": "crop-original"
+	},
+	{
+		"icon": "crop-portrait"
+	},
+	{
+		"icon": "crop-rotate"
+	},
+	{
+		"icon": "crop-square"
+	},
+	{
+		"icon": "dehaze"
+	},
+	{
+		"icon": "details"
+	},
+	{
+		"icon": "edit"
+	},
+	{
+		"icon": "exposure"
+	},
+	{
+		"icon": "exposure-neg-1"
+	},
+	{
+		"icon": "exposure-neg-2"
+	},
+	{
+		"icon": "exposure-plus-1"
+	},
+	{
+		"icon": "exposure-plus-2"
+	},
+	{
+		"icon": "exposure-zero"
+	},
+	{
+		"icon": "filter"
+	},
+	{
+		"icon": "filter-1"
+	},
+	{
+		"icon": "filter-2"
+	},
+	{
+		"icon": "filter-3"
+	},
+	{
+		"icon": "filter-4"
+	},
+	{
+		"icon": "filter-5"
+	},
+	{
+		"icon": "filter-6"
+	},
+	{
+		"icon": "filter-7"
+	},
+	{
+		"icon": "filter-8"
+	},
+	{
+		"icon": "filter-9"
+	},
+	{
+		"icon": "filter-9-plus"
+	},
+	{
+		"icon": "filter-b-and-w"
+	},
+	{
+		"icon": "filter-center-focus"
+	},
+	{
+		"icon": "filter-drama"
+	},
+	{
+		"icon": "filter-frames"
+	},
+	{
+		"icon": "filter-hdr"
+	},
+	{
+		"icon": "filter-none"
+	},
+	{
+		"icon": "filter-tilt-shift"
+	},
+	{
+		"icon": "filter-vintage"
+	},
+	{
+		"icon": "flare"
+	},
+	{
+		"icon": "flash-auto"
+	},
+	{
+		"icon": "flash-off"
+	},
+	{
+		"icon": "flash-on"
+	},
+	{
+		"icon": "flip"
+	},
+	{
+		"icon": "gradient"
+	},
+	{
+		"icon": "grain"
+	},
+	{
+		"icon": "grid-off"
+	},
+	{
+		"icon": "grid-on"
+	},
+	{
+		"icon": "hdr-off"
+	},
+	{
+		"icon": "hdr-on"
+	},
+	{
+		"icon": "hdr-strong"
+	},
+	{
+		"icon": "hdr-weak"
+	},
+	{
+		"icon": "healing"
+	},
+	{
+		"icon": "image"
+	},
+	{
+		"icon": "image-aspect-ratio"
+	},
+	{
+		"icon": "iso"
+	},
+	{
+		"icon": "landscape"
+	},
+	{
+		"icon": "leak-add"
+	},
+	{
+		"icon": "leak-remove"
+	},
+	{
+		"icon": "lens"
+	},
+	{
+		"icon": "linked-camera"
+	},
+	{
+		"icon": "looks"
+	},
+	{
+		"icon": "looks-3"
+	},
+	{
+		"icon": "looks-4"
+	},
+	{
+		"icon": "looks-5"
+	},
+	{
+		"icon": "looks-6"
+	},
+	{
+		"icon": "looks-one"
+	},
+	{
+		"icon": "looks-two"
+	},
+	{
+		"icon": "loupe"
+	},
+	{
+		"icon": "monochrome-photos"
+	},
+	{
+		"icon": "movie-creation"
+	},
+	{
+		"icon": "movie-filter"
+	},
+	{
+		"icon": "music-note"
+	},
+	{
+		"icon": "nature"
+	},
+	{
+		"icon": "nature-people"
+	},
+	{
+		"icon": "navigate-before"
+	},
+	{
+		"icon": "navigate-next"
+	},
+	{
+		"icon": "palette"
+	},
+	{
+		"icon": "panorama"
+	},
+	{
+		"icon": "panorama-fish-eye"
+	},
+	{
+		"icon": "panorama-horizontal"
+	},
+	{
+		"icon": "panorama-vertical"
+	},
+	{
+		"icon": "panorama-wide-angle"
+	},
+	{
+		"icon": "photo"
+	},
+	{
+		"icon": "photo-album"
+	},
+	{
+		"icon": "photo-camera"
+	},
+	{
+		"icon": "photo-filter"
+	},
+	{
+		"icon": "photo-library"
+	},
+	{
+		"icon": "photo-size-select-actual"
+	},
+	{
+		"icon": "photo-size-select-large"
+	},
+	{
+		"icon": "photo-size-select-small"
+	},
+	{
+		"icon": "picture-as-pdf"
+	},
+	{
+		"icon": "portrait"
+	},
+	{
+		"icon": "remove-red-eye"
+	},
+	{
+		"icon": "rotate-90-degrees-ccw"
+	},
+	{
+		"icon": "rotate-left"
+	},
+	{
+		"icon": "rotate-right"
+	},
+	{
+		"icon": "slideshow"
+	},
+	{
+		"icon": "straighten"
+	},
+	{
+		"icon": "style"
+	},
+	{
+		"icon": "switch-camera"
+	},
+	{
+		"icon": "switch-video"
+	},
+	{
+		"icon": "tag-faces"
+	},
+	{
+		"icon": "texture"
+	},
+	{
+		"icon": "timelapse"
+	},
+	{
+		"icon": "timer"
+	},
+	{
+		"icon": "timer-10"
+	},
+	{
+		"icon": "timer-3"
+	},
+	{
+		"icon": "timer-off"
+	},
+	{
+		"icon": "tonality"
+	},
+	{
+		"icon": "transform"
+	},
+	{
+		"icon": "tune"
+	},
+	{
+		"icon": "view-comfy"
+	},
+	{
+		"icon": "view-compact"
+	},
+	{
+		"icon": "vignette"
+	},
+	{
+		"icon": "wb-auto"
+	},
+	{
+		"icon": "wb-cloudy"
+	},
+	{
+		"icon": "wb-incandescent"
+	},
+	{
+		"icon": "wb-iridescent"
+	},
+	{
+		"icon": "wb-sunny"
+	}
+]

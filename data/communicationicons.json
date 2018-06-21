@@ -1,0 +1,152 @@
+[
+	{
+		"icon": "business"
+	},
+	{
+		"icon": "call"
+	},
+	{
+		"icon": "call-end"
+	},
+	{
+		"icon": "call-made"
+	},
+	{
+		"icon": "call-merge"
+	},
+	{
+		"icon": "call-missed"
+	},
+	{
+		"icon": "call-missed-outgoing"
+	},
+	{
+		"icon": "call-received"
+	},
+	{
+		"icon": "call-split"
+	},
+	{
+		"icon": "chat"
+	},
+	{
+		"icon": "chat-bubble"
+	},
+	{
+		"icon": "chat-bubble-outline"
+	},
+	{
+		"icon": "clear-all"
+	},
+	{
+		"icon": "comment"
+	},
+	{
+		"icon": "contact-mail"
+	},
+	{
+		"icon": "contact-phone"
+	},
+	{
+		"icon": "contacts"
+	},
+	{
+		"icon": "dialer-sip"
+	},
+	{
+		"icon": "dialpad"
+	},
+	{
+		"icon": "email"
+	},
+	{
+		"icon": "forum"
+	},
+	{
+		"icon": "import-contacts"
+	},
+	{
+		"icon": "import-export"
+	},
+	{
+		"icon": "invert-colors-off"
+	},
+	{
+		"icon": "live-help"
+	},
+	{
+		"icon": "location-off"
+	},
+	{
+		"icon": "location-on"
+	},
+	{
+		"icon": "mail-outline"
+	},
+	{
+		"icon": "message"
+	},
+	{
+		"icon": "no-sim"
+	},
+	{
+		"icon": "phone"
+	},
+	{
+		"icon": "phonelink-erase"
+	},
+	{
+		"icon": "phonelink-lock"
+	},
+	{
+		"icon": "phonelink-ring"
+	},
+	{
+		"icon": "phonelink-setup"
+	},
+	{
+		"icon": "portable-wifi-off"
+	},
+	{
+		"icon": "present-to-all"
+	},
+	{
+		"icon": "ring-volume"
+	},
+	{
+		"icon": "rss-feed"
+	},
+	{
+		"icon": "screen-share"
+	},
+	{
+		"icon": "speaker-phone"
+	},
+	{
+		"icon": "stay-current-landscape"
+	},
+	{
+		"icon": "stay-current-portrait"
+	},
+	{
+		"icon": "stay-primary-landscape"
+	},
+	{
+		"icon": "stay-primary-portrait"
+	},
+	{
+		"icon": "stop-screen-share"
+	},
+	{
+		"icon": "swap-calls"
+	},
+	{
+		"icon": "textsms"
+	},
+	{
+		"icon": "voicemail"
+	},
+	{
+		"icon": "vpn-key"
+	}
+]

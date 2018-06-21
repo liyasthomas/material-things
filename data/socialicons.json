@@ -1,0 +1,92 @@
+[
+	{
+		"icon": "cake"
+	},
+	{
+		"icon": "domain"
+	},
+	{
+		"icon": "group"
+	},
+	{
+		"icon": "group-add"
+	},
+	{
+		"icon": "location-city"
+	},
+	{
+		"icon": "mood"
+	},
+	{
+		"icon": "mood-bad"
+	},
+	{
+		"icon": "notifications"
+	},
+	{
+		"icon": "notifications-active"
+	},
+	{
+		"icon": "notifications-none"
+	},
+	{
+		"icon": "notifications-off"
+	},
+	{
+		"icon": "notifications-paused"
+	},
+	{
+		"icon": "pages"
+	},
+	{
+		"icon": "party-mode"
+	},
+	{
+		"icon": "people"
+	},
+	{
+		"icon": "people-outline"
+	},
+	{
+		"icon": "person"
+	},
+	{
+		"icon": "person-add"
+	},
+	{
+		"icon": "person-outline"
+	},
+	{
+		"icon": "plus-one"
+	},
+	{
+		"icon": "poll"
+	},
+	{
+		"icon": "public"
+	},
+	{
+		"icon": "school"
+	},
+	{
+		"icon": "sentiment-dissatisfied"
+	},
+	{
+		"icon": "sentiment-neutral"
+	},
+	{
+		"icon": "sentiment-satisfied"
+	},
+	{
+		"icon": "sentiment-very-dissatisfied"
+	},
+	{
+		"icon": "sentiment-very-satisfied"
+	},
+	{
+		"icon": "share"
+	},
+	{
+		"icon": "whatshot"
+	}
+]

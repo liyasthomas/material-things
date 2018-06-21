@@ -1,0 +1,206 @@
+[
+	{
+		"icon": "add-location"
+	},
+	{
+		"icon": "beenhere"
+	},
+	{
+		"icon": "directions"
+	},
+	{
+		"icon": "directions-bike"
+	},
+	{
+		"icon": "directions-boat"
+	},
+	{
+		"icon": "directions-bus"
+	},
+	{
+		"icon": "directions-car"
+	},
+	{
+		"icon": "directions-railway"
+	},
+	{
+		"icon": "directions-run"
+	},
+	{
+		"icon": "directions-subway"
+	},
+	{
+		"icon": "directions-transit"
+	},
+	{
+		"icon": "directions-walk"
+	},
+	{
+		"icon": "edit-location"
+	},
+	{
+		"icon": "ev-station"
+	},
+	{
+		"icon": "flight"
+	},
+	{
+		"icon": "hotel"
+	},
+	{
+		"icon": "layers"
+	},
+	{
+		"icon": "layers-clear"
+	},
+	{
+		"icon": "local-activity"
+	},
+	{
+		"icon": "local-airport"
+	},
+	{
+		"icon": "local-atm"
+	},
+	{
+		"icon": "local-bar"
+	},
+	{
+		"icon": "local-cafe"
+	},
+	{
+		"icon": "local-car-wash"
+	},
+	{
+		"icon": "local-convenience-store"
+	},
+	{
+		"icon": "local-dining"
+	},
+	{
+		"icon": "local-drink"
+	},
+	{
+		"icon": "local-florist"
+	},
+	{
+		"icon": "local-gas-station"
+	},
+	{
+		"icon": "local-grocery-store"
+	},
+	{
+		"icon": "local-hospital"
+	},
+	{
+		"icon": "local-hotel"
+	},
+	{
+		"icon": "local-laundry-service"
+	},
+	{
+		"icon": "local-library"
+	},
+	{
+		"icon": "local-mall"
+	},
+	{
+		"icon": "local-movies"
+	},
+	{
+		"icon": "local-offer"
+	},
+	{
+		"icon": "local-parking"
+	},
+	{
+		"icon": "local-pharmacy"
+	},
+	{
+		"icon": "local-phone"
+	},
+	{
+		"icon": "local-pizza"
+	},
+	{
+		"icon": "local-play"
+	},
+	{
+		"icon": "local-post-office"
+	},
+	{
+		"icon": "local-printshop"
+	},
+	{
+		"icon": "local-see"
+	},
+	{
+		"icon": "local-shipping"
+	},
+	{
+		"icon": "local-taxi"
+	},
+	{
+		"icon": "map"
+	},
+	{
+		"icon": "my-location"
+	},
+	{
+		"icon": "navigation"
+	},
+	{
+		"icon": "near-me"
+	},
+	{
+		"icon": "person-pin"
+	},
+	{
+		"icon": "person-pin-circle"
+	},
+	{
+		"icon": "pin-drop"
+	},
+	{
+		"icon": "place"
+	},
+	{
+		"icon": "rate-review"
+	},
+	{
+		"icon": "restaurant"
+	},
+	{
+		"icon": "restaurant-menu"
+	},
+	{
+		"icon": "satellite"
+	},
+	{
+		"icon": "store-mall-directory"
+	},
+	{
+		"icon": "streetview"
+	},
+	{
+		"icon": "subway"
+	},
+	{
+		"icon": "terrain"
+	},
+	{
+		"icon": "traffic"
+	},
+	{
+		"icon": "train"
+	},
+	{
+		"icon": "tram"
+	},
+	{
+		"icon": "transfer-within-a-station"
+	},
+	{
+		"icon": "zoom-out-map"
+	}
+]

@@ -1,0 +1,239 @@
+[
+	{
+		"icon": "device:access-alarm"
+	},
+	{
+		"icon": "device:access-alarms"
+	},
+	{
+		"icon": "device:access-time"
+	},
+	{
+		"icon": "device:add-alarm"
+	},
+	{
+		"icon": "device:airplanemode-active"
+	},
+	{
+		"icon": "device:airplanemode-inactive"
+	},
+	{
+		"icon": "device:battery-20"
+	},
+	{
+		"icon": "device:battery-30"
+	},
+	{
+		"icon": "device:battery-50"
+	},
+	{
+		"icon": "device:battery-60"
+	},
+	{
+		"icon": "device:battery-80"
+	},
+	{
+		"icon": "device:battery-90"
+	},
+	{
+		"icon": "device:battery-alert"
+	},
+	{
+		"icon": "device:battery-charging-20"
+	},
+	{
+		"icon": "device:battery-charging-30"
+	},
+	{
+		"icon": "device:battery-charging-50"
+	},
+	{
+		"icon": "device:battery-charging-60"
+	},
+	{
+		"icon": "device:battery-charging-80"
+	},
+	{
+		"icon": "device:battery-charging-90"
+	},
+	{
+		"icon": "device:battery-charging-full"
+	},
+	{
+		"icon": "device:battery-full"
+	},
+	{
+		"icon": "device:battery-std"
+	},
+	{
+		"icon": "device:battery-unknown"
+	},
+	{
+		"icon": "device:bluetooth"
+	},
+	{
+		"icon": "device:bluetooth-connected"
+	},
+	{
+		"icon": "device:bluetooth-disabled"
+	},
+	{
+		"icon": "device:bluetooth-searching"
+	},
+	{
+		"icon": "device:brightness-auto"
+	},
+	{
+		"icon": "device:brightness-high"
+	},
+	{
+		"icon": "device:brightness-low"
+	},
+	{
+		"icon": "device:brightness-medium"
+	},
+	{
+		"icon": "device:data-usage"
+	},
+	{
+		"icon": "device:developer-mode"
+	},
+	{
+		"icon": "device:devices"
+	},
+	{
+		"icon": "device:dvr"
+	},
+	{
+		"icon": "device:gps-fixed"
+	},
+	{
+		"icon": "device:gps-not-fixed"
+	},
+	{
+		"icon": "device:gps-off"
+	},
+	{
+		"icon": "device:graphic-eq"
+	},
+	{
+		"icon": "device:location-disabled"
+	},
+	{
+		"icon": "device:location-searching"
+	},
+	{
+		"icon": "device:network-cell"
+	},
+	{
+		"icon": "device:network-wifi"
+	},
+	{
+		"icon": "device:nfc"
+	},
+	{
+		"icon": "device:screen-lock-landscape"
+	},
+	{
+		"icon": "device:screen-lock-portrait"
+	},
+	{
+		"icon": "device:screen-lock-rotation"
+	},
+	{
+		"icon": "device:screen-rotation"
+	},
+	{
+		"icon": "device:sd-storage"
+	},
+	{
+		"icon": "device:settings-system-daydream"
+	},
+	{
+		"icon": "device:signal-cellular-0-bar"
+	},
+	{
+		"icon": "device:signal-cellular-1-bar"
+	},
+	{
+		"icon": "device:signal-cellular-2-bar"
+	},
+	{
+		"icon": "device:signal-cellular-3-bar"
+	},
+	{
+		"icon": "device:signal-cellular-4-bar"
+	},
+	{
+		"icon": "device:signal-cellular-connected-no-internet-0-bar"
+	},
+	{
+		"icon": "device:signal-cellular-connected-no-internet-1-bar"
+	},
+	{
+		"icon": "device:signal-cellular-connected-no-internet-2-bar"
+	},
+	{
+		"icon": "device:signal-cellular-connected-no-internet-3-bar"
+	},
+	{
+		"icon": "device:signal-cellular-connected-no-internet-4-bar"
+	},
+	{
+		"icon": "device:signal-cellular-no-sim"
+	},
+	{
+		"icon": "device:signal-cellular-null"
+	},
+	{
+		"icon": "device:signal-cellular-off"
+	},
+	{
+		"icon": "device:signal-wifi-0-bar"
+	},
+	{
+		"icon": "device:signal-wifi-1-bar"
+	},
+	{
+		"icon": "device:signal-wifi-1-bar-lock"
+	},
+	{
+		"icon": "device:signal-wifi-2-bar"
+	},
+	{
+		"icon": "device:signal-wifi-2-bar-lock"
+	},
+	{
+		"icon": "device:signal-wifi-3-bar"
+	},
+	{
+		"icon": "device:signal-wifi-3-bar-lock"
+	},
+	{
+		"icon": "device:signal-wifi-4-bar"
+	},
+	{
+		"icon": "device:signal-wifi-4-bar-lock"
+	},
+	{
+		"icon": "device:signal-wifi-off"
+	},
+	{
+		"icon": "device:storage"
+	},
+	{
+		"icon": "device:usb"
+	},
+	{
+		"icon": "device:wallpaper"
+	},
+	{
+		"icon": "device:widgets"
+	},
+	{
+		"icon": "device:wifi-lock"
+	},
+	{
+		"icon": "device:wifi-tethering"
+	}
+]

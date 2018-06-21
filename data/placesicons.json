@@ -1,0 +1,59 @@
+[
+	{
+		"icon": "ac-unit"
+	},
+	{
+		"icon": "airport-shuttle"
+	},
+	{
+		"icon": "all-inclusive"
+	},
+	{
+		"icon": "beach-access"
+	},
+	{
+		"icon": "business-center"
+	},
+	{
+		"icon": "casino"
+	},
+	{
+		"icon": "child-care"
+	},
+	{
+		"icon": "child-friendly"
+	},
+	{
+		"icon": "fitness-center"
+	},
+	{
+		"icon": "free-breakfast"
+	},
+	{
+		"icon": "golf-course"
+	},
+	{
+		"icon": "hot-tub"
+	},
+	{
+		"icon": "kitchen"
+	},
+	{
+		"icon": "pool"
+	},
+	{
+		"icon": "room-service"
+	},
+	{
+		"icon": "rv-hookup"
+	},
+	{
+		"icon": "smoke-free"
+	},
+	{
+		"icon": "smoking-rooms"
+	},
+	{
+		"icon": "spa"
+	}
+]

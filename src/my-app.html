@@ -26,6 +26,10 @@
 <link rel="import" href="../bower_components/neon-animation/neon-animatable.html">
 <link rel="import" href="../bower_components/neon-animation/neon-animations.html">
 
+<link rel="import" href="my-icons.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="app-styles.html">
+
 <link rel="lazy-import" href="my-colorshome.html">
 <link rel="lazy-import" href="my-iconshome.html">
 <link rel="lazy-import" href="my-shadow.html">
@@ -54,13 +58,19 @@
 <link rel="lazy-import" href="my-black.html">
 <link rel="lazy-import" href="my-white.html">
 
-<link rel="import" href="my-icons.html">
-<link rel="import" href="shared-styles.html">
-<link rel="import" href="app-styles.html">
+<link rel="lazy-import" href="my-avicons.html">
+<link rel="lazy-import" href="my-communicationicons.html">
+<link rel="lazy-import" href="my-deviceicons.html">
+<link rel="lazy-import" href="my-editoricons.html">
+<link rel="lazy-import" href="my-hardwareicons.html">
+<link rel="lazy-import" href="my-imageicons.html">
+<link rel="lazy-import" href="my-mapsicons.html">
+<link rel="lazy-import" href="my-notificationicons.html">
+<link rel="lazy-import" href="my-socialicons.html">
+<link rel="lazy-import" href="my-placesicons.html">
 
 <dom-module id="my-app">
 	<template>
-		<style is="custom-style" include="app-styles"></style>
     <style is="custom-style" include="shared-styles">
       :host {
         display: block;
@@ -95,23 +105,11 @@
 					box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.2);
 				};
       }
-			.logo {
-				color: var(--primary-text-color);
-				overflow: hidden;
-				text-overflow: ellipsis;
-				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
-				font-weight: 600;
-			}
-/*
-			.logo iron-icon {
-				margin-right: 16px;
-			}
-			[main-title] {
-			}
-*/
-			.colors-nav, .icons-nav {
-				display: none;
+			.sticky-nav {
 				padding: 0;
+			}
+			#colors-nav, #icons-nav {
+				display: none;
 			}
 			.iron-selected {
         color: var(--dark-accent-color);
@@ -144,6 +142,7 @@
 				}
 			}
     </style>
+		<style is="custom-style" include="app-styles"></style>
     <app-location
         route="{{route}}"
         url-space-regex="^[[rootPath]]">
@@ -186,13 +185,13 @@
 				<app-toolbar class="tab-nav">
 					<paper-tabs selected="[[page]]" attr-for-selected="id" autoselect no-bar on-click="scrollTop">
 						<paper-tab id="colorshome">
-							<a href="[[rootPath]]" tabindex="-1">
+							<a href="colorshome" tabindex="-1">
 								<iron-icon icon="my-icons:format-color-fill"></iron-icon>
 							</a>
 						</paper-tab>
 						<paper-tab id="iconshome">
 							<a href="iconshome" tabindex="-1">
-								<iron-icon icon="my-icons:face"></iron-icon>
+								<iron-icon icon="my-icons:tag-faces"></iron-icon>
 							</a>
 						</paper-tab>
 						<paper-tab id="shadow">
@@ -201,44 +200,14 @@
 							</a>
 						</paper-tab>
 					</paper-tabs>
-					<div class="logo" main-title></div>
+					<div main-title></div>
 					<paper-icon-button icon="my-icons:share" on-tap="openShare"></paper-icon-button>
 					<template is="dom-if" if="{{loading1}}">
 						<paper-progress indeterminate active$="[[loading1]]" top-item></paper-progress>
 					</template>
 				</app-toolbar>
-				<app-toolbar class="colors-nav" sticky>
-					<paper-tabs selected="[[page]]" attr-for-selected="id" autoselect on-click="scrollTop" scrollable fit-container>
-						<paper-tab id="colorshome">
-							<a href="[[rootPath]]" tabindex="-1">
-								<iron-icon icon="my-icons:home"></iron-icon>
-							</a>
-						</paper-tab>
-						<iron-ajax auto url="data/color_feeds.json" id="ajax1" loading="{{loading1}}" handle-as="json" last-error="{{error1}}" last-response="{{ajaxResponse1}}">
-						</iron-ajax>
-						<template is="dom-if" if="{{loading1}}">
-							<div class="actions flex-center-center" hidden$="[[!loading1]]">
-								<paper-spinner-lite active$="[[loading1]]"></paper-spinner-lite>
-							</div>
-						</template>
-						<template is="dom-if" if="{{error1}}">
-							<div class="error">
-								<div>Failed to load feeds.</div>
-								<div>Make sure you're connected to internet.</div>
-								<a href="javascript:location.reload();"><paper-icon-button icon="my-icons:refresh"></paper-icon-button></a>
-							</div>
-						</template>
-						<template is="dom-repeat" items="[[ajaxResponse1]]">
-							<paper-tab id="{{item.link}}">
-								<a href="{{item.link}}" tabindex="-1">
-									{{item.title}}
-								</a>
-							</paper-tab>
-						</template>
-					</paper-tabs>
-				</app-toolbar>
-				<app-toolbar class="icons-nav" sticky>
-					<paper-tabs selected="[[page]]" attr-for-selected="id" autoselect on-click="scrollTop" scrollable fit-container>
+				<app-toolbar class="sticky-nav" sticky>
+					<paper-tabs id="icons-nav" selected="[[page]]" attr-for-selected="id" autoselect on-click="scrollTop" scrollable fit-container>
 						<paper-tab id="iconshome">
 							<a href="iconshome" tabindex="-1">
 								<iron-icon icon="my-icons:home"></iron-icon>
@@ -259,6 +228,34 @@
 							</div>
 						</template>
 						<template is="dom-repeat" items="[[ajaxResponse2]]">
+							<paper-tab id="{{item.link}}">
+								<a href="{{item.link}}" tabindex="-1">
+									{{item.title}}
+								</a>
+							</paper-tab>
+						</template>
+					</paper-tabs>
+					<paper-tabs id="colors-nav" selected="[[page]]" attr-for-selected="id" autoselect on-click="scrollTop" scrollable fit-container>
+						<paper-tab id="colorshome">
+							<a href="colorshome" tabindex="-1">
+								<iron-icon icon="my-icons:home"></iron-icon>
+							</a>
+						</paper-tab>
+						<iron-ajax auto url="data/color_feeds.json" id="ajax1" loading="{{loading1}}" handle-as="json" last-error="{{error1}}" last-response="{{ajaxResponse1}}">
+						</iron-ajax>
+						<template is="dom-if" if="{{loading1}}">
+							<div class="actions flex-center-center" hidden$="[[!loading1]]">
+								<paper-spinner-lite active$="[[loading1]]"></paper-spinner-lite>
+							</div>
+						</template>
+						<template is="dom-if" if="{{error1}}">
+							<div class="error">
+								<div>Failed to load feeds.</div>
+								<div>Make sure you're connected to internet.</div>
+								<a href="javascript:location.reload();"><paper-icon-button icon="my-icons:refresh"></paper-icon-button></a>
+							</div>
+						</template>
+						<template is="dom-repeat" items="[[ajaxResponse1]]">
 							<paper-tab id="{{item.link}}">
 								<a href="{{item.link}}" tabindex="-1">
 									{{item.title}}
@@ -296,6 +293,16 @@
 					<my-bluegrey name="bluegrey"></my-bluegrey>
 					<my-black name="black"></my-black>
 					<my-white name="white"></my-white>
+					<my-avicons name="avicons"></my-avicons>
+					<my-communicationicons name="communicationicons"></my-communicationicons>
+					<my-deviceicons name="deviceicons"></my-deviceicons>
+					<my-editoricons name="editoricons"></my-editoricons>
+					<my-hardwareicons name="hardwareicons"></my-hardwareicons>
+					<my-imageicons name="imageicons"></my-imageicons>
+					<my-mapsicons name="mapsicons"></my-mapsicons>
+					<my-notificationicons name="notificationicons"></my-notificationicons>
+					<my-socialicons name="socialicons"></my-socialicons>
+					<my-placesicons name="placesicons"></my-placesicons>
 				</neon-animated-pages>
 			</div>
 			<footer>

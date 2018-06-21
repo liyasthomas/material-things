@@ -1,0 +1,146 @@
+[
+	{
+		"icon": "cast"
+	},
+	{
+		"icon": "cast-connected"
+	},
+	{
+		"icon": "computer"
+	},
+	{
+		"icon": "desktop-mac"
+	},
+	{
+		"icon": "desktop-windows"
+	},
+	{
+		"icon": "developer-board"
+	},
+	{
+		"icon": "device-hub"
+	},
+	{
+		"icon": "devices-other"
+	},
+	{
+		"icon": "dock"
+	},
+	{
+		"icon": "gamepad"
+	},
+	{
+		"icon": "headset"
+	},
+	{
+		"icon": "headset-mic"
+	},
+	{
+		"icon": "keyboard"
+	},
+	{
+		"icon": "keyboard-arrow-down"
+	},
+	{
+		"icon": "keyboard-arrow-left"
+	},
+	{
+		"icon": "keyboard-arrow-right"
+	},
+	{
+		"icon": "keyboard-arrow-up"
+	},
+	{
+		"icon": "keyboard-backspace"
+	},
+	{
+		"icon": "keyboard-capslock"
+	},
+	{
+		"icon": "keyboard-hide"
+	},
+	{
+		"icon": "keyboard-return"
+	},
+	{
+		"icon": "keyboard-tab"
+	},
+	{
+		"icon": "keyboard-voice"
+	},
+	{
+		"icon": "laptop"
+	},
+	{
+		"icon": "laptop-chromebook"
+	},
+	{
+		"icon": "laptop-mac"
+	},
+	{
+		"icon": "laptop-windows"
+	},
+	{
+		"icon": "memory"
+	},
+	{
+		"icon": "mouse"
+	},
+	{
+		"icon": "phone-android"
+	},
+	{
+		"icon": "phone-iphone"
+	},
+	{
+		"icon": "phonelink"
+	},
+	{
+		"icon": "phonelink-off"
+	},
+	{
+		"icon": "power-input"
+	},
+	{
+		"icon": "router"
+	},
+	{
+		"icon": "scanner"
+	},
+	{
+		"icon": "security"
+	},
+	{
+		"icon": "sim-card"
+	},
+	{
+		"icon": "smartphone"
+	},
+	{
+		"icon": "speaker"
+	},
+	{
+		"icon": "speaker-group"
+	},
+	{
+		"icon": "tablet"
+	},
+	{
+		"icon": "tablet-android"
+	},
+	{
+		"icon": "tablet-mac"
+	},
+	{
+		"icon": "toys"
+	},
+	{
+		"icon": "tv"
+	},
+	{
+		"icon": "videogame-asset"
+	},
+	{
+		"icon": "watch"
+	}
+]

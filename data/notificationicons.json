@@ -1,0 +1,164 @@
+[
+	{
+		"icon": "adb"
+	},
+	{
+		"icon": "airline-seat-flat"
+	},
+	{
+		"icon": "airline-seat-flat-angled"
+	},
+	{
+		"icon": "airline-seat-individual-suite"
+	},
+	{
+		"icon": "airline-seat-legroom-extra"
+	},
+	{
+		"icon": "airline-seat-legroom-normal"
+	},
+	{
+		"icon": "airline-seat-legroom-reduced"
+	},
+	{
+		"icon": "airline-seat-recline-extra"
+	},
+	{
+		"icon": "airline-seat-recline-normal"
+	},
+	{
+		"icon": "bluetooth-audio"
+	},
+	{
+		"icon": "confirmation-number"
+	},
+	{
+		"icon": "disc-full"
+	},
+	{
+		"icon": "do-not-disturb"
+	},
+	{
+		"icon": "do-not-disturb-alt"
+	},
+	{
+		"icon": "do-not-disturb-off"
+	},
+	{
+		"icon": "do-not-disturb-on"
+	},
+	{
+		"icon": "drive-eta"
+	},
+	{
+		"icon": "enhanced-encryption"
+	},
+	{
+		"icon": "event-available"
+	},
+	{
+		"icon": "event-busy"
+	},
+	{
+		"icon": "event-note"
+	},
+	{
+		"icon": "folder-special"
+	},
+	{
+		"icon": "live-tv"
+	},
+	{
+		"icon": "mms"
+	},
+	{
+		"icon": "more"
+	},
+	{
+		"icon": "network-check"
+	},
+	{
+		"icon": "network-locked"
+	},
+	{
+		"icon": "no-encryption"
+	},
+	{
+		"icon": "ondemand-video"
+	},
+	{
+		"icon": "personal-video"
+	},
+	{
+		"icon": "phone-bluetooth-speaker"
+	},
+	{
+		"icon": "phone-forwarded"
+	},
+	{
+		"icon": "phone-in-talk"
+	},
+	{
+		"icon": "phone-locked"
+	},
+	{
+		"icon": "phone-missed"
+	},
+	{
+		"icon": "phone-paused"
+	},
+	{
+		"icon": "power"
+	},
+	{
+		"icon": "priority-high"
+	},
+	{
+		"icon": "rv-hookup"
+	},
+	{
+		"icon": "sd-card"
+	},
+	{
+		"icon": "sim-card-alert"
+	},
+	{
+		"icon": "sms"
+	},
+	{
+		"icon": "sms-failed"
+	},
+	{
+		"icon": "sync"
+	},
+	{
+		"icon": "sync-disabled"
+	},
+	{
+		"icon": "sync-problem"
+	},
+	{
+		"icon": "system-update"
+	},
+	{
+		"icon": "tap-and-play"
+	},
+	{
+		"icon": "time-to-leave"
+	},
+	{
+		"icon": "vibration"
+	},
+	{
+		"icon": "voice-chat"
+	},
+	{
+		"icon": "vpn-lock"
+	},
+	{
+		"icon": "wc"
+	},
+	{
+		"icon": "wifi"
+	}
+]
