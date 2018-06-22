@@ -22,5 +22,17 @@
 	{
 		"link": "iconbutton",
 		"icon": "radio-button-checked"
+	},
+	{
+		"link": "inputs",
+		"icon": "text-format"
+	},
+	{
+		"link": "items",
+		"icon": "list"
+	},
+	{
+		"link": "progress",
+		"icon": "more-horiz"
 	}
 ]

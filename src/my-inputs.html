@@ -1,0 +1,170 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-input/paper-textarea.html">
+<link rel="import" href="../bower_components/paper-input/paper-input-container.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-inputs">
+	<template>
+    <style include="shared-styles">
+      :host {
+				display: block;
+				border-top: 1px solid #eee;
+      }
+			input.my-input {
+				@apply --paper-input-container-shared-input-style;
+			}
+			.custom-parent {
+				font-size: 12px;
+			}
+			paper-input.custom:hover {
+				border: 1px solid #29B6F6;
+			}
+			paper-input.custom {
+				margin-bottom: 14px;
+				--primary-text-color: #01579B;
+				--paper-input-container-color: black;
+				--paper-input-container-focus-color: black;
+				--paper-input-container-invalid-color: black;
+				border: 1px solid #BDBDBD;
+				border-radius: 5px;
+
+				/* Reset some defaults */
+				--paper-input-container: { padding: 0;};
+				--paper-input-container-underline: { display: none; height: 0;};
+				--paper-input-container-underline-focus: { display: none; };
+
+				/* New custom styles */
+				--paper-input-container-input: {
+					box-sizing: border-box;
+					font-size: inherit;
+					padding: 4px;
+				};
+				--paper-input-container-input-focus: {
+					background: rgba(0, 0, 0, 0.1);
+				};
+				--paper-input-container-input-invalid: {
+					background: rgba(255, 0, 0, 0.3);
+				};
+				--paper-input-container-label: {
+					top: -8px;
+					left: 4px;
+					background: white;
+					padding: 2px;
+					font-weight: bold;
+				};
+				--paper-input-container-label-floating: {
+					width: auto;
+				};
+			}
+    </style>
+		<div class="container">
+			<div class="content">
+				<h3 class="title">Inputs can have different types, and be disabled</h3>
+				<div class="element">
+					<paper-input label="text input"></paper-input>
+					<paper-input label="text input" value="pre-filled"></paper-input>
+					<paper-textarea label="autoresizing textarea input"></paper-textarea>
+					<paper-input label="password input" type="password"></paper-input>
+					<paper-input label="disabled input" disabled value="batman"></paper-input>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Inputs can have character counters</h3>
+				<div class="element">
+					<paper-input label="simple character counter" char-counter></paper-input>
+					<paper-input label="input with at most 10 characters" char-counter maxlength="10"></paper-input>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">The label can have different floating states</h3>
+				<div class="element">
+					<paper-input label="this label floats after typing"></paper-input>
+					<paper-input label="this label is always floating" always-float-label></paper-input>
+					<paper-input label="this label never floats" no-label-float></paper-input>
+					<paper-input label="this label is always floating" always-float-label placeholder="placeholder text"></paper-input>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Inputs can validate automatically or on demand, and can have custom error messages</h3>
+				<div class="element">
+					<paper-input label="this input requires some text" required auto-validate error-message="needs some text!"></paper-input>
+					<paper-input label="this input requires letters only" auto-validate pattern="[a-zA-Z]*" error-message="letters only!"></paper-input>
+					<paper-input label="this input requires letters only" auto-validate pattern="[a-zA-Z]*" error-message="letters only!" value="pre-filled 123"></paper-input>
+					<paper-input label="this input will only let you type letters" auto-validate allowed-pattern="[a-zA-Z]"></paper-input>
+					<paper-input id="inputForValidation" required label="this input is manually validated" pattern="[a-zA-Z]*" error-message="letters only!"></paper-input>
+					<paper-button onclick="validate()" class="primary" raised>Validate!</paper-button>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Inputs can have prefixes and suffixes</h3>
+				<div class="element">
+					<paper-input label="total" type="number">
+						<div slot="prefix">$</div>
+					</paper-input>
+					<paper-input label="username" id="inputWithButton">
+						<iron-icon icon="my-icons:mail" slot="prefix"></iron-icon>
+						<div slot="suffix">@email.com</div>
+						<paper-icon-button slot="suffix" onclick="clearInput()" icon="my-icons:close" alt="clear" title="clear">
+						</paper-icon-button>
+					</paper-input>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Inputs can have custom logic</h3>
+				<div class="element">
+					<paper-input-container always-float-label auto-validate attr-for-value="value">
+						<label slot="label">Social Security Number</label>
+						<ssn-input class="paper-input-input" slot="input"></ssn-input>
+						<paper-input-error slot="add-on">SSN invalid!</paper-input-error>
+					</paper-input-container>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">You can use paper-input-container directly if you want more control over the input (for example, if you want to use this in a native form, etc.)</h3>
+				<div class="element">
+					<paper-input-container>
+						<label slot="label">This is a label</label>
+						<iron-input slot="input">
+							<input class="my-input">
+						</iron-input>
+					</paper-input-container>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Inputs can be completely restyled</h3>
+				<div class="element">
+					<div class="custom-parent">
+						<paper-input class="custom" label="Name" value="Batman" always-float-label>
+						</paper-input>
+						<paper-input class="custom" label="Address (letters only, will autovalidate)" always-float-label auto-validate pattern="[a-zA-Z]*">
+						</paper-input>
+					</div>
+				</div>
+			</div>
+		</div>
+	</template>
+	<script>
+		class MyInputs extends Polymer.Element {
+			static get is() {
+				return 'my-inputs';
+			}
+
+			validate() {
+				document.getElementById('inputForValidation').validate();
+			}
+
+			clearInput() {
+				document.getElementById('inputWithButton').value = '';
+			}
+
+			static get properties() {
+				return {};
+			}
+		}
+
+		window.customElements.define(MyInputs.is, MyInputs);
+
+	</script>
+</dom-module>

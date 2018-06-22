@@ -110,11 +110,30 @@
 				@apply --layout-center-center;
 				padding: 16px;
 			}
+      .container {
+				padding: 32px;
+				max-width: 60vw;
+				margin: 0 auto;
+      }
+      .content {
+				margin-bottom: 64px;
+      }
+      .element {
+				@apply --shadow-elevation-2dp;
+				background-color: #fff;
+				margin-top: 32px;
+				padding: 16px;
+      }
 			.title {
 				font-size: 20px;
 				text-overflow: ellipsis;
 				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
 				font-weight: 600;
+			}
+			@media (max-width: 640px) {
+				.container {
+					max-width: none;
+				}
 			}
     </style>
   </template>

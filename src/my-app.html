@@ -35,6 +35,9 @@
 <link rel="lazy-import" href="my-buttons.html">
 <link rel="lazy-import" href="my-fab.html">
 <link rel="lazy-import" href="my-iconbutton.html">
+<link rel="lazy-import" href="my-inputs.html">
+<link rel="lazy-import" href="my-items.html">
+<link rel="lazy-import" href="my-progress.html">
 <link rel="lazy-import" href="my-404.html">
 
 <link rel="lazy-import" href="my-red.html">
@@ -76,9 +79,9 @@
       :host {
         display: block;
 
-				--primary-color: #fff;
-				--light-primary-color: #fff;
-				--dark-primary-color: #fff;
+				--primary-color: var(--paper-grey-800);
+				--light-primary-color: var(--paper-grey-500);
+				--dark-primary-color: var(--paper-grey-700);
 
 				--accent-color: var(--paper-grey-700);
 				--light-accent-color: var(--paper-grey-500);
@@ -91,16 +94,15 @@
 				--paper-tabs-selection-bar-color: rgba(0,0,0,.87);
 				--paper-tab-ink: var(--light-text-color);
 
-				--paper-progress-active-color: var(--light-accent-color);
-				--paper-progress-secondary-color: var(--dark-accent-color);
-				--paper-progress-container-color: var(--accent-color);
+				--paper-progress-active-color: var(--dark-accent-color);
+				--paper-progress-secondary-color: var(--light-accent-color);
 
 				--paper-spinner-color: var(--light-accent-color);
 
 				color: var(--primary-text-color);
       }
       app-header {
-				background-color: var(--primary-color);
+				background-color: #fff;
 				color: var(--secondary-text-color);
 				--app-header-shadow: {
 					box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.2);
@@ -118,6 +120,7 @@
 				text-overflow: ellipsis;
 				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
 				font-weight: 600;
+				color: var(--dark-accent-color);
 			}
 			.iron-selected {
         color: var(--dark-accent-color);
@@ -307,6 +310,9 @@
 					<my-buttons name="buttons"></my-buttons>
 					<my-fab name="fab"></my-fab>
 					<my-iconbutton name="iconbutton"></my-iconbutton>
+					<my-inputs name="inputs"></my-inputs>
+					<my-items name="items"></my-items>
+					<my-progress name="progress"></my-progress>
 					<my-404 name="404"></my-404>
 					<my-red name="red"></my-red>
 					<my-pink name="pink"></my-pink>
@@ -362,24 +368,6 @@
 		class MyApp extends Polymer.Element {
 			static get is() {
 				return 'my-app';
-			}
-			
-			show() {
-				const animation = this.$.animatable.animate([
-					{transform:'translateY(-100%)', easing: 'ease'},
-					{transform:'translateY(0)', easing: 'ease'},
-				],
-				{
-					duration: 800,
-				});
-
-				animation.finished.then(() => {
-					this.$.animatable.style.transform = 'translateY(0)';
-				});
-			}
-
-			_computeBgClass(color) {
-				return color + '-bg';
 			}
 
 			static get properties() {
@@ -451,6 +439,24 @@
 				];
 			}
 
+			show() {
+				const animation = this.$.animatable.animate([
+					{transform:'translateY(-100%)', easing: 'ease'},
+					{transform:'translateY(0)', easing: 'ease'},
+				],
+				{
+					duration: 800,
+				});
+
+				animation.finished.then(() => {
+					this.$.animatable.style.transform = 'translateY(0)';
+				});
+			}
+
+			_computeBgClass(color) {
+				return color + '-bg';
+			}
+
 			scrollTop() {
 				var scrollDuration = 200;
 				var scrollStep = -window.scrollY / (scrollDuration / 15),
@@ -467,6 +473,14 @@
 
 			openShare() {
 				this.$.sharehome.toggle();
+			}
+
+			constructor() {
+				super();
+			}
+
+			ready() {
+				super.ready();
 			}
 
 			connectedCallback() {
