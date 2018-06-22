@@ -1,10 +1,10 @@
 [
 	{
-		"link": "colorshome",
+		"link": "colors",
 		"icon": "format-color-fill"
 	},
 	{
-		"link": "iconshome",
+		"link": "icon",
 		"icon": "tag-faces"
 	},
 	{
@@ -25,7 +25,7 @@
 	},
 	{
 		"link": "inputs",
-		"icon": "text-format"
+		"icon": "text-fields"
 	},
 	{
 		"link": "items",
@@ -33,6 +33,18 @@
 	},
 	{
 		"link": "progress",
+		"icon": "straighten"
+	},
+	{
+		"link": "slider",
 		"icon": "more-horiz"
+	},
+	{
+		"link": "spinner",
+		"icon": "refresh"
+	},
+	{
+		"link": "tabs",
+		"icon": "tab"
 	}
 ]

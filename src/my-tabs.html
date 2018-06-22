@@ -1,0 +1,208 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-tabs">
+	<template>
+    <style include="shared-styles">
+      :host {
+				display: block;
+				border-top: 1px solid #eee;
+				--paper-tabs-selection-bar-color: #fff;
+				--paper-tab-ink: #fff;
+      }
+			paper-tabs {
+				background-color: var(--paper-grey-800);
+				color: #fff;
+			}
+			paper-tabs[no-bar] paper-tab.iron-selected {
+				color: #ffff8d;
+			}
+			paper-tab {
+				padding: 0 16px
+			}
+			paper-tab[link] a {
+				/* These mixins (from iron-flex-layout) center the link text. */
+				@apply --layout-horizontal;
+				@apply --layout-center-center;
+				color: #fff;
+				text-decoration: none;
+			}
+    </style>
+		<div class="container">
+			<div class="content">
+				<h3 class="title">Plain paper-tabs</h3>
+				<div class="element">
+					<paper-tabs selected="0">
+						<paper-tab>ITEM ONE</paper-tab>
+						<paper-tab>ITEM TWO</paper-tab>
+						<paper-tab>ITEM THREE</paper-tab>
+					</paper-tabs>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">The no-bar attribute disables the selection bar</h3>
+				<div class="element">
+					<paper-tabs id="plain-tabs" selected="0" no-bar>
+						<paper-tab>ITEM ONE</paper-tab>
+						<paper-tab>ITEM TWO</paper-tab>
+						<paper-tab>ITEM THREE</paper-tab>
+					</paper-tabs>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">The no-slide attribute prevents the selection bar from animating when the selection changes</h3>
+				<div class="element">
+					<paper-tabs selected="0" no-slide>
+						<paper-tab>ITEM ONE</paper-tab>
+						<paper-tab>ITEM TWO</paper-tab>
+						<paper-tab>ITEM THREE</paper-tab>
+					</paper-tabs>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">The noink attribute disables the ink ripple animation seen when the user activates a tab (by clicking, tapping, etc.)</h3>
+				<div class="element">
+					<paper-tabs selected="0" noink>
+						<paper-tab>ITEM ONE</paper-tab>
+						<paper-tab>ITEM TWO</paper-tab>
+						<paper-tab>ITEM THREE</paper-tab>
+					</paper-tabs>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">The scrollable attribute causes the tabs to scroll, rather than compress, when there is not enough space. Arrow buttons appear when any of the tabs are not completely visible</h3>
+				<div class="element">
+					<paper-tabs selected="0" scrollable>
+						<paper-tab>NUMBER ONE ITEM</paper-tab>
+						<paper-tab>ITEM TWO</paper-tab>
+						<paper-tab>THE THIRD ITEM</paper-tab>
+						<paper-tab>THE ITEM FOUR</paper-tab>
+						<paper-tab>FIFTH</paper-tab>
+						<paper-tab>THE SIXTH TAB</paper-tab>
+						<paper-tab>NUMBER SEVEN</paper-tab>
+						<paper-tab>EIGHT</paper-tab>
+						<paper-tab>NUMBER NINE</paper-tab>
+						<paper-tab>THE TENTH</paper-tab>
+						<paper-tab>THE ITEM ELEVEN</paper-tab>
+						<paper-tab>TWELFTH ITEM</paper-tab>
+					</paper-tabs>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">The fit-container attribute causes scrollable tabs to stretch to fit their container if the tabs don't need to scroll</h3>
+				<div class="element">
+					<paper-tabs selected="0" scrollable fit-container>
+						<paper-tab>NUMBER ONE ITEM</paper-tab>
+						<paper-tab>ITEM TWO</paper-tab>
+						<paper-tab>THE THIRD ITEM</paper-tab>
+					</paper-tabs>
+					<br>
+					<paper-tabs selected="0" scrollable fit-container style="width: 50%;">
+						<paper-tab>NUMBER ONE ITEM</paper-tab>
+						<paper-tab>ITEM TWO</paper-tab>
+						<paper-tab>THE THIRD ITEM</paper-tab>
+					</paper-tabs>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Tab layout is affected by the writing direction of the surrounding area</h3>
+				<div class="element">
+					<div dir="rtl">
+						<paper-tabs selected="0">
+							<paper-tab>ITEM ONE</paper-tab>
+							<paper-tab>ITEM TWO</paper-tab>
+							<paper-tab>ITEM THREE</paper-tab>
+						</paper-tabs>
+						&nbsp;
+						<paper-tabs selected="0" scrollable>
+							<paper-tab>NUMBER ONE ITEM</paper-tab>
+							<paper-tab>ITEM TWO</paper-tab>
+							<paper-tab>THE THIRD ITEM</paper-tab>
+							<paper-tab>THE ITEM FOUR</paper-tab>
+							<paper-tab>FIFTH</paper-tab>
+							<paper-tab>THE SIXTH TAB</paper-tab>
+							<paper-tab>NUMBER SEVEN</paper-tab>
+							<paper-tab>EIGHT</paper-tab>
+							<paper-tab>NUMBER NINE</paper-tab>
+							<paper-tab>THE TENTH</paper-tab>
+							<paper-tab>THE ITEM ELEVEN</paper-tab>
+							<paper-tab>TWELFTH ITEM</paper-tab>
+						</paper-tabs>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Use the align-bottom attribute when your tabs are positioned below the content they control. The selection bar will be shown at the top of the tabs</h3>
+				<div class="element">
+					<paper-tabs selected="0" align-bottom>
+						<paper-tab>ITEM ONE</paper-tab>
+						<paper-tab>ITEM TWO</paper-tab>
+						<paper-tab>ITEM THREE</paper-tab>
+					</paper-tabs>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Use the link attribute when a paper-tab contains a link. The link will fill the entire tab. paper-tabs implements its own tabindexing and keyboard focus patterns so an anchor placed inside should set tabindex="-1"</h3>
+				<div class="element">
+					<paper-tabs selected="0">
+						<paper-tab link>
+							<a href="#item1" tabindex="-1">ITEM ONE</a>
+						</paper-tab>
+						<paper-tab link>
+							<a href="#item2" tabindex="-1">ITEM TWO</a>
+						</paper-tab>
+						<paper-tab link>
+							<a href="#item3" tabindex="-1">ITEM THREE</a>
+						</paper-tab>
+					</paper-tabs>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Use autoselect to enable automatic tab selection</h3>
+				<div class="element">
+					<paper-tabs selected="0" autoselect>
+						<paper-tab>ITEM ONE</paper-tab>
+						<paper-tab>ITEM TWO</paper-tab>
+						<paper-tab>ITEM THREE</paper-tab>
+					</paper-tabs>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Use autoselect-delay to adjust the delay between the last keyup event and when the tab is automatically selected (when autoselect is true)</h3>
+				<div class="element">
+					<h4>
+						<code>autoselect-delay="0"</code>
+					</h4>
+					<paper-tabs selected="0" no-slide autoselect autoselect-delay="0">
+						<paper-tab>ITEM ONE</paper-tab>
+						<paper-tab>ITEM TWO</paper-tab>
+						<paper-tab>ITEM THREE</paper-tab>
+					</paper-tabs>
+					<h4>
+						<code>autoselect-delay="1000"</code>
+					</h4>
+					<paper-tabs selected="0" autoselect autoselect-delay="1000">
+						<paper-tab>ITEM ONE</paper-tab>
+						<paper-tab>ITEM TWO</paper-tab>
+						<paper-tab>ITEM THREE</paper-tab>
+					</paper-tabs>
+				</div>
+			</div>
+		</div>
+	</template>
+	<script>
+		class MyTabs extends Polymer.Element {
+			static get is() {
+				return 'my-tabs';
+			}
+
+			static get properties() {
+				return {};
+			}
+		}
+
+		window.customElements.define(MyTabs.is, MyTabs);
+
+	</script>
+</dom-module>

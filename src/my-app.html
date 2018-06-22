@@ -29,8 +29,8 @@
 <link rel="import" href="shared-styles.html">
 <link rel="import" href="app-styles.html">
 
-<link rel="lazy-import" href="my-colorshome.html">
-<link rel="lazy-import" href="my-iconshome.html">
+<link rel="lazy-import" href="my-colors.html">
+<link rel="lazy-import" href="my-icon.html">
 <link rel="lazy-import" href="my-shadow.html">
 <link rel="lazy-import" href="my-buttons.html">
 <link rel="lazy-import" href="my-fab.html">
@@ -38,6 +38,9 @@
 <link rel="lazy-import" href="my-inputs.html">
 <link rel="lazy-import" href="my-items.html">
 <link rel="lazy-import" href="my-progress.html">
+<link rel="lazy-import" href="my-slider.html">
+<link rel="lazy-import" href="my-tabs.html">
+<link rel="lazy-import" href="my-spinner.html">
 <link rel="lazy-import" href="my-404.html">
 
 <link rel="lazy-import" href="my-red.html">
@@ -141,6 +144,9 @@
 				background-color: #fff !important;
 				color: var(--paper-grey-500);
 			}
+      paper-tabs {
+        height: 100%;
+      }
 			.flexchild {
 				@apply --layout-flex;
 			}
@@ -244,8 +250,8 @@
 				</app-toolbar>
 				<app-toolbar class="sticky-nav" sticky>
 					<paper-tabs id="colors-nav" selected="[[page]]" attr-for-selected="id" autoselect on-click="scrollTop" scrollable fit-container>
-						<paper-tab id="colorshome">
-							<a href="colorshome" tabindex="-1">
+						<paper-tab id="colors">
+							<a href="colors" tabindex="-1">
 								<iron-icon icon="my-icons:home"></iron-icon>
 							</a>
 						</paper-tab>
@@ -272,8 +278,8 @@
 						</template>
 					</paper-tabs>
 					<paper-tabs id="icons-nav" selected="[[page]]" attr-for-selected="id" autoselect on-click="scrollTop" scrollable fit-container>
-						<paper-tab id="iconshome">
-							<a href="iconshome" tabindex="-1">
+						<paper-tab id="icon">
+							<a href="icon" tabindex="-1">
 								<iron-icon icon="my-icons:home"></iron-icon>
 							</a>
 						</paper-tab>
@@ -304,8 +310,8 @@
 			</app-header>
 			<div class="pages">
 				<neon-animated-pages selected="[[page]]" attr-for-selected="name" fallback-selection="404" role="main" entry-animation="fade-in-animation" exit-animation="fade-out-animation">
-					<my-colorshome name="colorshome"></my-colorshome>
-					<my-iconshome name="iconshome"></my-iconshome>
+					<my-colors name="colors"></my-colors>
+					<my-icon name="icon"></my-icon>
 					<my-shadow name="shadow"></my-shadow>
 					<my-buttons name="buttons"></my-buttons>
 					<my-fab name="fab"></my-fab>
@@ -313,6 +319,9 @@
 					<my-inputs name="inputs"></my-inputs>
 					<my-items name="items"></my-items>
 					<my-progress name="progress"></my-progress>
+					<my-slider name="slider"></my-slider>
+					<my-spinner name="spinner"></my-spinner>
+					<my-tabs name="tabs"></my-tabs>
 					<my-404 name="404"></my-404>
 					<my-red name="red"></my-red>
 					<my-pink name="pink"></my-pink>
@@ -352,7 +361,7 @@
 					&copy; 2018 Liyas Thomas
 				</div>
 				<div>
-					<a href="https://liyas-thomas.firebaseapp.com" target="_blank">
+					<a href="about">
 						<paper-icon-button icon="my-icons:info-outline"></paper-icon-button>
 					</a>
 					<paper-icon-button icon="my-icons:share" on-tap="openShare"></paper-icon-button>
@@ -493,7 +502,7 @@
 			_routePageChanged(page) {
 				// If no page was found in the route data, page will be an empty string.
 				// Default to 'home' in that case.
-				this.page = page || 'colorshome';
+				this.page = page || 'colors';
 
 				// Close a non-persistent drawer when the page & route are changed.
 				//				if (!this.$.drawer.persistent) {

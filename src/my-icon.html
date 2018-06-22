@@ -1,6 +1,6 @@
 <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="shared-styles.html">
-<dom-module id="my-iconshome">
+<dom-module id="my-icon">
 	<template>
     <style include="shared-styles">
       :host {
@@ -54,9 +54,9 @@
 		</div>
 	</template>
 	<script>
-		class Iconshome extends Polymer.Element {
+		class Icon extends Polymer.Element {
 			static get is() {
-				return 'my-iconshome';
+				return 'my-icon';
 			}
 
 			static get properties() {
@@ -64,7 +64,7 @@
 			}
 		}
 
-		window.customElements.define(Iconshome.is, Iconshome);
+		window.customElements.define(Icon.is, Icon);
 
 	</script>
 </dom-module>

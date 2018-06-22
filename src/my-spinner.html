@@ -1,0 +1,69 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-spinner/paper-spinner.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-spinner">
+	<template>
+    <style include="shared-styles">
+      :host {
+				display: block;
+				border-top: 1px solid #eee;
+      }
+			paper-spinner, paper-spinner-lite {
+				margin: 16px;
+			}
+			paper-spinner.multi {
+				--paper-spinner-layer-1-color: var(--paper-purple-500);
+				--paper-spinner-layer-2-color: var(--paper-cyan-500);
+				--paper-spinner-layer-3-color: var(--paper-blue-grey-500);
+				--paper-spinner-layer-4-color: var(--paper-amber-500);
+			}
+			paper-spinner-lite.orange {
+				--paper-spinner-color: var(--google-yellow-500);
+			}
+			paper-spinner-lite.green {
+				--paper-spinner-color: var(--google-green-500);
+			}
+			paper-spinner-lite.thin {
+				--paper-spinner-stroke-width: 1px;
+			}
+			paper-spinner-lite.thick {
+				--paper-spinner-stroke-width: 6px;
+			}
+    </style>
+		<div class="container">
+			<div class="content">
+				<h3 class="title">Spinners can be deactivated or activated</h3>
+				<div class="element">
+					<paper-spinner active></paper-spinner>
+					<paper-spinner-lite active></paper-spinner-lite>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Spinners can be styled using custom properties</h3>
+				<div class="element">
+					<paper-spinner class="multi" active></paper-spinner>
+					<paper-spinner-lite class="orange" active></paper-spinner-lite>
+					<paper-spinner-lite class="green" active></paper-spinner-lite>
+					<paper-spinner-lite class="thin" active></paper-spinner-lite>
+					<paper-spinner-lite class="thick" active></paper-spinner-lite>
+				</div>
+			</div>
+		</div>
+	</template>
+	<script>
+		class MySpinner extends Polymer.Element {
+			static get is() {
+				return 'my-spinner';
+			}
+
+			static get properties() {
+				return {};
+			}
+		}
+
+		window.customElements.define(MySpinner.is, MySpinner);
+
+	</script>
+</dom-module>
