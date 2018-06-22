@@ -1,0 +1,91 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-fab/paper-fab.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-fab">
+	<template>
+    <style include="shared-styles">
+      :host {
+				display: block;
+				border-top: 1px solid #eee;
+      }
+      .container {
+				padding: 32px;
+      }
+      .content {
+				margin-bottom: 64px;
+      }
+      .element {
+				@apply --shadow-elevation-2dp;
+				background-color: #fff;
+				margin-top: 32px;
+				padding: 16px;
+      }
+			paper-fab {
+				margin: 8px;
+				display: inline-flex;
+			}
+			paper-fab.blue {
+				--paper-fab-background: var(--paper-light-blue-500);
+				--paper-fab-keyboard-focus-background: var(--paper-light-blue-900);
+			}
+			paper-fab.orange {
+				--paper-fab-background: var(--paper-orange-500);
+				--paper-fab-keyboard-focus-background: var(--paper-orange-900);
+			}
+    </style>
+		<div class="container">
+			<div class="content">
+				<h3 class="title">FABs can be enabled or disabled</h3>
+				<div class="element">
+					<paper-fab icon="my-icons:favorite" title="heart"></paper-fab>
+					<paper-fab disabled icon="my-icons:reply" title="reply"></paper-fab>
+					<paper-fab class="label" label="L" title="heart eyes cat"></paper-fab>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">FABs can be made smaller using the mini attribute</h3>
+				<div class="element">
+					<paper-fab mini icon="my-icons:favorite" title="heart"></paper-fab>
+					<paper-fab mini disabled icon="my-icons:reply" title="reply"></paper-fab>
+					<paper-fab mini class="label" label="L" title="heart eyes cat"></paper-fab>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">FABs can hide the ripple effect using the noink attribute</h3>
+				<div class="element">
+					<paper-fab noink icon="my-icons:favorite" title="heart"></paper-fab>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">FABs can be styled using custom properties</h3>
+				<div class="element">
+					<paper-fab icon="my-icons:favorite" title="heart" class="blue"></paper-fab>
+					<paper-fab icon="my-icons:favorite" title="heart" class="orange"></paper-fab>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">FABs can be used as a link</h3>
+				<div class="element">
+					<a href="https://liyas-thomas.firebaseapp.com" tabindex="-1">
+						<paper-fab icon="my-icons:favorite"></paper-fab>
+					</a>
+				</div>
+			</div>
+		</div>
+	</template>
+	<script>
+		class MyFab extends Polymer.Element {
+			static get is() {
+				return 'my-fab';
+			}
+
+			static get properties() {
+				return {};
+			}
+		}
+
+		window.customElements.define(MyFab.is, MyFab);
+
+	</script>
+</dom-module>

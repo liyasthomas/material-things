@@ -1,0 +1,26 @@
+[
+	{
+		"link": "colorshome",
+		"icon": "format-color-fill"
+	},
+	{
+		"link": "iconshome",
+		"icon": "tag-faces"
+	},
+	{
+		"link": "shadow",
+		"icon": "layers"
+	},
+	{
+		"link": "buttons",
+		"icon": "bookmark-border"
+	},
+	{
+		"link": "fab",
+		"icon": "favorite-border"
+	},
+	{
+		"link": "iconbutton",
+		"icon": "radio-button-checked"
+	}
+]

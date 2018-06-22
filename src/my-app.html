@@ -8,7 +8,7 @@
 <link rel="import" href="../bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
 <link rel="import" href="../bower_components/app-layout/app-toolbar/app-toolbar.html">
 
-<!--<link rel="import" href="../bower_components/iron-media-query/iron-media-query.html">-->
+<link rel="import" href="../bower_components/iron-media-query/iron-media-query.html">
 <link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../bower_components/iron-selector/iron-selector.html">
 
@@ -33,6 +33,8 @@
 <link rel="lazy-import" href="my-iconshome.html">
 <link rel="lazy-import" href="my-shadow.html">
 <link rel="lazy-import" href="my-buttons.html">
+<link rel="lazy-import" href="my-fab.html">
+<link rel="lazy-import" href="my-iconbutton.html">
 <link rel="lazy-import" href="my-404.html">
 
 <link rel="lazy-import" href="my-red.html">
@@ -104,7 +106,7 @@
 					box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.2);
 				};
       }
-			.sticky-nav {
+			.sticky-nav, .tab-nav {
 				padding: 0;
 			}
 			#colors-nav, #icons-nav, #page-nav {
@@ -179,7 +181,7 @@
         data="{{routeData}}"
         tail="{{subroute}}">
     </app-route>
-<!--		<iron-media-query query="min-width: 641px" query-matches="{{wideLayout}}"></iron-media-query>-->
+		<iron-media-query query="min-width: 641px" query-matches="{{wideLayout}}"></iron-media-query>
 		<paper-toast id="updateToast" duration="3000" text="App cached. Browse offline!">
 			<paper-button onclick="window.location.reload(true)" class="toast-button">Okay</paper-button>
 		</paper-toast>
@@ -209,32 +211,32 @@
 		<app-header-layout fullbleed>
 			<app-header id="animatable" slot="header" fixed condenses reveals effects="waterfall" class$="[[_computeBgClass(page)]]">
 				<app-toolbar class="tab-nav">
-					<paper-tabs selected="[[page]]" attr-for-selected="id" autoselect no-bar on-click="scrollTop">
-						<paper-tab id="colorshome">
-							<a href="colorshome" tabindex="-1">
-								<iron-icon icon="my-icons:format-color-fill"></iron-icon>
-							</a>
-						</paper-tab>
-						<paper-tab id="iconshome">
-							<a href="iconshome" tabindex="-1">
-								<iron-icon icon="my-icons:tag-faces"></iron-icon>
-							</a>
-						</paper-tab>
-						<paper-tab id="shadow">
-							<a href="shadow" tabindex="-1">
-								<iron-icon icon="my-icons:layers"></iron-icon>
-							</a>
-						</paper-tab>
-						<paper-tab id="buttons">
-							<a href="buttons" tabindex="-1">
-								<iron-icon icon="my-icons:play-arrow"></iron-icon>
-							</a>
-						</paper-tab>
+					<paper-tabs id="main-nav" selected="[[page]]" attr-for-selected="id" autoselect on-click="scrollTop" no-bar scrollable$={{!wideLayout}} fit-container$={{!wideLayout}}>
+						<iron-ajax auto url="data/home_feeds.json" id="ajax0" loading="{{loading0}}" handle-as="json" last-error="{{error0}}" last-response="{{ajaxResponse0}}">
+						</iron-ajax>
+						<template is="dom-if" if="{{loading0}}">
+							<div class="actions" hidden$="[[!loading0]]">
+								<paper-spinner-lite active$="[[loading0]]"></paper-spinner-lite>
+							</div>
+						</template>
+						<template is="dom-if" if="{{error0}}">
+							<div class="error">
+								<div>Failed to load feeds.</div>
+								<div>Make sure you're connected to internet.</div>
+								<a href="javascript:location.reload();"><paper-icon-button icon="my-icons:refresh"></paper-icon-button></a>
+							</div>
+						</template>
+						<template is="dom-repeat" items="[[ajaxResponse0]]">
+							<paper-tab id="{{item.link}}">
+								<a href="{{item.link}}" tabindex="-1">
+									<iron-icon icon="my-icons:{{item.icon}}"></iron-icon>
+								</a>
+							</paper-tab>
+						</template>
 					</paper-tabs>
-					<div main-title></div>
-					<paper-icon-button icon="my-icons:share" on-tap="openShare"></paper-icon-button>
-					<template is="dom-if" if="{{loading1}}">
-						<paper-progress indeterminate active$="[[loading1]]" top-item></paper-progress>
+<!--					<div main-title></div>-->
+					<template is="dom-if" if="{{loading0}}">
+						<paper-progress indeterminate active$="[[loading0]]" top-item></paper-progress>
 					</template>
 				</app-toolbar>
 				<app-toolbar class="sticky-nav" sticky>
@@ -303,6 +305,8 @@
 					<my-iconshome name="iconshome"></my-iconshome>
 					<my-shadow name="shadow"></my-shadow>
 					<my-buttons name="buttons"></my-buttons>
+					<my-fab name="fab"></my-fab>
+					<my-iconbutton name="iconbutton"></my-iconbutton>
 					<my-404 name="404"></my-404>
 					<my-red name="red"></my-red>
 					<my-pink name="pink"></my-pink>
@@ -345,6 +349,7 @@
 					<a href="https://liyas-thomas.firebaseapp.com" target="_blank">
 						<paper-icon-button icon="my-icons:info-outline"></paper-icon-button>
 					</a>
+					<paper-icon-button icon="my-icons:share" on-tap="openShare"></paper-icon-button>
 				</div>
 			</footer>
 		</app-header-layout>

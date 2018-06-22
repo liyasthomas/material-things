@@ -1,0 +1,99 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-iconbutton">
+	<template>
+    <style include="shared-styles">
+      :host {
+				display: block;
+				border-top: 1px solid #eee;
+      }
+      .container {
+				padding: 32px;
+      }
+      .content {
+				margin-bottom: 64px;
+      }
+      .element {
+				@apply --shadow-elevation-2dp;
+				background-color: #fff;
+				margin-top: 32px;
+				padding: 16px;
+      }
+			paper-icon-button {
+				margin: 8px;
+			}
+			paper-icon-button.pink {
+				color: var(--paper-pink-500);
+				--paper-icon-button-ink-color: var(--paper-indigo-500);
+			}
+			paper-icon-button.pink:hover {
+				background-color: var(--paper-pink-500);
+				color: white;
+			}
+			paper-icon-button.blue {
+				--paper-icon-button-ink-color: var(--paper-orange-500);
+				background-color: var(--paper-light-blue-500);
+				color: white;
+				border-radius: 3px;
+				padding: 2px;
+			}
+			paper-icon-button.giant {
+				width: 100px;
+				height: 100px;
+			}
+    </style>
+		<div class="container">
+			<div class="content">
+				<h3 class="title">Buttons can use iron-icons or external images, and can be disabled</h3>
+				<div class="element">
+					<paper-icon-button icon="my-icons:favorite" title="heart"></paper-icon-button>
+					<paper-icon-button src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" alt="octocat" title="octocat"></paper-icon-button>
+					<paper-icon-button disabled icon="my-icons:favorite-border" title="reply"></paper-icon-button>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Buttons can hide the ripple effect using the noink attribute</h3>
+				<div class="element">
+					<paper-icon-button noink icon="my-icons:content-copy" title="find"></paper-icon-button>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Buttons can be styled using regular CSS and custom properties</h3>
+				<div class="element">
+					<paper-icon-button icon="my-icons:favorite" title="heart" class="pink"></paper-icon-button>
+					<paper-icon-button icon="my-icons:face" title="take off" class="blue"></paper-icon-button>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Buttons can be resized</h3>
+				<div class="element">
+					<paper-icon-button icon="my-icons:bubble-chart" title="wake up" class="giant"></paper-icon-button>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Buttons can be used as a link</h3>
+				<div class="element">
+					<a href="https://www.polymer-project.org" tabindex="-1">
+						<paper-icon-button icon="my-icons:polymer"></paper-icon-button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</template>
+	<script>
+		class MyIconbutton extends Polymer.Element {
+			static get is() {
+				return 'my-iconbutton';
+			}
+
+			static get properties() {
+				return {};
+			}
+		}
+
+		window.customElements.define(MyIconbutton.is, MyIconbutton);
+
+	</script>
+</dom-module>
