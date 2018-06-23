@@ -1,9 +1,8 @@
-var CACHE_NAME = 'mat-colors-cache';
+var CACHE_NAME = 'material-things-cache';
 var urlsToCache = [
   '/',
   '/index.html',
-  '/src/my-app.html',
-  '/src/my-about.html'
+  '/src/my-app.html'
 ];
 
 self.addEventListener('install', function (event) {

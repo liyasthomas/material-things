@@ -6,15 +6,12 @@
     <style include="shared-styles">
       :host {
 				display: block;
-				border-top: 1px solid #eee;
       }
-      div {
-        display: flex;
-        background: #fff;
-        margin: 64px auto;
-        padding: 32px;
-        border-radius: 2px;
-				max-width: 60vw;
+      .material {
+				border-radius: 4px;
+				background-color: #fff;
+				margin-top: 32px;
+				padding: 32px;
       }
 			.dp2 {
 				@apply --shadow-elevation-2dp;				
@@ -40,22 +37,54 @@
 			.dp24 {
 				@apply --shadow-elevation-24dp;				
 			}
-			@media (max-width: 640px) {
-				div {
-					margin: 64px 32px;
-					max-width: none;
-				}
-			}
     </style>
-		<div class="dp0">0dp</div>
-		<div class="dp2">2dp</div>
-		<div class="dp3">3dp</div>
-		<div class="dp4">4dp</div>
-		<div class="dp6">6dp</div>
-		<div class="dp8">8dp</div>
-		<div class="dp12">12dp</div>
-		<div class="dp16">16dp</div>
-		<div class="dp24">24dp</div>
+		<div class="container">
+			<div class="content">
+				<div class="material">
+					0dp
+				</div>
+			</div>
+			<div class="content">
+				<div class="material dp2">
+					2dp
+				</div>
+			</div>
+			<div class="content">
+				<div class="material dp3">
+					3dp
+				</div>
+			</div>
+			<div class="content">
+				<div class="material dp4">
+					4dp
+				</div>
+			</div>
+			<div class="content">
+				<div class="material dp6">
+					6dp
+				</div>
+			</div>
+			<div class="content">
+				<div class="material dp8">
+					8dp
+				</div>
+			</div>
+			<div class="content">
+				<div class="material dp12">
+					12dp
+				</div>
+			</div>
+			<div class="content">
+				<div class="material dp16">
+					16dp
+				</div>
+			</div>
+			<div class="content">
+				<div class="material dp24">
+					24dp
+				</div>
+			</div>
+		</div>
 	</template>
 	<script>
 		class MyShadow extends Polymer.Element {
