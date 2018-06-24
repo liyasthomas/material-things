@@ -13,15 +13,15 @@
 	},
 	{
 		"link": "buttons",
-		"icon": "bookmark-border"
+		"icon": "note"
 	},
 	{
 		"link": "fab",
-		"icon": "favorite-border"
+		"icon": "favorite"
 	},
 	{
 		"link": "iconbutton",
-		"icon": "radio-button-checked"
+		"icon": "bubble-chart"
 	},
 	{
 		"link": "inputs",
@@ -32,8 +32,12 @@
 		"icon": "list"
 	},
 	{
+		"link": "menu",
+		"icon": "menu"
+	},
+	{
 		"link": "progress",
-		"icon": "straighten"
+		"icon": "remove"
 	},
 	{
 		"link": "slider",

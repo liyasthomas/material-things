@@ -1,0 +1,154 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-menu-button/paper-menu-button.html">
+<link rel="import" href="../bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-menu">
+	<template>
+    <style include="shared-styles">
+      :host {
+				display: block;
+      }
+      iron-image {
+        padding: 16px;
+      }
+    </style>
+		<div class="container">
+			<div class="content">
+				<h3 class="title">Icon Button + Menu</h3>
+				<div class="element">
+					<paper-menu-button>
+						<paper-icon-button icon="my-icons:menu" slot="dropdown-trigger" alt="menu"></paper-icon-button>
+						<paper-listbox slot="dropdown-content">
+							<paper-item>alpha</paper-item>
+							<paper-item>beta</paper-item>
+							<paper-item>gamma</paper-item>
+							<paper-item>delta</paper-item>
+							<paper-item>epsilon</paper-item>
+						</paper-listbox>
+					</paper-menu-button>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Menu with multi selection</h3>
+				<div class="element">
+					<paper-menu-button ignore-select>
+						<paper-icon-button icon="my-icons:menu" slot="dropdown-trigger" alt="multi menu"></paper-icon-button>
+						<paper-listbox slot="dropdown-content" multi>
+							<paper-item>alpha</paper-item>
+							<paper-item>beta</paper-item>
+							<paper-item>gamma</paper-item>
+							<paper-item>delta</paper-item>
+							<paper-item>epsilon</paper-item>
+						</paper-listbox>
+					</paper-menu-button>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Disabled</h3>
+				<div class="element">
+					<paper-menu-button disabled>
+						<paper-icon-button icon="my-icons:menu" slot="dropdown-trigger" alt="menu"></paper-icon-button>
+						<paper-listbox slot="dropdown-content">
+							<paper-item>alpha</paper-item>
+							<paper-item>beta</paper-item>
+							<paper-item>gamma</paper-item>
+							<paper-item>delta</paper-item>
+							<paper-item>epsilon</paper-item>
+						</paper-listbox>
+					</paper-menu-button>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Alternate Alignment</h3>
+				<div class="element">
+					<paper-menu-button vertical-align="bottom" horizontal-align="right">
+						<paper-icon-button icon="my-icons:menu" slot="dropdown-trigger" alt="bottom align"></paper-icon-button>
+						<paper-listbox slot="dropdown-content">
+							<paper-item>alpha</paper-item>
+							<paper-item>beta</paper-item>
+							<paper-item>gamma</paper-item>
+							<paper-item>delta</paper-item>
+							<paper-item>epsilon</paper-item>
+						</paper-listbox>
+					</paper-menu-button>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Alternate Button</h3>
+				<div class="element"><paper-menu-button>
+					<paper-button slot="dropdown-trigger" raised>
+						<span>Dinosaurs</span>
+						<iron-icon icon="my-icons:done"></iron-icon>
+					</paper-button>
+					<paper-listbox slot="dropdown-content">
+						<template is="dom-repeat" items="[[dinosaur]]">
+							<paper-item>[[item.title]]</paper-item>
+						</template>
+					</paper-listbox>
+				</paper-menu-button>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Alternate Content</h3>
+				<div class="element">
+					<paper-menu-button vertical-align="bottom">
+						<paper-icon-button slot="dropdown-trigger" icon="my-icons:polymer" alt="polymer"></paper-icon-button>
+						<iron-image slot="dropdown-content" src="../images/manifest/icon-192x192.png"></iron-image>
+					</paper-menu-button>
+				</div>
+			</div>
+		</div>
+	</template>
+	<script>
+		class MyMenu extends Polymer.Element {
+			static get is() {
+				return 'my-menu';
+			}
+
+			static get properties() {
+				return {
+					dinosaur: {
+						type: Array,
+						value: function() {
+							return [
+								{"title": "allosaurus"},
+								{"title": "brontosaurus"},
+								{"title": "carcharodontosaurus"},
+								{"title": "diplodocus"},
+								{"title": "ekrixinatosaurus"},
+								{"title": "fukuiraptor"},
+								{"title": "gallimimus"},
+								{"title": "hadrosaurus"},
+								{"title": "iguanodon"},
+								{"title": "jainosaurus"},
+								{"title": "kritosaurus"},
+								{"title": "liaoceratops"},
+								{"title": "megalosaurus"},
+								{"title": "nemegtosaurus"},
+								{"title": "ornithomimus"},
+								{"title": "protoceratops"},
+								{"title": "quetecsaurus"},
+								{"title": "rajasaurus"},
+								{"title": "stegosaurus"},
+								{"title": "triceratops"},
+								{"title": "utahraptor"},
+								{"title": "vulcanodon"},
+								{"title": "wannanosaurus"},
+								{"title": "xenoceratops"},
+								{"title": "yandusaurus"},
+								{"title": "zephyrosauru"}
+							]
+						}
+					}
+				};
+			}
+		}
+
+		window.customElements.define(MyMenu.is, MyMenu);
+
+	</script>
+</dom-module>

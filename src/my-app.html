@@ -38,6 +38,7 @@
 <link rel="lazy-import" href="my-iconbutton.html">
 <link rel="lazy-import" href="my-inputs.html">
 <link rel="lazy-import" href="my-items.html">
+<link rel="lazy-import" href="my-menu.html">
 <link rel="lazy-import" href="my-progress.html">
 <link rel="lazy-import" href="my-slider.html">
 <link rel="lazy-import" href="my-tabs.html">
@@ -319,6 +320,7 @@
 					<my-iconbutton name="iconbutton"></my-iconbutton>
 					<my-inputs name="inputs"></my-inputs>
 					<my-items name="items"></my-items>
+					<my-menu name="menu"></my-menu>
 					<my-progress name="progress"></my-progress>
 					<my-slider name="slider"></my-slider>
 					<my-spinner name="spinner"></my-spinner>
@@ -400,7 +402,8 @@
 					social: {
 						type: Array,
 						value: function() {
-							return [{
+							return [
+								{
 									link: "https://www.facebook.com/liyasthomas",
 									icon: "facebook"
 								},
