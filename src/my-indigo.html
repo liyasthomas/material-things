@@ -37,8 +37,17 @@
 					<iron-icon icon="my-icons:content-copy" item-icon slot="item-icon"></iron-icon>
 					<span class="name">{{item.title}}</span>
 					<p id="message"><span class="hex">{{item.color}}</span></p>
+					<div class="code">
+						<paper-icon-button icon="my-icons:code" data-index$="[[index]]" on-click="_toggleInfo"></paper-icon-button>
+					</div>
 					<paper-ripple></paper-ripple>
 				</paper-icon-item>
+				<iron-collapse id$="collapse[[index]]">
+					<div class$="[[_computeBgClass(item.mode)]] snip" style="background-color: {{item.color}}">
+					background-color: var(--paper-indigo-{{item.title}});
+					/* {{item.color}} */
+					</div>
+				</iron-collapse>
 			</template>
 		</paper-listbox>
 	</template>
@@ -50,6 +59,11 @@
 
 			_computeBgClass(color) {
 				return color + '-bg';
+			}
+
+			_toggleInfo(e) {
+				var collapseElem = this.shadowRoot.querySelector('#collapse'+e.currentTarget.dataset.index);
+				collapseElem.toggle();
 			}
 
 			static get properties() {

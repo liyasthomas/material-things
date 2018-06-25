@@ -181,50 +181,6 @@
 					width: 100%;
 				}
 			}
-			
-			
-			
-        #search {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flexbox;
-            display: -o-flex;
-            display: flex;
-            -webkit-box-align: center;
-            -webkit-align-items: center;
-            -moz-align-items: center;
-            -ms-align-items: center;
-            -o-align-items: center;
-            align-items: center;
-            -webkit-box-flex: 1;
-            -webkit-flex: 0 0 auto;
-            -moz-flex: 0 0 auto;
-            -ms-flex: 0 0 auto;
-            -o-flex: 0 0 auto;
-            flex: 0 0 auto;
-					flex-shrink: none;
-            width: 40px;
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-            background-color: #eee;
-        }
-
-        #search[show] {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            padding: 0 16px;
-            margin-left: 0
-        }
-
-        #search[show] input {
-            padding: 16px;
-            visibility: visible
-        }
     </style>
 		<style is="custom-style" include="app-styles"></style>
     <app-location
@@ -262,7 +218,9 @@
 				</div>
 			</div>
 		</paper-toast>
-		<paper-toast id="ready_toast" duration="5000" text="Click on any tile to copy the code to clipboard!"></paper-toast>
+		<paper-toast id="ready_toast" duration="5000" text="">
+			<span>Click on <paper-icon-button icon="my-icons:code"></paper-icon-button> to view the code. Click on <paper-icon-button icon="my-icons:content-copy"></paper-icon-button> to copy code to clipboard!</span>
+		</paper-toast>
 		<!-- Main content -->
 		<app-header-layout fullbleed>
 			<app-header id="animatable" slot="header" fixed condenses reveals effects="waterfall" class$="[[_computeBgClass(page)]]">
@@ -291,13 +249,6 @@
 						</template>
 					</paper-tabs>
 					<div main-title></div>
-					
-					
-        <div id="search" show$="{{show}}" on-click="toggleSearch">
-            <paper-icon-button icon="my-icons:search"></paper-icon-button>
-            <input is="iron-input" bind-value="{{searchInput}}" type="search" id="input" on-keyup="onKeyPress" autocomplete="off">
-        </div>
-					
 					<template is="dom-if" if="{{loading0}}">
 						<paper-progress indeterminate active$="[[loading0]]" top-item></paper-progress>
 					</template>
@@ -451,14 +402,6 @@
 //						type: Boolean,
 //						reflectToAttribute: true
 //					},
-					show: {
-							type: Boolean,
-							value: false
-					},
-					searchInput: {
-							type: String,
-							value: ''
-					},
 					social: {
 						type: Array,
 						value: function() {
@@ -504,29 +447,6 @@
 					// Polymer.Element#rootPath
 					rootPath: String,
 				};
-			}
-			
-			toggleSearch(e) {
-					if (e) { // comes first
-							e.stopPropagation();
-					}
-					if (e.target === this.$.input) {
-							return;
-					}
-					this.show = !this.show;
-					this.async(function() {
-							this.$.input.focus();
-					});
-			}
-
-			onKeyPress(e) {
-					if (e.keyCode == 13) { // Enter
-							var q = this.searchInput;
-							//q = 'site:mysite.com+' + q; // edit site here
-							window.open('https://www.google.com/search?q=' + q);
-							this.show = false;
-							this.searchInput = '';
-					}
 			}
 
 			static get observers() {
