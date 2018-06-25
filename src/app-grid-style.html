@@ -5,7 +5,7 @@
       paper-icon-item {
 				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
 				font-weight: 500;
-				padding: 32px 16px;
+				padding: 24px 16px;
 				cursor: pointer;
       }
 			.dark-bg {
@@ -14,12 +14,30 @@
 			.light-bg {
 				color: rgba(0,0,0,.87);
 			}
+			.dark-bg paper-ripple {
+				color: rgba(255,255,255,.3);
+			}
+			.light-bg paper-ripple {
+				color: rgba(0,0,0,.3);
+			}
 			.name {
+				font-weight: 600;
 				text-transform: uppercase;
 			}
 			.hex {
 				margin-left: 32px;
 				text-transform: uppercase;
+			}
+			.snip {
+				padding: 24px;
+				font-size: 16px;
+				font-family: 'Roboto Mono', 'Consolas', monospace;
+			}
+			.dark-bg.snip {
+				color: rgba(255,255,255,.7);
+			}
+			.light-bg.snip {
+				color: rgba(0,0,0,.7);
 			}
 			@media (max-width: 640px) {
 				paper-ripple {

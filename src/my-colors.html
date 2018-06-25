@@ -35,7 +35,7 @@
 			<template is="dom-repeat" items="[[ajaxResponse]]">
 				<a href="{{item.link}}">
 					<paper-icon-item id="{{item.title}}" class$="[[_computeBgClass(item.mode)]]" style="background-color: {{item.color}}">
-						<iron-icon icon="my-icons:format-color-fill" item-icon slot="item-icon"></iron-icon>
+						<paper-icon-button icon="my-icons:format-color-fill" item-icon slot="item-icon"></paper-icon-button>
 						<span class="name">{{item.title}}</span>
 						<p id="message"><span class="hex">{{item.color}}</span></p>
 						<paper-ripple></paper-ripple>

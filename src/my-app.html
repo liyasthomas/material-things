@@ -125,7 +125,6 @@
 				text-transform: capitalize;
 				text-overflow: ellipsis;
 				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
-				font-weight: 600;
 				color: var(--dark-accent-color);
 			}
 			.iron-selected {
@@ -248,13 +247,12 @@
 							</paper-tab>
 						</template>
 					</paper-tabs>
-					<div main-title></div>
 					<template is="dom-if" if="{{loading0}}">
 						<paper-progress indeterminate active$="[[loading0]]" top-item></paper-progress>
 					</template>
 				</app-toolbar>
 				<app-toolbar class="sticky-nav" sticky>
-					<paper-tabs id="colors-nav" selected="[[page]]" attr-for-selected="id" autoselect on-click="scrollTop" scrollable fit-container>
+					<paper-tabs id="colors-nav" selected="[[page]]" attr-for-selected="id" autoselect scrollable fit-container>
 						<paper-tab id="colors">
 							<a href="colors" tabindex="-1">
 								<iron-icon icon="my-icons:home"></iron-icon>
@@ -282,7 +280,7 @@
 							</paper-tab>
 						</template>
 					</paper-tabs>
-					<paper-tabs id="icons-nav" selected="[[page]]" attr-for-selected="id" autoselect on-click="scrollTop" scrollable fit-container>
+					<paper-tabs id="icons-nav" selected="[[page]]" attr-for-selected="id" autoselect scrollable fit-container>
 						<paper-tab id="icon">
 							<a href="icon" tabindex="-1">
 								<iron-icon icon="my-icons:home"></iron-icon>
