@@ -3,8 +3,8 @@
 	"short_name": "Material Things",
 	"start_url": "/",
 	"display": "standalone",
-	"theme_color": "#000",
-	"background_color": "#fff",
+	"theme_color": "#202124",
+	"background_color": "#202124",
 	"icons": [
 		{
 			"src": "images/manifest/icon-512x512.png",

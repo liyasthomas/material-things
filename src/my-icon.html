@@ -15,7 +15,7 @@
 				@apply --layout-vertical;
 				@apply --layout-center-center;
 				flex: 1;
-        padding: 32px;
+        padding: 16px;
       }
 			.set div {
 				@apply --layout-flex;
@@ -24,6 +24,23 @@
 				font-size: 12px;
 			}
     </style>
+		<div class="container">
+			<div class="content">
+				<div class="actions">
+					<iron-image preload fade sizing="contain" class="icon" src="../images/assets/feeds/ic_icons_192px_light.svg" alt="Icons"></iron-image>
+				</div>
+				<h2 class="title">Icons</h2>
+				<p class="description">
+					Material icons are delightful, beautifully crafted symbols for common actions and items. Download on desktop to use them in your digital products for Android, iOS, and web.
+				</p>
+				<p>
+					<a href="https://github.com/google/material-design-icons"><paper-icon-button src="../images/assets/social/github.svg"></paper-icon-button></a>
+					<a href="https://google.github.io/material-design-icons/"><paper-icon-button icon="my-icons:code"></paper-icon-button></a>
+					<a href="https://www.apache.org/licenses/LICENSE-2.0.html"><paper-icon-button icon="my-icons:copyright"></paper-icon-button></a>
+					<a href="https://material.io/tools/icons/"><paper-icon-button icon="my-icons:open-in-new"></paper-icon-button></a>
+				</p>
+			</div>
+		</div>
 		<iron-ajax auto
 			url="data/ironicons.json"
 			id="ajax"
@@ -33,7 +50,7 @@
 			last-response="{{ajaxResponse}}">
 		</iron-ajax>
 		<template is="dom-if" if="{{loading}}">
-			<div class="actions flex-center-center" hidden$="[[!loading]]">
+			<div class="actions" hidden$="[[!loading]]">
 				<paper-spinner-lite active$="[[loading]]"></paper-spinner-lite>
 			</div>
 		</template>
@@ -47,7 +64,7 @@
     <div class="container">
 			<template is="dom-repeat" items="[[ajaxResponse]]">
 				<div class="set">
-					<div><paper-icon-button id="{{item.icon}}" icon="{{item.icon}}"></paper-icon-button></div>
+					<div><paper-icon-button class="big" id="{{item.icon}}" icon="{{item.icon}}"></paper-icon-button></div>
 					<div>{{item.icon}}</div>
 				</div>
 			</template>

@@ -4,7 +4,7 @@
 	"fragments": [
     "src/my-colors.html",
     "src/my-icon.html",
-    "src/my-shadow.html",
+    "src/my-elevation.html",
     "src/my-buttons.html",
     "src/my-fab.html",
     "src/my-iconbutton.html",
@@ -15,6 +15,7 @@
     "src/my-slider.html",
     "src/my-spinner.html",
     "src/my-tabs.html",
+    "src/my-about.html",
     "src/my-404.html",
 		"src/my-red.html",
 		"src/my-pink.html",

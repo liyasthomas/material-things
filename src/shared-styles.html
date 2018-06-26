@@ -113,31 +113,58 @@
 				@apply --layout-horizontal;
 				@apply --layout-justified;
 				@apply --layout-center-center;
-				padding: 16px;
+				padding: 32px;
 			}
       .container {
 				padding: 32px;
-				max-width: 60vw;
 				margin: 0 auto;
+				border-bottom: 1px solid var(--light-text-color);;
       }
       .content {
-				margin-bottom: 64px;
+				@apply --layout-flex;
       }
       .element {
 				@apply --shadow-elevation-2dp;
 				border-radius: 4px;
 				background-color: #fff;
-				margin-top: 32px;
+				margin: 32px 0 64px 0;
 				padding: 16px;
       }
-			.title {
+			h2.title {
+				font-size: 32px;
+				text-overflow: ellipsis;
+				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
+				font-weight: 600;
+			}
+			h3.title {
 				font-size: 20px;
 				text-overflow: ellipsis;
 				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
+				font-weight: 600;
+			}
+			.description {
+				color: var(--secondary-text-color);
+				max-width: 60vw;
+			}
+			.icon {
+				--iron-image-placeholder: {
+					background-image: url(../images/assets/feeds/loader.svg);
+				}
+				width: 128px;
+				height: 128px;
+				transition: all .1s ease;
+			}
+			paper-icon-button.big {
+				width: 64px;
+				height: 64px;
 			}
 			@media (max-width: 640px) {
-				.container {
+				.description {
 					max-width: none;
+				}
+				paper-icon-button.big {
+					width: 56px;
+					height: 56px;
 				}
 				paper-toast {
 					margin: 0;

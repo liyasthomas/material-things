@@ -12,6 +12,7 @@
 <link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../bower_components/iron-selector/iron-selector.html">
 <link rel="import" href="../bower_components/iron-collapse/iron-collapse.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
 
 <link rel="import" href="../bower_components/paper-toast/paper-toast.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
@@ -33,7 +34,7 @@
 
 <link rel="lazy-import" href="my-colors.html">
 <link rel="lazy-import" href="my-icon.html">
-<link rel="lazy-import" href="my-shadow.html">
+<link rel="lazy-import" href="my-elevation.html">
 <link rel="lazy-import" href="my-buttons.html">
 <link rel="lazy-import" href="my-fab.html">
 <link rel="lazy-import" href="my-iconbutton.html">
@@ -44,6 +45,7 @@
 <link rel="lazy-import" href="my-slider.html">
 <link rel="lazy-import" href="my-tabs.html">
 <link rel="lazy-import" href="my-spinner.html">
+<link rel="lazy-import" href="my-about.html">
 <link rel="lazy-import" href="my-404.html">
 
 <link rel="lazy-import" href="my-red.html">
@@ -125,6 +127,7 @@
 				text-transform: capitalize;
 				text-overflow: ellipsis;
 				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
+				font-weight: 600;
 				color: var(--dark-accent-color);
 			}
 			.iron-selected {
@@ -137,7 +140,7 @@
         @apply --layout-flex;
 				position: relative;
 			}
-			paper-toast#sharehome {
+			#sharehome {
 				@apply --layout-horizontal;
 				@apply --layout-center;
 				@apply --layout-justified;
@@ -168,7 +171,7 @@
     		@apply --layout-justified;
 				color: var(--secondary-text-color);
 				font-size: 16px;
-				padding: 32px 16px;
+				padding: 32px;
 			}
 			footer paper-icon-button {
 				margin: 4px;
@@ -178,6 +181,9 @@
 					margin: 0;
 					max-width: none;
 					width: 100%;
+				}
+				#sharehome {
+					max-width: none;
 				}
 			}
     </style>
@@ -313,7 +319,7 @@
 				<neon-animated-pages selected="[[page]]" attr-for-selected="name" fallback-selection="404" role="main" entry-animation="fade-in-animation" exit-animation="fade-out-animation">
 					<my-colors name="colors"></my-colors>
 					<my-icon name="icon"></my-icon>
-					<my-shadow name="shadow"></my-shadow>
+					<my-elevation name="elevation"></my-elevation>
 					<my-buttons name="buttons"></my-buttons>
 					<my-fab name="fab"></my-fab>
 					<my-iconbutton name="iconbutton"></my-iconbutton>
@@ -324,6 +330,7 @@
 					<my-slider name="slider"></my-slider>
 					<my-spinner name="spinner"></my-spinner>
 					<my-tabs name="tabs"></my-tabs>
+					<my-about name="about"></my-about>
 					<my-404 name="404"></my-404>
 					<my-red name="red"></my-red>
 					<my-pink name="pink"></my-pink>
@@ -360,7 +367,7 @@
 			</div>
 			<footer>
 				<div>
-					&copy; 2018 Liyas Thomas
+					Material is an adaptable system of guidelines, components, and tools that support the best practices of user interface design. Backed by open-source code, Material streamlines collaboration between designers and developers, and helps teams quickly build beautiful products.
 				</div>
 				<div>
 					<a href="about">

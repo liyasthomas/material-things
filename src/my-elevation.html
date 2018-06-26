@@ -1,0 +1,132 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-elevation">
+	<template>
+    <style include="shared-styles">
+      :host {
+				display: block;
+      }
+      .material {
+				border-radius: 4px;
+				background-color: #fff;
+				margin-top: 32px;
+				padding: 32px;
+      }
+			.dp2 {
+				@apply --shadow-elevation-2dp;				
+			}
+			.dp3 {
+				@apply --shadow-elevation-3dp;				
+			}
+			.dp4 {
+				@apply --shadow-elevation-4dp;				
+			}
+			.dp6 {
+				@apply --shadow-elevation-6dp;				
+			}
+			.dp8 {
+				@apply --shadow-elevation-8dp;				
+			}
+			.dp12 {
+				@apply --shadow-elevation-12dp;				
+			}
+			.dp16 {
+				@apply --shadow-elevation-16dp;				
+			}
+			.dp24 {
+				@apply --shadow-elevation-24dp;				
+			}
+    </style>
+		<div class="container">
+			<div class="content">
+				<div class="actions">
+					<iron-image preload fade sizing="contain" class="icon" src="../images/assets/feeds/ic_icons_192px_light.svg" alt="Icons"></iron-image>
+				</div>
+				<h2 class="title">Elevation</h2>
+				<p class="description">
+					Elevation is the relative distance between two surfaces along the z-axis.
+				</p>
+				<p>
+					<a href="https://github.com/google/"><paper-icon-button src="../images/assets/social/github.svg"></paper-icon-button></a>
+					<a href="https://google.github.io/"><paper-icon-button icon="my-icons:code"></paper-icon-button></a>
+					<a href="https://www.apache.org/licenses/LICENSE-2.0.html"><paper-icon-button icon="my-icons:copyright"></paper-icon-button></a>
+					<a href="https://material.io/design/environment/elevation.html"><paper-icon-button icon="my-icons:open-in-new"></paper-icon-button></a>
+				</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="content">
+				<div class="material">
+					<h3 class="title">0dp</h3>
+				</div>
+			</div>
+			<div class="content">
+				<div class="material dp2">
+					<h3 class="title">2dp</h3>
+					<p>Contained button</p>
+				</div>
+			</div>
+			<div class="content">
+				<div class="material dp3">
+					<h3 class="title">3dp</h3>
+				</div>
+			</div>
+			<div class="content">
+				<div class="material dp4">
+					<h3 class="title">4dp</h3>
+					<p>Top app bar</p>
+				</div>
+			</div>
+			<div class="content">
+				<div class="material dp6">
+					<h3 class="title">6dp</h3>
+				</div>
+			</div>
+			<div class="content">
+				<div class="material dp8">
+					<h3 class="title">8dp</h3>
+					<p>Standard bottom sheet</p>
+					<p>Standard side sheet</p>
+					<p>Bottom navigation bar</p>
+					<p>Menus and sub menus</p>
+					<p>Card (when picked up)</p>
+					<p>Contained button (pressed state)</p>
+				</div>
+			</div>
+			<div class="content">
+				<div class="material dp12">
+					<h3 class="title">12dp</h3>
+				</div>
+			</div>
+			<div class="content">
+				<div class="material dp16">
+					<h3 class="title">16dp</h3>
+					<p>Navigation drawer</p>
+					<p>Modal bottom sheet</p>
+					<p>Modal side sheet</p>
+				</div>
+			</div>
+			<div class="content">
+				<div class="material dp24">
+					<h3 class="title">24dp</h3>
+					<p>Dialogs</p>
+				</div>
+			</div>
+		</div>
+	</template>
+	<script>
+		class MyElevation extends Polymer.Element {
+			static get is() {
+				return 'my-elevation';
+			}
+
+			static get properties() {
+				return {};
+			}
+		}
+
+		window.customElements.define(MyElevation.is, MyElevation);
+
+	</script>
+</dom-module>

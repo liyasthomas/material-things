@@ -15,7 +15,7 @@
 				@apply --layout-vertical;
 				@apply --layout-center-center;
 				flex: 1;
-        padding: 32px;
+        padding: 16px;
       }
 			.set div {
 				@apply --layout-flex;
@@ -47,7 +47,7 @@
     <div class="container">
 			<template is="dom-repeat" items="[[ajaxResponse]]">
 				<div class="set">
-					<div><paper-icon-button id="{{item.icon}}" icon="editor:{{item.icon}}"></paper-icon-button></div>
+					<div><paper-icon-button class="big" id="{{item.icon}}" icon="editor:{{item.icon}}"></paper-icon-button></div>
 					<div>{{item.icon}}</div>
 				</div>
 			</template>
