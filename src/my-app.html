@@ -32,6 +32,7 @@
 <link rel="import" href="shared-styles.html">
 <link rel="import" href="app-styles.html">
 
+<link rel="lazy-import" href="my-home.html">
 <link rel="lazy-import" href="my-colors.html">
 <link rel="lazy-import" href="my-icon.html">
 <link rel="lazy-import" href="my-elevation.html">
@@ -169,12 +170,10 @@
 				@apply --layout-horizontal;
 				@apply --layout-center;
     		@apply --layout-justified;
+				background-color: var(--paper-grey-200);
 				color: var(--secondary-text-color);
 				font-size: 16px;
 				padding: 32px;
-			}
-			footer paper-icon-button {
-				margin: 4px;
 			}
 			@media (max-width: 640px) {
 				paper-toast {
@@ -228,7 +227,12 @@
 		<app-header-layout fullbleed>
 			<app-header id="animatable" slot="header" fixed condenses reveals effects="waterfall" class$="[[_computeBgClass(page)]]">
 				<app-toolbar class="tab-nav">
-					<paper-tabs id="main-nav" selected="[[page]]" attr-for-selected="id" autoselect on-click="scrollTop" no-bar scrollable$={{!wideLayout}} fit-container$={{!wideLayout}}>
+					<paper-tabs id="main-nav" selected="[[page]]" attr-for-selected="id" on-click="scrollTop" no-bar autoselect scrollable fit-container hide-scroll-buttons$={{!wideLayout}}>
+						<paper-tab id="home">
+							<a href="home" tabindex="-1">
+								<iron-icon src="../images/assets/feeds/Google_Material_Design_Logo.svg"></iron-icon>
+							</a>
+						</paper-tab>
 						<iron-ajax auto url="data/home_feeds.json" id="ajax0" loading="{{loading0}}" handle-as="json" last-error="{{error0}}" last-response="{{ajaxResponse0}}">
 						</iron-ajax>
 						<template is="dom-if" if="{{loading0}}">
@@ -256,7 +260,7 @@
 					</template>
 				</app-toolbar>
 				<app-toolbar class="sticky-nav" sticky>
-					<paper-tabs id="colors-nav" selected="[[page]]" attr-for-selected="id" autoselect scrollable fit-container>
+					<paper-tabs id="colors-nav" selected="[[page]]" attr-for-selected="id" autoselect scrollable fit-container hide-scroll-buttons$={{!wideLayout}}>
 						<paper-tab id="colors">
 							<a href="colors" tabindex="-1">
 								<iron-icon icon="my-icons:home"></iron-icon>
@@ -284,7 +288,7 @@
 							</paper-tab>
 						</template>
 					</paper-tabs>
-					<paper-tabs id="icons-nav" selected="[[page]]" attr-for-selected="id" autoselect scrollable fit-container>
+					<paper-tabs id="icons-nav" selected="[[page]]" attr-for-selected="id" autoselect scrollable fit-container hide-scroll-buttons$={{!wideLayout}}>
 						<paper-tab id="icon">
 							<a href="icon" tabindex="-1">
 								<iron-icon icon="my-icons:home"></iron-icon>
@@ -317,6 +321,7 @@
 			</app-header>
 			<div class="pages">
 				<neon-animated-pages selected="[[page]]" attr-for-selected="name" fallback-selection="404" role="main" entry-animation="fade-in-animation" exit-animation="fade-out-animation">
+					<my-home name="home"></my-home>
 					<my-colors name="colors"></my-colors>
 					<my-icon name="icon"></my-icon>
 					<my-elevation name="elevation"></my-elevation>
@@ -367,7 +372,7 @@
 			</div>
 			<footer>
 				<div>
-					Material is an adaptable system of guidelines, components, and tools that support the best practices of user interface design. Backed by open-source code, Material streamlines collaboration between designers and developers, and helps teams quickly build beautiful products.
+					<iron-icon icon="my-icons:copyright"></iron-icon>Liyas Thomas
 				</div>
 				<div>
 					<a href="about">
@@ -512,7 +517,7 @@
 			_routePageChanged(page) {
 				// If no page was found in the route data, page will be an empty string.
 				// Default to 'home' in that case.
-				this.page = page || 'colors';
+				this.page = page || 'home';
 
 				// Close a non-persistent drawer when the page & route are changed.
 				//				if (!this.$.drawer.persistent) {

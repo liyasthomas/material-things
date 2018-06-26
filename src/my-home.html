@@ -1,0 +1,58 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="app-grid-style.html">
+
+<dom-module id="my-home">
+	<template>
+		<style include="app-grid-style">
+		</style>
+    <style include="shared-styles">
+      :host {
+        display: block;
+      }
+    </style>
+		<div class="container">
+			<div class="content">
+				<div class="actions">
+					<iron-image preload fade sizing="contain" class="icon" src="../images/assets/feeds/Google_Material_Design_Logo.svg" alt="Icons"></iron-image>
+				</div>
+				<h2 class="title">Material Design</h2>
+				<p class="description">
+					Material is an adaptable system of guidelines, components, and tools that support the best practices of user interface design. Backed by open-source code, Material streamlines collaboration between designers and developers, and helps teams quickly build beautiful products.
+				</p>
+				<p>
+					<a href="https://github.com/google/"><paper-icon-button src="../images/assets/social/github.svg"></paper-icon-button></a>
+					<a href="https://google.github.io/"><paper-icon-button icon="my-icons:code"></paper-icon-button></a>
+					<a href="https://www.apache.org/licenses/LICENSE-2.0.html"><paper-icon-button icon="my-icons:copyright"></paper-icon-button></a>
+					<a href="https://material.io/design/color/the-color-system.html"><paper-icon-button icon="my-icons:open-in-new"></paper-icon-button></a>
+				</p>
+			</div>
+		</div>
+		<div class="container2">
+			<div class="content">
+				<h2 class="title">Material Design</h2>
+				<p class="description">
+					These color palettes.
+				</p>
+			</div>
+		</div>
+	</template>
+	<script>
+		class MyHome extends Polymer.Element {
+			static get is() {
+				return 'my-home';
+			}
+
+			_computeBgClass(color) {
+				return color + '-bg';
+			}
+
+			static get properties() {
+				return {};
+			}
+		}
+
+		window.customElements.define(MyHome.is, MyHome);
+
+	</script>
+</dom-module>
