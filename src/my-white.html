@@ -1,7 +1,6 @@
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="shared-styles.html">
 <link rel="import" href="app-grid-style.html">
-
 <dom-module id="my-white">
 	<template>
 		<style include="app-grid-style">
@@ -45,7 +44,7 @@
 				</paper-icon-item>
 				<iron-collapse id$="collapse[[index]]" opened="{{item.opened}}">
 					<div class$="[[_computeBgClass(item.mode)]] snip" style="background-color: {{item.color}}">
-					background-color: {{item.color}});
+					background-color: {{item.color}};
 					</div>
 				</iron-collapse>
 			</template>
