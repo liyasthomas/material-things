@@ -11,6 +11,7 @@
         display: block;
       }
     </style>
+		<paper-toast id="copyToast" text="Copied to clipboard!"></paper-toast>
 		<iron-ajax auto
 			url="data/white.json"
 			id="ajax"
@@ -31,18 +32,18 @@
 				<a href="javascript:location.reload();"><paper-icon-button icon="my-icons:refresh"></paper-icon-button></a>
 			</div>
     </template>
-		<paper-listbox selected="" attr-for-selected="id" class="listbox" role="listbox" style="background-color: #000;">
+		<paper-listbox selected="" attr-for-selected="id" class="listbox" role="listbox" style="background-color: #000">
 			<template is="dom-repeat" items="[[ajaxResponse]]">
-				<paper-icon-item id="{{item.title}}" class$="[[_computeBgClass(item.mode)]]" style="background-color: {{item.color}}">
-					<paper-icon-button icon="my-icons:content-copy" item-icon slot="item-icon"></paper-icon-button>
+				<paper-icon-item id="{{item.title}}" class$="[[_computeBgClass(item.mode)]]" style="background-color: {{item.color}}" data-index$="[[index]]" data-selector$="#collapse-[[index]]" on-click="_toggleInfo">
+					<paper-icon-button icon="my-icons:content-copy" item-icon slot="item-icon" on-click="_openToast"></paper-icon-button>
 					<span class="name">{{item.title}}</span>
 					<p id="message"><span class="hex">{{item.color}}</span></p>
 					<div class="code">
-						<paper-icon-button icon="my-icons:code" data-index$="[[index]]" on-click="_toggleInfo"></paper-icon-button>
+						<paper-icon-button icon="my-icons:[[_icon(item.opened)]]"></paper-icon-button>
 					</div>
 					<paper-ripple></paper-ripple>
 				</paper-icon-item>
-				<iron-collapse id$="collapse[[index]]">
+				<iron-collapse id$="collapse[[index]]" opened="{{item.opened}}">
 					<div class$="[[_computeBgClass(item.mode)]] snip" style="background-color: {{item.color}}">
 					background-color: {{item.color}});
 					</div>
@@ -63,6 +64,14 @@
 			_toggleInfo(e) {
 				var collapseElem = this.shadowRoot.querySelector('#collapse'+e.currentTarget.dataset.index);
 				collapseElem.toggle();
+			}
+
+			_icon(itemOpen) {
+				return itemOpen ? 'expand-less' : 'expand-more';
+			}
+
+			_openToast() {
+				this.$.copyToast.toggle();
 			}
 
 			static get properties() {

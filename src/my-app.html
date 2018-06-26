@@ -137,7 +137,7 @@
         @apply --layout-flex;
 				position: relative;
 			}
-			paper-toast {
+			paper-toast#sharehome {
 				@apply --layout-horizontal;
 				@apply --layout-center;
 				@apply --layout-justified;
@@ -193,9 +193,7 @@
         tail="{{subroute}}">
     </app-route>
 		<iron-media-query query="min-width: 641px" query-matches="{{wideLayout}}"></iron-media-query>
-		<paper-toast id="updateToast" duration="3000" text="App cached. Browse offline!">
-			<paper-button onclick="window.location.reload(true)" class="toast-button">Okay</paper-button>
-		</paper-toast>
+		<paper-toast id="updateToast" text="App cached. Browse offline!"></paper-toast>
 		<paper-toast id="sharehome" duration="0">
 			<div class="flex-vertical flexchild">
 				<div class="flex-horizontal flex-center-center">
@@ -217,7 +215,7 @@
 				</div>
 			</div>
 		</paper-toast>
-		<paper-toast id="ready_toast" duration="5000" text="">
+		<paper-toast id="ready_toast" duration="5000">
 			<span>Click on <paper-icon-button icon="my-icons:code"></paper-icon-button> to view the code. Click on <paper-icon-button icon="my-icons:content-copy"></paper-icon-button> to copy code to clipboard!</span>
 		</paper-toast>
 		<!-- Main content -->
