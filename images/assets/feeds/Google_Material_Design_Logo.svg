@@ -52,7 +52,7 @@
      cy="12"
      r="12"
      id="circle2"
-     style="fill:#757575" />
+     style="fill:#525252" />
   <path
      d="M 3.6,20.4 H 20.4 V 3.6 H 3.6 Z"
      id="path4"

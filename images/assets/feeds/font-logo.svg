@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <path fill="#FF5252" d="M184 96c0 3.5-.2 6.96-.61 10.36-4.67 39.85-35.97 71.56-75.62 76.85-3.85.52-7.78.79-11.77.79-48.6 0-88-39.4-88-88S47.4 8 96 8s88 39.4 88 88z"/>
+  <linearGradient id="a" x1="61.495" x2="159.408" y1="59.495" y2="157.408" gradientUnits="userSpaceOnUse">
+    <stop offset=".006" stop-color="#3E2723" stop-opacity=".2"/>
+    <stop offset=".996" stop-color="#3E2723" stop-opacity="0"/>
+  </linearGradient>
+  <path fill="url(#a)" d="M183.27 107.27c-4.9 38.42-34.58 69.09-72.51 75.48L68 140h18v-36h34V88H86V68h42V52l55.27 55.27z"/>
+  <path fill="#3E2723" d="M96 183c-48.43 0-87.72-39.13-87.99-87.5 0 .17-.01.33-.01.5 0 48.6 39.4 88 88 88s88-39.4 88-88c0-.17-.01-.33-.01-.5-.27 48.37-39.56 87.5-87.99 87.5z" opacity=".2"/>
+  <path fill="#FFF" d="M96 9c48.43 0 87.72 39.13 87.99 87.5 0-.17.01-.33.01-.5 0-48.6-39.4-88-88-88S8 47.4 8 96c0 .17.01.33.01.5C8.28 48.13 47.57 9 96 9z" opacity=".2"/>
+  <path fill="#F5F5F5" d="M128 68V52H68v88h18v-36h34V88H86V68"/>
+  <path fill="#FFF" d="M68 52h60v1H68zm18 36h34v1H86z" opacity=".4"/>
+  <path fill="#3E2723" d="M68 140h18v1H69m17-37h34v1H86zm0-36h42v1H86z" opacity=".2"/>
+  <radialGradient id="b" cx="33.535" cy="34.326" r="176.835" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#FFF"/>
+    <stop offset=".01" stop-color="#FFF" stop-opacity=".99"/>
+    <stop offset="1" stop-color="#FFF" stop-opacity="0"/>
+  </radialGradient>
+  <circle cx="96" cy="96" r="88" fill="url(#b)" fill-opacity=".1"/>
+  <path fill="none" d="M0 0h192v192H0z"/>
+</svg>

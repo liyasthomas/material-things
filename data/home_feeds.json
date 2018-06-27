@@ -17,22 +17,22 @@
 	{
 		"link": "typography",
 		"title": "Typography",
-		"icon": "text-format"
+		"icon": "title"
 	},
 	{
 		"link": "buttons",
 		"title": "Buttons",
-		"icon": "note"
+		"icon": "surround-sound"
 	},
 	{
 		"link": "fab",
 		"title": "FAB",
-		"icon": "favorite"
+		"icon": "add-circle"
 	},
 	{
 		"link": "iconbutton",
 		"title": "Icon Buttons",
-		"icon": "bubble-chart"
+		"icon": "adjust"
 	},
 	{
 		"link": "inputs",
@@ -57,12 +57,12 @@
 	{
 		"link": "slider",
 		"title": "Slider",
-		"icon": "more-horiz"
+		"icon": "linear-scale"
 	},
 	{
 		"link": "spinner",
 		"title": "Spinner",
-		"icon": "refresh"
+		"icon": "donut-large"
 	},
 	{
 		"link": "tabs",
