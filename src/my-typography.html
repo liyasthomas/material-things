@@ -1,0 +1,147 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-typography">
+	<template>
+    <style include="shared-styles">
+      :host {
+				display: block;
+      }
+			.font {
+				padding: 16px;
+				font-size: 24px;
+			}
+			.mono {
+				font-family: 'Roboto Mono', Consolas, Menlo, Monaco, monospace;
+			}
+			.product {
+				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
+			}
+			.light {
+				font-weight: lighter;
+			}
+			.regular {
+				font-weight: normal;
+			}
+			.medium {
+				font-weight: 500;
+			}
+			.bold {
+				font-weight: bold;
+			}
+			.paper-font-display4 { @apply --paper-font-display4; }
+			.paper-font-display3 { @apply --paper-font-display3; }
+			.paper-font-display2 { @apply --paper-font-display2; }
+			.paper-font-display1 { @apply --paper-font-display1; }
+			.paper-font-headline { @apply --paper-font-headline; }
+			.paper-font-title { @apply --paper-font-title; }
+			.paper-font-subhead {  @apply --paper-font-subhead; }
+			.paper-font-body2 { @apply --paper-font-body2; }
+			.paper-font-body1 { @apply --paper-font-body1; }
+			.paper-font-caption { @apply --paper-font-caption; }
+			.paper-font-menu { @apply --paper-font-menu; }
+			.paper-font-button { @apply --paper-font-button; }
+    </style>
+		<div class="container">
+			<div class="content">
+				<div class="actions">
+					<iron-image preload fade sizing="contain" class="icon" src="../images/assets/feeds/ic_icons_192px_light.svg" alt="Icons"></iron-image>
+				</div>
+				<h2 class="title">Typography</h2>
+				<p class="description">
+					Use typography to present your design and content as clearly and efficiently as possible.
+				</p>
+				<p>
+					<a href="https://github.com/google/"><paper-icon-button src="../images/assets/social/github.svg"></paper-icon-button></a>
+					<a href="https://google.github.io/"><paper-icon-button icon="my-icons:code"></paper-icon-button></a>
+					<a href="https://www.apache.org/licenses/LICENSE-2.0.html"><paper-icon-button icon="my-icons:copyright"></paper-icon-button></a>
+					<a href="https://material.io/design/environment/elevation.html"><paper-icon-button icon="my-icons:open-in-new"></paper-icon-button></a>
+				</p>
+			</div>
+		</div>
+		<div class="container2">
+			<div class="content">
+				<h2 class="title">Font Weight</h2>
+				<p class="description">
+					Weight refers to the relative thickness of a font's stroke. A typeface can come in many weights; and four to six weights is a typical number available for a typeface.
+				</p>
+				<h3 class="title">Roboto.ttf</h3>
+				<div class="element">
+					<div class="font light">Light</div>
+					<div class="font regular">Regular</div>
+					<div class="font medium">Medium</div>
+					<div class="font bold">Bold</div>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Roboto Mono.ttf</h3>
+				<div class="element mono">
+					<div class="font light">Light</div>
+					<div class="font regular">Regular</div>
+					<div class="font medium">Medium</div>
+					<div class="font bold">Bold</div>
+				</div>
+			</div>
+			<div class="content">
+				<h3 class="title">Product Sans.ttf</h3>
+				<div class="element product">
+					<div class="font regular">Regular</div>
+					<div class="font bold">Bold</div>
+				</div>
+			</div>
+		</div>
+		<div class="container2">
+			<div class="content">
+				<h2 class="title">Type Scale</h2>
+				<p class="description">
+					Use typography to present your design and content as clearly and efficiently as possible.
+				</p>
+				<div class="element">
+					<div class="redlines">
+						<div class="paper-font-display4">Display 4</div>
+						<div class="paper-font-display3">Display 3</div>
+						<div class="paper-font-display2">Display 2</div>
+						<div class="paper-font-display1">Display 1</div>
+						<div class="paper-font-headline">Headline</div>
+						<div class="paper-font-title">Title</div>
+						<div class="paper-font-subhead">Subhead</div>
+						<div class="paper-font-body2">Body 2</div>
+						<div class="paper-font-body1">Body 1</div>
+						<div class="paper-font-caption">Caption</div>
+						<div class="paper-font-menu">Menu</div>
+						<div class="paper-font-button">Button</div>
+					</div>
+					<p class="redlines paper-font-body1">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+						tincidunt dui sit amet mi auctor, ac gravida magna aliquam. Fusce quis
+						purus elementum, tempus nisi vel, volutpat nulla. Vestibulum mollis
+						dictum tellus, vulputate porttitor arcu. Curabitur imperdiet risus id
+						egestas accumsan. Donec lectus felis, dignissim id iaculis sit amet,
+						faucibus in leo.
+					</p>
+					<p class="redlines paper-font-body2">
+						Mauris id urna ac ante ultrices commodo a imperdiet elit. Vivamus
+						interdum neque magna, eget dapibus est auctor et. Donec accumsan
+						libero nec augue scelerisque, ac egestas ante tincidunt. Proin
+						sollicitudin, mi eget sagittis mollis, arcu orci scelerisque turpis, a
+						sollicitudin tellus quam non sapien.
+					</p>
+				</div>
+			</div>
+		</div>
+	</template>
+	<script>
+		class MyTypography extends Polymer.Element {
+			static get is() {
+				return 'my-typography';
+			}
+
+			static get properties() {
+				return {};
+			}
+		}
+
+		window.customElements.define(MyTypography.is, MyTypography);
+
+	</script>
+</dom-module>

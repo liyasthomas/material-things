@@ -1,54 +1,72 @@
 [
 	{
 		"link": "colors",
+		"title": "Colors",
 		"icon": "format-color-fill"
 	},
 	{
 		"link": "icon",
+		"title": "Icons",
 		"icon": "tag-faces"
 	},
 	{
 		"link": "elevation",
+		"title": "Elevation",
 		"icon": "layers"
 	},
 	{
+		"link": "typography",
+		"title": "Typography",
+		"icon": "text-format"
+	},
+	{
 		"link": "buttons",
+		"title": "Buttons",
 		"icon": "note"
 	},
 	{
 		"link": "fab",
+		"title": "FAB",
 		"icon": "favorite"
 	},
 	{
 		"link": "iconbutton",
+		"title": "Icon Buttons",
 		"icon": "bubble-chart"
 	},
 	{
 		"link": "inputs",
+		"title": "Inputs",
 		"icon": "text-fields"
 	},
 	{
 		"link": "items",
+		"title": "Items",
 		"icon": "list"
 	},
 	{
 		"link": "menu",
+		"title": "Menu",
 		"icon": "menu"
 	},
 	{
 		"link": "progress",
+		"title": "Progress",
 		"icon": "remove"
 	},
 	{
 		"link": "slider",
+		"title": "Slider",
 		"icon": "more-horiz"
 	},
 	{
 		"link": "spinner",
+		"title": "Spinner",
 		"icon": "refresh"
 	},
 	{
 		"link": "tabs",
+		"title": "Tabs",
 		"icon": "tab"
 	}
 ]

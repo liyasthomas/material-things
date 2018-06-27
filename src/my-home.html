@@ -10,6 +10,9 @@
       :host {
         display: block;
       }
+      .element {
+				padding: 0;
+			}
     </style>
 		<div class="container">
 			<div class="content">
@@ -24,7 +27,7 @@
 					<a href="https://github.com/google/"><paper-icon-button src="../images/assets/social/github.svg"></paper-icon-button></a>
 					<a href="https://google.github.io/"><paper-icon-button icon="my-icons:code"></paper-icon-button></a>
 					<a href="https://www.apache.org/licenses/LICENSE-2.0.html"><paper-icon-button icon="my-icons:copyright"></paper-icon-button></a>
-					<a href="https://material.io/design/color/the-color-system.html"><paper-icon-button icon="my-icons:open-in-new"></paper-icon-button></a>
+					<a href="https://material.io/"><paper-icon-button icon="my-icons:open-in-new"></paper-icon-button></a>
 				</p>
 			</div>
 		</div>
@@ -34,6 +37,33 @@
 				<p class="description">
 					Library of material designed components.
 				</p>
+				<iron-ajax auto url="data/home_feeds.json" id="ajax0" loading="{{loading0}}" handle-as="json" last-error="{{error0}}" last-response="{{ajaxResponse0}}">
+				</iron-ajax>
+				<template is="dom-if" if="{{loading0}}">
+					<div class="actions" hidden$="[[!loading0]]">
+						<paper-spinner-lite active$="[[loading0]]"></paper-spinner-lite>
+					</div>
+				</template>
+				<template is="dom-if" if="{{error0}}">
+					<div class="error">
+						<div>Failed to load feeds.</div>
+						<div>Make sure you're connected to internet.</div>
+						<a href="javascript:location.reload();"><paper-icon-button icon="my-icons:refresh"></paper-icon-button></a>
+					</div>
+				</template>
+				<div class="element">
+					<paper-listbox selected="" attr-for-selected="id" class="listbox" role="listbox">
+						<template is="dom-repeat" items="[[ajaxResponse0]]">
+							<a href="{{item.link}}">
+								<paper-icon-item id="{{item.title}}">
+									<iron-icon icon="my-icons:{{item.icon}}" item-icon slot="item-icon"></iron-icon>
+									<span class="name">{{item.title}}</span>
+									<paper-ripple></paper-ripple>
+								</paper-icon-item>
+							</a>
+						</template>
+					</paper-listbox>
+				</div>
 			</div>
 		</div>
 	</template>
@@ -41,10 +71,6 @@
 		class MyHome extends Polymer.Element {
 			static get is() {
 				return 'my-home';
-			}
-
-			_computeBgClass(color) {
-				return color + '-bg';
 			}
 
 			static get properties() {
