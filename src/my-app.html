@@ -157,16 +157,6 @@
       paper-tabs {
         height: 100%;
       }
-			.flexchild {
-				@apply --layout-flex;
-			}
-			.flex-horizontal {
-				@apply --layout-horizontal;
-			}
-			.flex-center-center {
-				@apply --layout-horizontal;
-				@apply --layout-center-center;
-			}
 			footer {
 				@apply --layout-horizontal;
 				@apply --layout-center;
@@ -201,14 +191,11 @@
 		<iron-media-query query="min-width: 641px" query-matches="{{wideLayout}}"></iron-media-query>
 		<paper-toast id="updateToast" text="App cached. Browse offline!"></paper-toast>
 		<paper-toast id="sharehome" duration="0">
-			<div class="flex-vertical flexchild">
-				<div class="flex-horizontal flex-center-center">
-					<div class="flex-horizontal flexchild">
-						<div class="flexchild">Share via</div>
-						<paper-icon-button icon="my-icons:close" on-tap="openShare"></paper-icon-button>
-					</div>
+			<div class="flex-vertical">
+				<div class="flex-horizontal">
+					<div class="flexchild">Share via</div><paper-icon-button icon="my-icons:close" on-tap="openShare"></paper-icon-button>
 				</div>
-				<div class="flex-vertical flexchild" on-tap="openShare">
+				<div>
 					<template is="dom-repeat" items="[[social]]">
 						<a href="{{item.link}}" target="_blank"><paper-icon-button class="toast-button" src="../images/assets/social/{{item.icon}}.svg"></paper-icon-button></a>
 					</template>

@@ -2,7 +2,8 @@
 <link rel="import" href="../bower_components/paper-styles/paper-styles.html">
 <dom-module id="shared-styles">
 	<template>
-    <style is="custom-style">*,
+    <style is="custom-style">
+			*,
 			*:focus,
 			*::before,
 			*::after {
@@ -37,10 +38,7 @@
 			}
 			paper-item, paper-icon-item {
 				font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
-				line-height: 1.5;
 				color: var(--primary-text-color);
-				--paper-item-focused: {
-				};
 				--paper-item-focused-before: {
 					opacity: 0;
 				};
@@ -103,17 +101,38 @@
         display: block;
         width: 100%;
 			}
-			.error {
-				padding: 16px;
-				font-family: 'Roboto Mono', Consolas, Menlo, Monaco, monospace;
-				font-size: 14px;
-				color: var(--secondary-text-color);
+			.flexchild {
+				@apply --layout-flex;
+			}
+			.flex-vertical {
+				@apply --layout-vertical;
+			}
+			.flex-horizontal {
+				@apply --layout-horizontal;
+			}
+			.flex-center-center {
+				@apply --layout-horizontal;
+				@apply --layout-center-center;
+			}
+			.flex-end-align {
+				@apply --layout-horizontal;
+				@apply --layout-end;
+				height: 100%
+			}
+			.flex-justified {
+				@apply --layout-justified;
 			}
 			.actions {
 				@apply --layout-horizontal;
 				@apply --layout-justified;
 				@apply --layout-center-center;
 				padding: 32px;
+			}
+			.error {
+				padding: 16px;
+				font-family: 'Roboto Mono', Consolas, Menlo, Monaco, monospace;
+				font-size: 14px;
+				color: var(--secondary-text-color);
 			}
       .container {
 				padding: 32px;
